@@ -1,0 +1,317 @@
+{
+  "scheme": "semi_intrusive_galerkin_plus_shared_routed_ridge_moe",
+  "data_root": "/root/Cylinder_Results_Re500_1000_POD_data",
+  "tensor_path": "/root/Cylinder_Results_Re500_1000_POD_data/semi_intrusive_galerkin_tensors_allRe_ru80_rp80.npz",
+  "settings": {
+    "r_u": 16,
+    "r_p": 16,
+    "phase_harmonics": 4,
+    "ridge_shared": 0.01,
+    "ridge_expert": 1.0,
+    "top_k": 2,
+    "sigma_phase": 0.2,
+    "sigma_re": 0.35,
+    "rollout_steps": 20
+  },
+  "pod_energy": {
+    "velocity_first_16": 0.9122042076786477,
+    "pressure_first_16": 0.9518386585499199
+  },
+  "samples": {
+    "total_snapshots": 1206,
+    "valid_derivative_samples": 1194
+  },
+  "results": [
+    {
+      "test_Re": 700,
+      "train_Re": [
+        500,
+        600,
+        800,
+        900,
+        1000
+      ],
+      "num_train": 995,
+      "num_test": 199,
+      "metrics": {
+        "galerkin_only": {
+          "relative_l2": 0.20342264995092998,
+          "rmse": 1.2990874455489272,
+          "mae": 0.8417852233402477,
+          "r2_centered": 0.9585745257554669,
+          "mode_relative_l2_first8": [
+            0.2414439992322516,
+            0.08840605793448085,
+            0.07811845154750699,
+            0.2894059516887089,
+            0.4545838655645915,
+            0.5027195791611648,
+            0.43810415214331394,
+            0.2954418170844155
+          ]
+        },
+        "galerkin_plus_shared": {
+          "relative_l2": 0.14243408753985579,
+          "rmse": 0.9096053708172512,
+          "mae": 0.6407211738084432,
+          "r2_centered": 0.9796906160750661,
+          "mode_relative_l2_first8": [
+            0.1858573110177349,
+            0.05949488493130732,
+            0.0628930932645263,
+            0.2799017251812646,
+            0.3525076042353089,
+            0.4217978537669739,
+            0.2369463072042937,
+            0.1546468920547376
+          ]
+        },
+        "galerkin_plus_shared_routed": {
+          "relative_l2": 0.1175203402755731,
+          "rmse": 0.7505024572507641,
+          "mae": 0.5363924402934156,
+          "r2_centered": 0.986174050873458,
+          "mode_relative_l2_first8": [
+            0.14188051923018752,
+            0.0590826804666841,
+            0.051918458173329005,
+            0.2944153284905602,
+            0.3019668308083832,
+            0.33812745150291906,
+            0.186513331687409,
+            0.14620713123320034
+          ]
+        }
+      },
+      "one_step_euler": {
+        "galerkin_only": {
+          "relative_l2": 0.06499384631534369,
+          "rmse": 0.638951847523664
+        },
+        "galerkin_plus_shared": {
+          "relative_l2": 0.05182970165467799,
+          "rmse": 0.509535679242277
+        },
+        "galerkin_plus_shared_routed": {
+          "relative_l2": 0.04901758337407522,
+          "rmse": 0.4818898593268303
+        }
+      },
+      "rollout_teacher_forced_pressure": {
+        "galerkin_plus_shared_routed": {
+          "relative_l2_mean": 0.4264273112311161,
+          "relative_l2_median": 0.3309301003902758,
+          "num_windows": 9
+        },
+        "steps": 20,
+        "note": "Uses true pressure POD coefficients and known phase as context."
+      },
+      "improvement_percent_vs_galerkin_relative_l2": {
+        "shared": 29.981205350773955,
+        "shared_routed": 42.22848817309976
+      },
+      "router": {
+        "expert_centers": [
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.0
+          },
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.25
+          },
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.5
+          },
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.75
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.0
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.25
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.5
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.75
+          }
+        ],
+        "train_expert_utilization": [
+          0.10697559845276215,
+          0.10844012204269271,
+          0.1163308392503321,
+          0.11601521056889182,
+          0.13357424093454306,
+          0.13524107084661666,
+          0.14186927328611046,
+          0.14155364461745698
+        ],
+        "test_expert_utilization": [
+          0.18803404066417448,
+          0.19105236926083774,
+          0.19105236923898647,
+          0.19105236926083774,
+          0.05819711508960551,
+          0.06020391216166088,
+          0.06020391216166088,
+          0.06020391216166088
+        ]
+      }
+    },
+    {
+      "test_Re": 1000,
+      "train_Re": [
+        500,
+        600,
+        700,
+        800,
+        900
+      ],
+      "num_train": 995,
+      "num_test": 199,
+      "metrics": {
+        "galerkin_only": {
+          "relative_l2": 0.17964029665587639,
+          "rmse": 2.6540958735888274,
+          "mae": 1.7314944866927462,
+          "r2_centered": 0.9676927047806301,
+          "mode_relative_l2_first8": [
+            0.3143437708062728,
+            0.09425504513928878,
+            0.04972296994440723,
+            0.10341418370679238,
+            0.150071689020199,
+            0.5291464706271587,
+            0.3160859805617116,
+            0.17655139481379312
+          ]
+        },
+        "galerkin_plus_shared": {
+          "relative_l2": 0.10773957605448196,
+          "rmse": 1.591798552727764,
+          "mae": 1.1579687996581354,
+          "r2_centered": 0.9883789974183615,
+          "mode_relative_l2_first8": [
+            0.143158872469845,
+            0.05891694799520278,
+            0.043245781766096454,
+            0.10625677738275179,
+            0.08433752234507086,
+            0.23983954638758084,
+            0.2862431478922544,
+            0.17909917640295162
+          ]
+        },
+        "galerkin_plus_shared_routed": {
+          "relative_l2": 0.09855433694538378,
+          "rmse": 1.4560912216266344,
+          "mae": 1.0637847727597065,
+          "r2_centered": 0.9902760088719111,
+          "mode_relative_l2_first8": [
+            0.12499020455649201,
+            0.056621228731452436,
+            0.037049750135706196,
+            0.09962882546510149,
+            0.07491954412431655,
+            0.18868222422148986,
+            0.26585389219104744,
+            0.17269659012590646
+          ]
+        }
+      },
+      "one_step_euler": {
+        "galerkin_only": {
+          "relative_l2": 0.05733398089305423,
+          "rmse": 0.9612132790812141
+        },
+        "galerkin_plus_shared": {
+          "relative_l2": 0.04748049561897938,
+          "rmse": 0.7960180363448192
+        },
+        "galerkin_plus_shared_routed": {
+          "relative_l2": 0.04568103094283532,
+          "rmse": 0.7658497257721827
+        }
+      },
+      "rollout_teacher_forced_pressure": {
+        "galerkin_plus_shared_routed": {
+          "relative_l2_mean": 0.4006149551048276,
+          "relative_l2_median": 0.38542345622767193,
+          "num_windows": 9
+        },
+        "steps": 20,
+        "note": "Uses true pressure POD coefficients and known phase as context."
+      },
+      "improvement_percent_vs_galerkin_relative_l2": {
+        "shared": 40.024828471380815,
+        "shared_routed": 45.137956917523695
+      },
+      "router": {
+        "expert_centers": [
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.0
+          },
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.25
+          },
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.5
+          },
+          {
+            "re_unit_center": 0.25,
+            "phase_center": 0.75
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.0
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.25
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.5
+          },
+          {
+            "re_unit_center": 0.75,
+            "phase_center": 0.75
+          }
+        ],
+        "train_expert_utilization": [
+          0.14458240658559704,
+          0.14665059589486026,
+          0.1545413130981294,
+          0.15422568442105947,
+          0.09880809099261875,
+          0.1001868838819097,
+          0.1005025125527283,
+          0.10050251257250854
+        ],
+        "test_expert_utilization": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.23202786479922838,
+          0.23547484698519686,
+          0.26703771582857305,
+          0.2654595723864042
+        ]
+      }
+    }
+  ],
+  "runtime_seconds": 1.8774096965789795
+}
