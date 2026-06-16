@@ -1,0 +1,178 @@
+{
+  "method": "weighted global snapshot POD using mesh-derived nodal control volumes",
+  "important_note": "The saved flow snapshots are VTK pointData. Therefore the L2 mass weights are point control volumes obtained by distributing each VTK cell volume equally to its corner points. The weighted Euclidean inner product of the assembled snapshots is exactly the corresponding lumped nodal L2 inner product for these pointData fields.",
+  "weighting": {
+    "cell_volume_source": "/home/ray/tmp_weighted_pod_mesh_case/VTK/tmp_weighted_pod_mesh_case_0.vtk",
+    "point_weight_construction": "point_volumes[i] = sum_{cells c containing point i} volume(c) / n_points(c)",
+    "velocity_weighting": "For [u,v], sqrt(point_volumes) is applied independently to u and v.",
+    "pressure_weighting": "For p, sqrt(point_volumes) is applied to p.",
+    "total_cell_volume": 59.92146896194584,
+    "total_point_volume": 59.92146896194584,
+    "min_cell_volume": 4.169426742166133e-06,
+    "max_cell_volume": 0.0026389172735762426,
+    "min_point_volume": 1.0423566855415334e-06,
+    "max_point_volume": 0.0013194506894868754,
+    "mesh_point_match_max_delta": 0.0
+  },
+  "mean_treatment": "For each Re, retained snapshots are centered by that Re time-mean field before weighting.",
+  "retained_data": {
+    "Re_values": [
+      500.0,
+      517.2413793103449,
+      534.4827586206897,
+      551.7241379310345,
+      568.9655172413793,
+      586.2068965517242,
+      603.448275862069,
+      620.6896551724138,
+      637.9310344827586,
+      655.1724137931035,
+      672.4137931034483,
+      689.6551724137931,
+      706.8965517241379,
+      724.1379310344828,
+      741.3793103448277,
+      758.6206896551724,
+      775.8620689655172,
+      793.1034482758621,
+      810.344827586207,
+      827.5862068965517,
+      844.8275862068965,
+      862.0689655172414,
+      879.3103448275863,
+      896.551724137931,
+      913.7931034482759,
+      931.0344827586207,
+      948.2758620689656,
+      965.5172413793105,
+      982.7586206896552,
+      1000.0
+    ],
+    "Re_labels": [
+      "Re_500p000000",
+      "Re_517p241379",
+      "Re_534p482759",
+      "Re_551p724138",
+      "Re_568p965517",
+      "Re_586p206897",
+      "Re_603p448276",
+      "Re_620p689655",
+      "Re_637p931034",
+      "Re_655p172414",
+      "Re_672p413793",
+      "Re_689p655172",
+      "Re_706p896552",
+      "Re_724p137931",
+      "Re_741p379310",
+      "Re_758p620690",
+      "Re_775p862069",
+      "Re_793p103448",
+      "Re_810p344828",
+      "Re_827p586207",
+      "Re_844p827586",
+      "Re_862p068966",
+      "Re_879p310345",
+      "Re_896p551724",
+      "Re_913p793103",
+      "Re_931p034483",
+      "Re_948p275862",
+      "Re_965p517241",
+      "Re_982p758621",
+      "Re_1000p000000"
+    ],
+    "drop_cycles": 2.0,
+    "estimated_Strouhal": 0.2,
+    "snapshots_per_Re": {
+      "Re_500p000000": 201,
+      "Re_517p241379": 201,
+      "Re_534p482759": 201,
+      "Re_551p724138": 201,
+      "Re_568p965517": 201,
+      "Re_586p206897": 201,
+      "Re_603p448276": 201,
+      "Re_620p689655": 201,
+      "Re_637p931034": 201,
+      "Re_655p172414": 201,
+      "Re_672p413793": 201,
+      "Re_689p655172": 201,
+      "Re_706p896552": 201,
+      "Re_724p137931": 201,
+      "Re_741p379310": 201,
+      "Re_758p620690": 201,
+      "Re_775p862069": 201,
+      "Re_793p103448": 201,
+      "Re_810p344828": 201,
+      "Re_827p586207": 201,
+      "Re_844p827586": 201,
+      "Re_862p068966": 201,
+      "Re_879p310345": 201,
+      "Re_896p551724": 201,
+      "Re_913p793103": 201,
+      "Re_931p034483": 201,
+      "Re_948p275862": 201,
+      "Re_965p517241": 201,
+      "Re_982p758621": 201,
+      "Re_1000p000000": 201
+    },
+    "total_snapshots": 6030
+  },
+  "velocity_pod": {
+    "features": "[u all mesh points, v all mesh points]",
+    "phi_uv_shape": [
+      80,
+      194736
+    ],
+    "phi_uv_weighted_shape": [
+      80,
+      194736
+    ],
+    "coeff_uv_shape": [
+      6030,
+      80
+    ],
+    "mean_uv_by_Re_shape": [
+      30,
+      194736
+    ],
+    "energy_target": 0.999,
+    "max_modes": 80,
+    "retained_rank": 80,
+    "retained_cumulative_energy": 0.9922074312692857
+  },
+  "pressure_pod": {
+    "features": "p all mesh points",
+    "phi_p_shape": [
+      80,
+      97368
+    ],
+    "phi_p_weighted_shape": [
+      80,
+      97368
+    ],
+    "coeff_p_shape": [
+      6030,
+      80
+    ],
+    "mean_p_by_Re_shape": [
+      30,
+      97368
+    ],
+    "energy_target": 0.999,
+    "max_modes": 80,
+    "retained_rank": 80,
+    "retained_cumulative_energy": 0.9967036457737273
+  },
+  "reconstruction": {
+    "velocity_raw_field": "uv = mean_uv_by_Re[re_index] + coeff_uv[snapshot_id, :r] @ phi_uv[:r]",
+    "pressure_raw_field": "p = mean_p_by_Re[re_index] + coeff_p[snapshot_id, :r] @ phi_p[:r]",
+    "weighted_fluctuation": "weighted_uv_fluct = coeff_uv[snapshot_id, :r] @ phi_uv_weighted[:r]",
+    "uv_layout": "first n_points entries are u, next n_points entries are v"
+  },
+  "units": {
+    "points": "m",
+    "point_volumes": "m^3",
+    "u_v": "m/s",
+    "p": "m^2/s^2",
+    "time": "s"
+  }
+}
