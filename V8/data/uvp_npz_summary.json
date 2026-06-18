@@ -1,0 +1,1002 @@
+[
+  {
+    "Re": 50.0,
+    "label": "Re_50p000000",
+    "status": "completed",
+    "npz": "Re_50p000000_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67579091
+  },
+  {
+    "Re": 50.28473956963665,
+    "label": "Re_50p284740",
+    "status": "completed",
+    "npz": "Re_50p284740_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67435374
+  },
+  {
+    "Re": 50.725835688997414,
+    "label": "Re_50p725836",
+    "status": "completed",
+    "npz": "Re_50p725836_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66732576
+  },
+  {
+    "Re": 51.2547624634004,
+    "label": "Re_51p254762",
+    "status": "completed",
+    "npz": "Re_51p254762_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67277562
+  },
+  {
+    "Re": 51.850243182198504,
+    "label": "Re_51p850243",
+    "status": "completed",
+    "npz": "Re_51p850243_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67297239
+  },
+  {
+    "Re": 52.50067544795085,
+    "label": "Re_52p500675",
+    "status": "completed",
+    "npz": "Re_52p500675_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67302485
+  },
+  {
+    "Re": 53.198541664976545,
+    "label": "Re_53p198542",
+    "status": "completed",
+    "npz": "Re_53p198542_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66820137
+  },
+  {
+    "Re": 53.938493910453815,
+    "label": "Re_53p938494",
+    "status": "completed",
+    "npz": "Re_53p938494_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67350458
+  },
+  {
+    "Re": 54.71649422199223,
+    "label": "Re_54p716494",
+    "status": "completed",
+    "npz": "Re_54p716494_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67385929
+  },
+  {
+    "Re": 55.529364399783695,
+    "label": "Re_55p529364",
+    "status": "completed",
+    "npz": "Re_55p529364_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66875796
+  },
+  {
+    "Re": 56.374524935324224,
+    "label": "Re_56p374525",
+    "status": "completed",
+    "npz": "Re_56p374525_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67471901
+  },
+  {
+    "Re": 57.24983210780596,
+    "label": "Re_57p249832",
+    "status": "completed",
+    "npz": "Re_57p249832_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67459257
+  },
+  {
+    "Re": 58.1534705420386,
+    "label": "Re_58p153471",
+    "status": "completed",
+    "npz": "Re_58p153471_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67001629
+  },
+  {
+    "Re": 59.083879193653836,
+    "label": "Re_59p083879",
+    "status": "completed",
+    "npz": "Re_59p083879_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67557741
+  },
+  {
+    "Re": 60.03969853840223,
+    "label": "Re_60p039699",
+    "status": "completed",
+    "npz": "Re_60p039699_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67506371
+  },
+  {
+    "Re": 61.019731782413324,
+    "label": "Re_61p019732",
+    "status": "completed",
+    "npz": "Re_61p019732_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67423254
+  },
+  {
+    "Re": 62.022915668660175,
+    "label": "Re_62p022916",
+    "status": "completed",
+    "npz": "Re_62p022916_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66867193
+  },
+  {
+    "Re": 63.04829804495639,
+    "label": "Re_63p048298",
+    "status": "completed",
+    "npz": "Re_63p048298_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67150395
+  },
+  {
+    "Re": 64.0950203161302,
+    "label": "Re_64p095020",
+    "status": "completed",
+    "npz": "Re_64p095020_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67039174
+  },
+  {
+    "Re": 65.16230350105268,
+    "label": "Re_65p162304",
+    "status": "completed",
+    "npz": "Re_65p162304_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66560669
+  },
+  {
+    "Re": 66.24943700085825,
+    "label": "Re_66p249437",
+    "status": "completed",
+    "npz": "Re_66p249437_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66561385
+  },
+  {
+    "Re": 67.35576944038614,
+    "label": "Re_67p355769",
+    "status": "completed",
+    "npz": "Re_67p355769_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66556985
+  },
+  {
+    "Re": 68.48070111856899,
+    "label": "Re_68p480701",
+    "status": "completed",
+    "npz": "Re_68p480701_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67089644
+  },
+  {
+    "Re": 69.62367772406823,
+    "label": "Re_69p623678",
+    "status": "completed",
+    "npz": "Re_69p623678_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66587643
+  },
+  {
+    "Re": 70.78418505777968,
+    "label": "Re_70p784185",
+    "status": "completed",
+    "npz": "Re_70p784185_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66593659
+  },
+  {
+    "Re": 71.961744565267,
+    "label": "Re_71p961745",
+    "status": "completed",
+    "npz": "Re_71p961745_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67125146
+  },
+  {
+    "Re": 73.15590952711165,
+    "label": "Re_73p155910",
+    "status": "completed",
+    "npz": "Re_73p155910_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67135578
+  },
+  {
+    "Re": 74.3662617884985,
+    "label": "Re_74p366262",
+    "status": "completed",
+    "npz": "Re_74p366262_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66620531
+  },
+  {
+    "Re": 75.59240893440443,
+    "label": "Re_75p592409",
+    "status": "completed",
+    "npz": "Re_75p592409_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67140099
+  },
+  {
+    "Re": 76.83398183580583,
+    "label": "Re_76p833982",
+    "status": "completed",
+    "npz": "Re_76p833982_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67144840
+  },
+  {
+    "Re": 78.09063250696548,
+    "label": "Re_78p090633",
+    "status": "completed",
+    "npz": "Re_78p090633_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67146260
+  },
+  {
+    "Re": 79.36203222523305,
+    "label": "Re_79p362032",
+    "status": "completed",
+    "npz": "Re_79p362032_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67159425
+  },
+  {
+    "Re": 80.6478698737082,
+    "label": "Re_80p647870",
+    "status": "completed",
+    "npz": "Re_80p647870_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67163611
+  },
+  {
+    "Re": 81.94785047416524,
+    "label": "Re_81p947850",
+    "status": "completed",
+    "npz": "Re_81p947850_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67158568
+  },
+  {
+    "Re": 83.26169388325664,
+    "label": "Re_83p261694",
+    "status": "completed",
+    "npz": "Re_83p261694_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67167066
+  },
+  {
+    "Re": 84.58913362952583,
+    "label": "Re_84p589134",
+    "status": "completed",
+    "npz": "Re_84p589134_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67167494
+  },
+  {
+    "Re": 85.92991587240932,
+    "label": "Re_85p929916",
+    "status": "completed",
+    "npz": "Re_85p929916_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67165673
+  },
+  {
+    "Re": 87.28379846737946,
+    "label": "Re_87p283798",
+    "status": "completed",
+    "npz": "Re_87p283798_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67170419
+  },
+  {
+    "Re": 88.65055012381347,
+    "label": "Re_88p650550",
+    "status": "completed",
+    "npz": "Re_88p650550_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66653576
+  },
+  {
+    "Re": 90.02994964418022,
+    "label": "Re_90p029950",
+    "status": "completed",
+    "npz": "Re_90p029950_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67176917
+  },
+  {
+    "Re": 91.42178523479743,
+    "label": "Re_91p421785",
+    "status": "completed",
+    "npz": "Re_91p421785_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66658029
+  },
+  {
+    "Re": 92.82585387979714,
+    "label": "Re_92p825854",
+    "status": "completed",
+    "npz": "Re_92p825854_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67173964
+  },
+  {
+    "Re": 94.24196077109409,
+    "label": "Re_94p241961",
+    "status": "completed",
+    "npz": "Re_94p241961_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67169759
+  },
+  {
+    "Re": 95.66991878812722,
+    "label": "Re_95p669919",
+    "status": "completed",
+    "npz": "Re_95p669919_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66656549
+  },
+  {
+    "Re": 97.10954802196616,
+    "label": "Re_97p109548",
+    "status": "completed",
+    "npz": "Re_97p109548_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67169920
+  },
+  {
+    "Re": 98.56067533907228,
+    "label": "Re_98p560675",
+    "status": "completed",
+    "npz": "Re_98p560675_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66654145
+  },
+  {
+    "Re": 100.02313398059889,
+    "label": "Re_100p023134",
+    "status": "completed",
+    "npz": "Re_100p023134_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67176794
+  },
+  {
+    "Re": 101.49676319362149,
+    "label": "Re_101p496763",
+    "status": "completed",
+    "npz": "Re_101p496763_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67180140
+  },
+  {
+    "Re": 102.98140789112661,
+    "label": "Re_102p981408",
+    "status": "completed",
+    "npz": "Re_102p981408_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67184094
+  },
+  {
+    "Re": 104.47691833796033,
+    "label": "Re_104p476918",
+    "status": "completed",
+    "npz": "Re_104p476918_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67187021
+  },
+  {
+    "Re": 105.9831498602642,
+    "label": "Re_105p983150",
+    "status": "completed",
+    "npz": "Re_105p983150_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66686012
+  },
+  {
+    "Re": 107.49996257620461,
+    "label": "Re_107p499963",
+    "status": "completed",
+    "npz": "Re_107p499963_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67221299
+  },
+  {
+    "Re": 109.02722114604703,
+    "label": "Re_109p027221",
+    "status": "completed",
+    "npz": "Re_109p027221_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66713947
+  },
+  {
+    "Re": 110.56479453983853,
+    "label": "Re_110p564795",
+    "status": "completed",
+    "npz": "Re_110p564795_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66722597
+  },
+  {
+    "Re": 112.11255582114805,
+    "label": "Re_112p112556",
+    "status": "completed",
+    "npz": "Re_112p112556_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67254607
+  },
+  {
+    "Re": 113.67038194547632,
+    "label": "Re_113p670382",
+    "status": "completed",
+    "npz": "Re_113p670382_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67269744
+  },
+  {
+    "Re": 115.23815357209122,
+    "label": "Re_115p238154",
+    "status": "completed",
+    "npz": "Re_115p238154_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67280398
+  },
+  {
+    "Re": 116.81575488816932,
+    "label": "Re_116p815755",
+    "status": "completed",
+    "npz": "Re_116p815755_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67291794
+  },
+  {
+    "Re": 118.40307344423672,
+    "label": "Re_118p403073",
+    "status": "completed",
+    "npz": "Re_118p403073_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67295035
+  },
+  {
+    "Re": 120.0,
+    "label": "Re_120p000000",
+    "status": "completed",
+    "npz": "Re_120p000000_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67260436
+  },
+  {
+    "Re": 122.5876379693534,
+    "label": "Re_122p587638",
+    "status": "completed",
+    "npz": "Re_122p587638_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 67107815
+  },
+  {
+    "Re": 125.74232819111633,
+    "label": "Re_125p742328",
+    "status": "completed",
+    "npz": "Re_125p742328_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66924321
+  },
+  {
+    "Re": 129.15362165831633,
+    "label": "Re_129p153622",
+    "status": "completed",
+    "npz": "Re_129p153622_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66895096
+  },
+  {
+    "Re": 132.7430241189145,
+    "label": "Re_132p743024",
+    "status": "completed",
+    "npz": "Re_132p743024_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66367811
+  },
+  {
+    "Re": 136.4709640793883,
+    "label": "Re_136p470964",
+    "status": "completed",
+    "npz": "Re_136p470964_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66890803
+  },
+  {
+    "Re": 140.31315830185366,
+    "label": "Re_140p313158",
+    "status": "completed",
+    "npz": "Re_140p313158_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66403856
+  },
+  {
+    "Re": 144.25304435879485,
+    "label": "Re_144p253044",
+    "status": "completed",
+    "npz": "Re_144p253044_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66409483
+  },
+  {
+    "Re": 148.27854108834353,
+    "label": "Re_148p278541",
+    "status": "completed",
+    "npz": "Re_148p278541_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66932917
+  },
+  {
+    "Re": 152.38041428358497,
+    "label": "Re_152p380414",
+    "status": "completed",
+    "npz": "Re_152p380414_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66944405
+  },
+  {
+    "Re": 156.5513578360306,
+    "label": "Re_156p551358",
+    "status": "completed",
+    "npz": "Re_156p551358_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66941731
+  },
+  {
+    "Re": 160.7854354076802,
+    "label": "Re_160p785435",
+    "status": "completed",
+    "npz": "Re_160p785435_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66430966
+  },
+  {
+    "Re": 165.07772066603667,
+    "label": "Re_165p077721",
+    "status": "completed",
+    "npz": "Re_165p077721_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66940631
+  },
+  {
+    "Re": 169.42405454256362,
+    "label": "Re_169p424055",
+    "status": "completed",
+    "npz": "Re_169p424055_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66943773
+  },
+  {
+    "Re": 173.82087525045205,
+    "label": "Re_173p820875",
+    "status": "completed",
+    "npz": "Re_173p820875_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66403625
+  },
+  {
+    "Re": 178.26509554893917,
+    "label": "Re_178p265096",
+    "status": "completed",
+    "npz": "Re_178p265096_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66895535
+  },
+  {
+    "Re": 182.75401181248435,
+    "label": "Re_182p754012",
+    "status": "completed",
+    "npz": "Re_182p754012_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66881382
+  },
+  {
+    "Re": 187.28523517025508,
+    "label": "Re_187p285235",
+    "status": "completed",
+    "npz": "Re_187p285235_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66893350
+  },
+  {
+    "Re": 191.85663836395094,
+    "label": "Re_191p856638",
+    "status": "completed",
+    "npz": "Re_191p856638_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66916649
+  },
+  {
+    "Re": 196.46631405470794,
+    "label": "Re_196p466314",
+    "status": "completed",
+    "npz": "Re_196p466314_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66916968
+  },
+  {
+    "Re": 201.11254163497472,
+    "label": "Re_201p112542",
+    "status": "completed",
+    "npz": "Re_201p112542_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66393951
+  },
+  {
+    "Re": 205.79376046883607,
+    "label": "Re_205p793760",
+    "status": "completed",
+    "npz": "Re_205p793760_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66922954
+  },
+  {
+    "Re": 210.50854806671384,
+    "label": "Re_210p508548",
+    "status": "completed",
+    "npz": "Re_210p508548_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66937190
+  },
+  {
+    "Re": 215.25560210021428,
+    "label": "Re_215p255602",
+    "status": "completed",
+    "npz": "Re_215p255602_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66950483
+  },
+  {
+    "Re": 220.03372544287214,
+    "label": "Re_220p033725",
+    "status": "completed",
+    "npz": "Re_220p033725_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66448064
+  },
+  {
+    "Re": 224.84181362213127,
+    "label": "Re_224p841814",
+    "status": "completed",
+    "npz": "Re_224p841814_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66457638
+  },
+  {
+    "Re": 229.67884421248942,
+    "label": "Re_229p678844",
+    "status": "completed",
+    "npz": "Re_229p678844_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66464314
+  },
+  {
+    "Re": 234.54386780602948,
+    "label": "Re_234p543868",
+    "status": "completed",
+    "npz": "Re_234p543868_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66464162
+  },
+  {
+    "Re": 239.43600027574684,
+    "label": "Re_239p436000",
+    "status": "completed",
+    "npz": "Re_239p436000_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66959741
+  },
+  {
+    "Re": 244.35441610680957,
+    "label": "Re_244p354416",
+    "status": "completed",
+    "npz": "Re_244p354416_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66355042
+  },
+  {
+    "Re": 249.29834261643794,
+    "label": "Re_249p298343",
+    "status": "completed",
+    "npz": "Re_249p298343_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66732758
+  },
+  {
+    "Re": 254.2670549182,
+    "label": "Re_254p267055",
+    "status": "completed",
+    "npz": "Re_254p267055_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66588448
+  },
+  {
+    "Re": 259.25987151383515,
+    "label": "Re_259p259872",
+    "status": "completed",
+    "npz": "Re_259p259872_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66074602
+  },
+  {
+    "Re": 264.2761504171667,
+    "label": "Re_264p276150",
+    "status": "completed",
+    "npz": "Re_264p276150_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66593654
+  },
+  {
+    "Re": 269.31528573164144,
+    "label": "Re_269p315286",
+    "status": "completed",
+    "npz": "Re_269p315286_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66600077
+  },
+  {
+    "Re": 274.37670461658155,
+    "label": "Re_274p376705",
+    "status": "completed",
+    "npz": "Re_274p376705_uvp_pointData.npz",
+    "n_times": 128,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66096318
+  },
+  {
+    "Re": 279.4598645881182,
+    "label": "Re_279p459865",
+    "status": "completed",
+    "npz": "Re_279p459865_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66604968
+  },
+  {
+    "Re": 284.56425110958367,
+    "label": "Re_284p564251",
+    "status": "completed",
+    "npz": "Re_284p564251_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66611399
+  },
+  {
+    "Re": 289.68937543331265,
+    "label": "Re_289p689375",
+    "status": "completed",
+    "npz": "Re_289p689375_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66600821
+  },
+  {
+    "Re": 294.8347726616741,
+    "label": "Re_294p834773",
+    "status": "completed",
+    "npz": "Re_294p834773_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66603585
+  },
+  {
+    "Re": 300.0,
+    "label": "Re_300p000000",
+    "status": "completed",
+    "npz": "Re_300p000000_uvp_pointData.npz",
+    "n_times": 129,
+    "n_points": 97368,
+    "n_cells": 48128,
+    "size_bytes": 66617347
+  }
+]
