@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export LD_LIBRARY_PATH=/root/miniconda3/envs/pt_env/lib:${LD_LIBRARY_PATH:-}
+PY=/root/miniconda3/envs/pt_env/bin/python
+ROOT=/root/moe/V9/test_results_v9
+SCRIPT=${ROOT}/deep_moe_rom_v9.py
+
+mkdir -p "${ROOT}/results"
+
+run_exp() {
+  local name="$1"
+  shift
+  local out="${ROOT}/results/${name}"
+  mkdir -p "${out}"
+  echo "===== ${name} $(date -Is) =====" | tee "${out}/run.log"
+  "${PY}" "${SCRIPT}" \
+    --output-dir "${out}" \
+    --experiment-name "${name}" \
+    --test-re-indices 10 59 99 \
+    --batch-size 768 \
+    --recon-dim 2048 \
+    --rollout-steps 16 \
+    --train-rollout-steps 8 \
+    --rollout-batch 2 \
+    --rollout-every-batches 3 \
+    --curriculum-steps 1,2,4,8 \
+    --num-experts 8 \
+    --top-k 2 \
+    --hidden-dim 144 \
+    --expert-hidden 224 \
+    --dropout 0.035 \
+    --temperature 1.15 \
+    --lambda-pressure 0.65 \
+    --lambda-pressure-rollout 0.35 \
+    --lambda-router-balance 0.08 \
+    --lambda-router-entropy -0.0015 \
+    --lambda-router-smooth 0.05 \
+    --lambda-alpha-rel 0.08 \
+    --lambda-rhs-rel 0.08 \
+    --lambda-pressure-rel 0.35 \
+    --rollout-relative-mix 0.35 \
+    --relative-floor-frac 0.05 \
+    --lr 7.5e-4 \
+    --weight-decay 1.2e-4 \
+    --device cuda \
+    "$@" 2>&1 | tee -a "${out}/run.log"
+  echo "===== ${name} done $(date -Is) =====" | tee -a "${out}/run.log"
+}
+
+run_exp v9_r16_rk4_b2_relmod \
+  --r-u 16 --r-p 16 --num-blocks 2 \
+  --epochs 70 --min-epochs 40 --patience 12
+
+run_exp v9_r24_rk4_b3_relmod \
+  --r-u 24 --r-p 24 --num-blocks 3 \
+  --epochs 60 --min-epochs 35 --patience 12
