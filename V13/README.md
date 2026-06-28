@@ -21,6 +21,15 @@ Main files:
 - `test_results_v13/run_v13_shared_operator_lowre_pressure.sh`: low-Re pressure ablation.
 - `TECHNICAL_REPORT_V13.md`: final experiment report.
 
+Flow diagrams:
+
+- Training flow: [`docs/v13_training_flow.svg`](docs/v13_training_flow.svg)
+- Inference flow: [`docs/v13_inference_flow.svg`](docs/v13_inference_flow.svg)
+
+![V13 training flow](docs/v13_training_flow.svg)
+
+![V13 inference flow](docs/v13_inference_flow.svg)
+
 Best result:
 
 - Main model: `v13_r16_hier_closure_24x4_top2`.

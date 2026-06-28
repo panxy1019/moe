@@ -29,6 +29,15 @@ V13 按研究指南在 V12 shared-expert operator-space MoE 上继续扩展：
 
 ## 2. V13 模型结构
 
+训练与推理流程图：
+
+- 训练流程图：[`docs/v13_training_flow.svg`](docs/v13_training_flow.svg)
+- 推理流程图：[`docs/v13_inference_flow.svg`](docs/v13_inference_flow.svg)
+
+![V13 training flow](docs/v13_training_flow.svg)
+
+![V13 inference flow](docs/v13_inference_flow.svg)
+
 主结构：
 
 ```text
