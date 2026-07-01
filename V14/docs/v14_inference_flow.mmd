@@ -1,0 +1,48 @@
+flowchart LR
+  subgraph I["Inputs at time t"]
+    A["ROM state<br/>a_t, b_t"]
+    B["Conditioning<br/>Re, phase, history"]
+    C["Physics descriptors<br/>energy, norms, Galerkin RHS"]
+  end
+
+  subgraph R["Sparse regime routing"]
+    E["Shared encoder<br/>h_t"]
+    G["Group router<br/>select physics regime"]
+    V["Velocity in-group router<br/>Top-2 routed experts"]
+    P["Pressure in-group router<br/>Top-2 routed experts"]
+    SV["Group shared velocity expert"]
+    SP["Group shared pressure expert"]
+  end
+
+  subgraph O["Operator assembly"]
+    U["Velocity local operator<br/>sum_i pi_i f_i"]
+    Z["Pressure local operator/state<br/>sum_i pi_i g_i"]
+    F["ROM RHS<br/>Galerkin(a_t, Re) + closure"]
+  end
+
+  subgraph T["Autonomous integration"]
+    K["RK4 stages<br/>k1, k2, k3, k4"]
+    N["Next state<br/>a_{t+1}, b_{t+1}"]
+    H["Update history buffers"]
+    D["Diagnostics<br/>active experts, group load, rollout error"]
+  end
+
+  A --> C --> E
+  B --> E
+  E --> G
+  G --> V
+  G --> P
+  G --> SV
+  G --> SP
+  V --> U
+  SV --> U
+  P --> Z
+  SP --> Z
+  U --> F --> K
+  Z --> N
+  K --> N --> H
+  H --> A
+  G --> D
+  V --> D
+  P --> D
+  N --> D
