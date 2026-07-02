@@ -222,3 +222,490 @@ V14_2 的 group router 仍能学到大致 regime 划分：
 - `test_results_v14_2/results/v14_2_test2_time_s5_re_s2_uniform10/v14_2_test2_time_s5_re_s2_uniform10_error_vs_re.svg`
 
 Checkpoint 文件保留在集群，不提交 GitHub。
+# Velocity / Pressure Head 语义说明
+
+适用代码：
+
+- `V14/test_results_v14/train_v14.py`
+- `V14_2_DataAblation/test_results_v14_2/train_v14_2.py`
+
+本文解释当前 HPRS-MoE-ROM 中速度头和压力头到底预测什么、如何进入 RK4/rollout、以及训练时分别受到哪些约束。
+
+## 1. 状态变量
+
+当前 ROM 状态由两部分组成：
+
+```text
+a_t: velocity POD coefficients, shape = r_u
+b_t: pressure POD coefficients, shape = r_p
+```
+
+当前主实验一般使用：
+
+```text
+r_u = 16
+r_p = 16
+```
+
+模型输入不是只有 `a_t, b_t`，而是：
+
+```text
+x_t = [a_t, b_t, Re, phase, physical descriptors, history]
+```
+
+其中 physical descriptors 包括 energy、modal norm、Galerkin RHS、历史状态差分、历史 RHS 差分等。
+
+模型输出两个 head：
+
+```text
+velocity head -> rhs_std
+pressure head -> pressure_std
+```
+
+这两个 head 都先在标准化空间输出，随后反标准化回物理 POD 系数空间。
+
+## 2. Velocity Head：预测动力学算子
+
+速度头不是直接预测下一步 `a_{t+1}`，而是预测 velocity dynamics operator，也就是速度系数的时间导数/RHS。
+
+代码中有两种速度 target：
+
+```bash
+--rhs-target full
+--rhs-target residual
+```
+
+当前 V14/V14_2 主实验使用：
+
+```bash
+--rhs-target residual
+```
+
+### 2.1 `rhs-target=full`
+
+如果使用 full，模型 velocity head 直接学习完整速度 RHS：
+
+```text
+rhs_model = da/dt
+```
+
+也就是：
+
+```text
+f_pred(a_t, b_t, Re) = rhs_model
+```
+
+训练 target 是数据中的真实时间导数：
+
+```text
+target = adot
+```
+
+### 2.2 `rhs-target=residual`
+
+当前主线使用 residual。此时 Galerkin 先给一个物理基底：
+
+```text
+rhs_g = Galerkin(a_t, b_t, Re)
+```
+
+模型 velocity head 只学习 Galerkin RHS 的 correction：
+
+```text
+rhs_closure = adot - rhs_g
+```
+
+训练 target 是：
+
+```text
+target = residual = adot - rhs_g
+```
+
+推理时反标准化后再加回 Galerkin：
+
+```text
+rhs_pred = rhs_g + rhs_closure
+```
+
+所以当前 velocity head 的语义是：
+
+```text
+模型不直接输出 a_{t+1}
+模型输出 Galerkin RHS 的残差修正
+最终速度动力学 = Galerkin RHS + learned closure
+```
+
+## 3. Velocity 如何进入时间推进
+
+V14 保留显式时间推进，不是黑盒 next-state map。
+
+当前默认 integrator：
+
+```bash
+--integrator rk4
+```
+
+推理时每一步为：
+
+```text
+k1 = f(a_t)
+k2 = f(a_t + 0.5 dt k1)
+k3 = f(a_t + 0.5 dt k2)
+k4 = f(a_t + dt k3)
+
+a_{t+1} = a_t + dt/6 * (k1 + 2 k2 + 2 k3 + k4)
+```
+
+其中：
+
+```text
+f(a, b, Re) = Galerkin(a, b, Re) + velocity_closure(a, b, Re)
+```
+
+注意：RK4 的四个 stage 都会重新调用 velocity operator；因此 velocity head 学的是一个可重复调用的局部动力学算子，而不是单步状态映射。
+
+## 4. Velocity 训练约束
+
+速度相关 loss 主要有以下几类。
+
+### 4.1 RHS/operator loss
+
+标准化空间中直接约束 velocity head：
+
+```text
+dyn_loss = MSE(rhs_std, rhs_target_std)
+```
+
+如果 `rhs-target=residual`：
+
+```text
+rhs_target = adot - rhs_g
+```
+
+如果 `rhs-target=full`：
+
+```text
+rhs_target = adot
+```
+
+### 4.2 One-step coefficient loss
+
+训练时用 Euler 近似构造一个 one-step 速度预测：
+
+```text
+a_euler = a_t + dt * rhs_pred
+```
+
+然后约束：
+
+```text
+a_euler ~= true a_{t+1}
+```
+
+这不是最终推理方式。最终推理用 RK4。这个 loss 的作用是让 RHS 在一步时间推进上有正确效果。
+
+### 4.3 Velocity relative loss
+
+对速度 one-step 误差做 relative loss：
+
+```text
+relative(a_euler - a_{t+1}, a_{t+1})
+```
+
+代码中有 floor，避免低幅值样本过度主导。
+
+### 4.4 RHS relative loss
+
+直接约束最终物理 RHS：
+
+```text
+relative(rhs_pred - adot, adot)
+```
+
+注意这里的 `rhs_pred` 已经是：
+
+```text
+rhs_g + rhs_closure
+```
+
+### 4.5 Consistency loss
+
+用有限差分构造一个粗略 RHS：
+
+```text
+finite_step_rhs = (a_{t+1} - a_t) / dt
+```
+
+约束：
+
+```text
+rhs_pred ~= finite_step_rhs
+```
+
+### 4.6 Reconstruction loss
+
+把 POD 系数误差投回截取的物理空间列：
+
+```text
+recon_delta = (a_euler - a_{t+1}) @ phi_recon
+```
+
+用于弱约束速度系数误差在物理空间里的影响。
+
+### 4.7 Rollout / energy / trajectory consistency
+
+closed-loop rollout 中连续推进多步：
+
+```text
+4 -> 8 -> 12 -> 16 training rollout steps
+```
+
+并约束整段轨迹：
+
+```text
+a_pred trajectory ~= a_true trajectory
+b_pred trajectory ~= b_true trajectory
+energy(a_pred) ~= energy(a_true)
+final trajectory consistency
+```
+
+这部分是为减少 autonomous rollout drift。
+
+## 5. Pressure Head：两种语义
+
+压力头也输出一个 `r_p` 维向量，但这个向量的语义由参数决定：
+
+```bash
+--pressure-target state
+--pressure-target closure
+```
+
+当前 V14/V14_2 主实验使用：
+
+```bash
+--pressure-target closure
+```
+
+low-Re state-pressure 对照实验使用过：
+
+```bash
+--pressure-target state
+```
+
+## 6. Pressure State：直接预测压力状态
+
+如果：
+
+```bash
+--pressure-target state
+```
+
+pressure head 直接预测下一步压力 POD 系数：
+
+```text
+pressure_op = b_{t+1}^{pred}
+```
+
+推理时：
+
+```text
+b_{t+1} = pressure_op
+```
+
+训练 target 是：
+
+```text
+target = true b_{t+1}
+```
+
+所以 pressure state 模式中：
+
+```text
+网络负责完整压力预测
+pressure surrogate 只作为评估对照，不参与最终 b_next 合成
+```
+
+## 7. Pressure Closure：预测压力 surrogate 的修正
+
+如果：
+
+```bash
+--pressure-target closure
+```
+
+pressure surrogate 先基于速度状态给一个基础压力：
+
+```text
+b_base = pressure_surrogate(a_{t+1}, Re)
+```
+
+模型 pressure head 不预测完整压力，而是预测修正量：
+
+```text
+pressure_closure = b_{t+1} - b_base
+```
+
+训练 target 是：
+
+```text
+target = true b_{t+1} - pressure_surrogate(true/next a, Re)
+```
+
+推理时：
+
+```text
+b_{t+1}^{pred} = pressure_surrogate(a_{t+1}^{pred}, Re) + pressure_closure
+```
+
+所以当前主线 pressure head 的语义是：
+
+```text
+pressure surrogate 负责基础压力
+HPRS-MoE pressure head 负责 residual correction
+最终压力 = surrogate + learned correction
+```
+
+## 8. Pressure 训练约束
+
+压力相关 loss 有两层。
+
+### 8.1 Pressure head MSE
+
+标准化空间里直接约束 pressure head：
+
+```text
+pressure_loss = MSE(pressure_head_std, pressure_target_std)
+```
+
+如果 `pressure-target=state`：
+
+```text
+pressure_target = true b_{t+1}
+```
+
+如果 `pressure-target=closure`：
+
+```text
+pressure_target = true b_{t+1} - pressure_base_next
+```
+
+### 8.2 Final pressure relative loss
+
+不管 pressure head 是 state 还是 closure，最终都会合成一个物理压力预测：
+
+```text
+if state:
+    b_pred = pressure_op
+else:
+    b_pred = pressure_base_next + pressure_op
+```
+
+然后约束：
+
+```text
+relative(b_pred - true b_{t+1}, true b_{t+1})
+```
+
+这点很重要：closure 模式下，pressure head 本身的 MSE 是 residual MSE，但最终评估看的是：
+
+```text
+pressure_base + residual correction
+```
+
+## 9. Pressure 在 RK4 里的位置
+
+速度 `a` 用 RK4 推进。
+
+压力 `b` 不是用 RK4 积分一个 `db/dt`，而是在每个时间步结束时由 pressure branch 更新：
+
+```text
+先用 RK4 得到 a_{t+1}
+再得到 b_{t+1}
+```
+
+closure 模式：
+
+```text
+b_{t+1} = pressure_surrogate(a_{t+1}, Re) + pressure_closure
+```
+
+state 模式：
+
+```text
+b_{t+1} = pressure_head(...)
+```
+
+目前代码中，RK4 的 k1/k2/k3/k4 主要用于 velocity RHS；pressure head 在一步更新中主要用于最终 pressure update，而不是四个 RK4 stage 分别积分压力。
+
+## 10. 当前主线到底是什么
+
+V14 / V14_2 主实验配置是：
+
+```bash
+--rhs-target residual
+--pressure-target closure
+```
+
+因此当前主线可以概括为：
+
+```text
+Velocity:
+  Galerkin 给基础 RHS
+  MoE velocity head 学 RHS residual closure
+  RK4 用 Galerkin + closure 连续推进 a
+
+Pressure:
+  pressure surrogate 给基础 b
+  MoE pressure head 学 pressure residual closure
+  最终 b = surrogate(a_next) + closure
+```
+
+也就是：
+
+```text
+速度是 operator-space residual dynamics
+压力是 surrogate-space residual correction
+```
+
+两者都不是纯黑盒 next-state map。
+
+## 11. 为什么 low-Re pressure 仍然难
+
+在 closure 模式下，pressure prediction 的最终质量受两部分共同影响：
+
+```text
+b_pred = pressure_surrogate(a_pred) + pressure_closure
+```
+
+因此 low-Re pressure 误差可能来自：
+
+- `a_pred` 的相位/幅值误差传递到 pressure surrogate；
+- pressure surrogate 自身在 low-Re 外推不好；
+- pressure residual target 对 Re 和 phase 很敏感；
+- pressure branch 没有显式 Poisson/algebraic pressure 物理约束；
+- pressure 不像 velocity 一样通过 RK4 积分，它更像 algebraic/slaved variable。
+
+这也是为什么 `pressure-target=state` 在 validation 上可能把 seen-Re pressure 压低，但 held-out low-Re test 仍然不好：它解决的是 target 形式问题，不一定解决跨 Re pressure physics 泛化问题。
+
+## 12. 快速对照表
+
+| 分支 | target 参数 | head 输出 | 最终物理量 | 当前主线 |
+|---|---|---|---|---|
+| Velocity | `rhs-target=full` | `adot` | `rhs_pred = head` | 否 |
+| Velocity | `rhs-target=residual` | `adot - rhs_g` | `rhs_pred = rhs_g + head` | 是 |
+| Pressure | `pressure-target=state` | `b_{t+1}` | `b_pred = head` | 仅对照 |
+| Pressure | `pressure-target=closure` | `b_{t+1} - b_base` | `b_pred = b_base + head` | 是 |
+
+## 13. 一句话总结
+
+当前主模型不是让网络直接预测完整下一步状态。
+
+更准确地说：
+
+```text
+速度：网络修正 Galerkin 动力学算子，然后 RK4 推进
+压力：网络修正 pressure surrogate，然后得到下一步压力
+```
+
+所以如果要继续提升模型，velocity 方向应重点看长期动力学稳定性，pressure 方向应重点看 surrogate/pressure physics residual 是否足够合理。
+
