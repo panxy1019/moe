@@ -1,0 +1,6 @@
+*.pt
+*.log
+*.pid
+swanlog/
+*_metrics.json
+*_aggregate.json
