@@ -1,0 +1,91 @@
+[     1.6s] 数据目录: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/hopf
+[     1.6s] 网格文件: /home/ray/Desktop/Cylinder_Results/Re_100_VTK/run_Re_100_7107.vtk
+[     1.6s] Re labels: ['Re_47p081355', 'Re_47p722947', 'Re_48p368688', 'Re_49p022357', 'Re_49p687640', 'Re_50p368054', 'Re_51p066785', 'Re_51p786450', 'Re_52p528767', 'Re_53p294175', 'Re_54p081508', 'Re_54p887950', 'Re_55p709610', 'Re_56p543246', 'Re_57p389970', 'Re_58p262636', 'Re_59p201432']
+[     1.6s] r_u=80, r_p=80, nu=0.001
+[     1.7s] 读取 area-weighted L2 point_areas 作为质量权重
+[     1.7s] mass sum=5.992146803695e+02, min=1.042e-05, max=1.319e-02
+[     1.7s] 计算速度模态导数：r_u=80
+[    16.2s]   velocity mode derivatives 8/80
+[    30.2s]   velocity mode derivatives 16/80
+[    44.2s]   velocity mode derivatives 24/80
+[    58.4s]   velocity mode derivatives 32/80
+[    72.4s]   velocity mode derivatives 40/80
+[    86.6s]   velocity mode derivatives 48/80
+[   100.7s]   velocity mode derivatives 56/80
+[   114.8s]   velocity mode derivatives 64/80
+[   128.8s]   velocity mode derivatives 72/80
+[   142.6s]   velocity mode derivatives 80/80
+[   142.6s] 计算压力模态梯度：r_p=80
+[   143.8s]   pressure mode gradients 8/80
+[   144.9s]   pressure mode gradients 16/80
+[   146.0s]   pressure mode gradients 24/80
+[   147.1s]   pressure mode gradients 32/80
+[   148.2s]   pressure mode gradients 40/80
+[   149.3s]   pressure mode gradients 48/80
+[   150.5s]   pressure mode gradients 56/80
+[   151.6s]   pressure mode gradients 64/80
+[   152.7s]   pressure mode gradients 72/80
+[   153.8s]   pressure mode gradients 80/80
+[   153.8s] 计算共享 Gram/P/H
+[   154.6s] 计算二次对流张量 H：r_u=80, chunks=48
+[   194.4s]   H chunks 2/48
+[   235.3s]   H chunks 4/48
+[   274.9s]   H chunks 6/48
+[   313.7s]   H chunks 8/48
+[   352.0s]   H chunks 10/48
+[   391.0s]   H chunks 12/48
+[   430.6s]   H chunks 14/48
+[   471.5s]   H chunks 16/48
+[   511.2s]   H chunks 18/48
+[   549.8s]   H chunks 20/48
+[   588.0s]   H chunks 22/48
+[   626.5s]   H chunks 24/48
+[   666.2s]   H chunks 26/48
+[   706.8s]   H chunks 28/48
+[   746.9s]   H chunks 30/48
+[   785.3s]   H chunks 32/48
+[   823.7s]   H chunks 34/48
+[   862.2s]   H chunks 36/48
+[   902.0s]   H chunks 38/48
+[   943.0s]   H chunks 40/48
+[   982.6s]   H chunks 42/48
+[  1019.5s]   H chunks 44/48
+[  1056.7s]   H chunks 46/48
+[  1085.2s]   H chunks 48/48
+[  1085.2s] 计算均值场导数：Re_47p081355
+[  1087.1s] 计算均值相关 c/A：Re_47p081355
+[  1088.0s] 计算均值场导数：Re_47p722947
+[  1089.9s] 计算均值相关 c/A：Re_47p722947
+[  1090.7s] 计算均值场导数：Re_48p368688
+[  1092.6s] 计算均值相关 c/A：Re_48p368688
+[  1093.5s] 计算均值场导数：Re_49p022357
+[  1095.3s] 计算均值相关 c/A：Re_49p022357
+[  1096.2s] 计算均值场导数：Re_49p687640
+[  1098.1s] 计算均值相关 c/A：Re_49p687640
+[  1098.9s] 计算均值场导数：Re_50p368054
+[  1100.8s] 计算均值相关 c/A：Re_50p368054
+[  1101.7s] 计算均值场导数：Re_51p066785
+[  1103.6s] 计算均值相关 c/A：Re_51p066785
+[  1104.5s] 计算均值场导数：Re_51p786450
+[  1106.3s] 计算均值相关 c/A：Re_51p786450
+[  1107.2s] 计算均值场导数：Re_52p528767
+[  1109.1s] 计算均值相关 c/A：Re_52p528767
+[  1110.0s] 计算均值场导数：Re_53p294175
+[  1111.8s] 计算均值相关 c/A：Re_53p294175
+[  1112.7s] 计算均值场导数：Re_54p081508
+[  1114.6s] 计算均值相关 c/A：Re_54p081508
+[  1115.5s] 计算均值场导数：Re_54p887950
+[  1117.3s] 计算均值相关 c/A：Re_54p887950
+[  1118.2s] 计算均值场导数：Re_55p709610
+[  1120.1s] 计算均值相关 c/A：Re_55p709610
+[  1121.0s] 计算均值场导数：Re_56p543246
+[  1122.8s] 计算均值相关 c/A：Re_56p543246
+[  1123.7s] 计算均值场导数：Re_57p389970
+[  1125.6s] 计算均值相关 c/A：Re_57p389970
+[  1126.5s] 计算均值场导数：Re_58p262636
+[  1128.4s] 计算均值相关 c/A：Re_58p262636
+[  1129.2s] 计算均值场导数：Re_59p201432
+[  1131.1s] 计算均值相关 c/A：Re_59p201432
+[  1132.0s] 保存张量: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/velocity_rom_hopf.npz
+[  1132.0s] 写 Markdown 报告: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/velocity_rom_hopf.md
+[  1132.0s] 完成

@@ -1,0 +1,216 @@
+{
+  "root": "/home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library",
+  "regimes": {
+    "steady": {
+      "n_re": 20,
+      "n_snapshots": 1277,
+      "first_label": "Re_20p000000",
+      "last_label": "Re_46p440072",
+      "source_regime_labels": [
+        "pre_hopf_steady",
+        "steady_wake"
+      ],
+      "pod_velocity_file_bytes": 121787656,
+      "pod_pressure_file_bytes": 61957085,
+      "velocity_rom_bytes": 9407822,
+      "pressure_rom_bytes": 9984600,
+      "velocity_pod_energy_rank80": 0.9999999996580932,
+      "pressure_pod_energy_rank80": 0.9999999994277058,
+      "pod_Gv_max_abs_I": 4.2947794431924535e-08,
+      "pod_Gp_max_abs_I": 2.9183077954186842e-08,
+      "velocity_shapes": {
+        "G_u": [
+          80,
+          80
+        ],
+        "c_all": [
+          20,
+          80
+        ],
+        "A_all": [
+          20,
+          80,
+          80
+        ],
+        "H": [
+          80,
+          80,
+          80
+        ],
+        "P": [
+          80,
+          80
+        ]
+      },
+      "velocity_bad_numeric_arrays": [],
+      "velocity_cond_G_u": 1.0000000901709039,
+      "velocity_max_abs_G_u_I": 4.294779509805835e-08,
+      "pressure_shapes": {
+        "L": [
+          80,
+          80
+        ],
+        "H_p": [
+          80,
+          80,
+          80
+        ],
+        "H_tilde": [
+          80,
+          80,
+          80
+        ]
+      },
+      "pressure_bad_numeric_arrays": [],
+      "pressure_L_rank": 80,
+      "pressure_L_eig_max": -0.003052018762514587,
+      "pressure_L_eig_min": -1122.9367349185352,
+      "pressure_rel_residual_H": 9.664456811230706e-15,
+      "pressure_first_c_residual": 4.0638055634739565e-17,
+      "pressure_first_A_residual": 3.508812564697809e-14,
+      "pressure_last_c_residual": 1.3120566374189163e-16,
+      "pressure_last_A_residual": 8.249020464929508e-14
+    },
+    "hopf": {
+      "n_re": 17,
+      "n_snapshots": 2740,
+      "first_label": "Re_47p081355",
+      "last_label": "Re_59p201432",
+      "source_regime_labels": [
+        "hopf_transition"
+      ],
+      "pod_velocity_file_bytes": 122176404,
+      "pod_pressure_file_bytes": 62018335,
+      "velocity_rom_bytes": 9094886,
+      "pressure_rom_bytes": 9659848,
+      "velocity_pod_energy_rank80": 0.9999999991619867,
+      "pressure_pod_energy_rank80": 0.9999999960741074,
+      "pod_Gv_max_abs_I": 5.445613004972927e-08,
+      "pod_Gp_max_abs_I": 5.31067581022171e-08,
+      "velocity_shapes": {
+        "G_u": [
+          80,
+          80
+        ],
+        "c_all": [
+          17,
+          80
+        ],
+        "A_all": [
+          17,
+          80,
+          80
+        ],
+        "H": [
+          80,
+          80,
+          80
+        ],
+        "P": [
+          80,
+          80
+        ]
+      },
+      "velocity_bad_numeric_arrays": [],
+      "velocity_cond_G_u": 1.0000000688092219,
+      "velocity_max_abs_G_u_I": 5.445613204813071e-08,
+      "pressure_shapes": {
+        "L": [
+          80,
+          80
+        ],
+        "H_p": [
+          80,
+          80,
+          80
+        ],
+        "H_tilde": [
+          80,
+          80,
+          80
+        ]
+      },
+      "pressure_bad_numeric_arrays": [],
+      "pressure_L_rank": 80,
+      "pressure_L_eig_max": -0.003893938211303801,
+      "pressure_L_eig_min": -337.0297263405414,
+      "pressure_rel_residual_H": 6.848875152766463e-15,
+      "pressure_first_c_residual": 9.902296628556264e-17,
+      "pressure_first_A_residual": 3.5370730355503436e-15,
+      "pressure_last_c_residual": 1.417187623071743e-16,
+      "pressure_last_A_residual": 4.59231599130549e-15
+    },
+    "periodic": {
+      "n_re": 63,
+      "n_snapshots": 10150,
+      "first_label": "Re_60p307745",
+      "last_label": "Re_200p000000",
+      "source_regime_labels": [
+        "developing_periodic_shedding",
+        "high_re_2d_periodic_near_modeA",
+        "mature_periodic_shedding"
+      ],
+      "pod_velocity_file_bytes": 140386461,
+      "pod_pressure_file_bytes": 72611991,
+      "velocity_rom_bytes": 13893898,
+      "pressure_rom_bytes": 14284775,
+      "velocity_pod_energy_rank80": 0.9999720490877191,
+      "pressure_pod_energy_rank80": 0.99998191903454,
+      "pod_Gv_max_abs_I": 5.4849880415375196e-08,
+      "pod_Gp_max_abs_I": 5.205878328418123e-08,
+      "velocity_shapes": {
+        "G_u": [
+          80,
+          80
+        ],
+        "c_all": [
+          63,
+          80
+        ],
+        "A_all": [
+          63,
+          80,
+          80
+        ],
+        "H": [
+          80,
+          80,
+          80
+        ],
+        "P": [
+          80,
+          80
+        ]
+      },
+      "velocity_bad_numeric_arrays": [],
+      "velocity_cond_G_u": 1.000000056571536,
+      "velocity_max_abs_G_u_I": 5.484988196968743e-08,
+      "pressure_shapes": {
+        "L": [
+          80,
+          80
+        ],
+        "H_p": [
+          80,
+          80,
+          80
+        ],
+        "H_tilde": [
+          80,
+          80,
+          80
+        ]
+      },
+      "pressure_bad_numeric_arrays": [],
+      "pressure_L_rank": 80,
+      "pressure_L_eig_max": -0.01818450542079711,
+      "pressure_L_eig_min": -70.97874944018139,
+      "pressure_rel_residual_H": 4.087900373438283e-15,
+      "pressure_first_c_residual": 2.8223590500759036e-17,
+      "pressure_first_A_residual": 3.8293888131415935e-15,
+      "pressure_last_c_residual": 1.1693014198078043e-15,
+      "pressure_last_A_residual": 8.111375219581997e-15
+    }
+  },
+  "method_note": "Regime-specific area-weighted POD from raw snapshots; randomized block SVD rank 80 oversampling 32 power_iter 2."
+}

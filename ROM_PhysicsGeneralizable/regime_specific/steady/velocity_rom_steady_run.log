@@ -1,0 +1,97 @@
+[     3.0s] 数据目录: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/steady
+[     3.0s] 网格文件: /home/ray/Desktop/Cylinder_Results/Re_100_VTK/run_Re_100_7107.vtk
+[     3.0s] Re labels: ['Re_20p000000', 'Re_22p535676', 'Re_24p630436', 'Re_26p667332', 'Re_28p695138', 'Re_30p720428', 'Re_32p740068', 'Re_34p737570', 'Re_36p657767', 'Re_38p357249', 'Re_39p685479', 'Re_40p711525', 'Re_41p576575', 'Re_42p359071', 'Re_43p093925', 'Re_43p797402', 'Re_44p478353', 'Re_45p142703', 'Re_45p795194', 'Re_46p440072']
+[     3.0s] r_u=80, r_p=80, nu=0.001
+[     3.1s] 读取 area-weighted L2 point_areas 作为质量权重
+[     3.1s] mass sum=5.992146803695e+02, min=1.042e-05, max=1.319e-02
+[     3.1s] 计算速度模态导数：r_u=80
+[    19.8s]   velocity mode derivatives 8/80
+[    34.7s]   velocity mode derivatives 16/80
+[    48.6s]   velocity mode derivatives 24/80
+[    62.6s]   velocity mode derivatives 32/80
+[    76.5s]   velocity mode derivatives 40/80
+[    90.3s]   velocity mode derivatives 48/80
+[   104.2s]   velocity mode derivatives 56/80
+[   118.2s]   velocity mode derivatives 64/80
+[   132.0s]   velocity mode derivatives 72/80
+[   145.8s]   velocity mode derivatives 80/80
+[   145.8s] 计算压力模态梯度：r_p=80
+[   147.0s]   pressure mode gradients 8/80
+[   148.1s]   pressure mode gradients 16/80
+[   149.2s]   pressure mode gradients 24/80
+[   150.3s]   pressure mode gradients 32/80
+[   151.4s]   pressure mode gradients 40/80
+[   152.6s]   pressure mode gradients 48/80
+[   153.7s]   pressure mode gradients 56/80
+[   154.8s]   pressure mode gradients 64/80
+[   155.9s]   pressure mode gradients 72/80
+[   157.0s]   pressure mode gradients 80/80
+[   157.0s] 计算共享 Gram/P/H
+[   159.1s] 计算二次对流张量 H：r_u=80, chunks=48
+[   200.8s]   H chunks 2/48
+[   241.9s]   H chunks 4/48
+[   281.2s]   H chunks 6/48
+[   320.4s]   H chunks 8/48
+[   359.6s]   H chunks 10/48
+[   400.0s]   H chunks 12/48
+[   441.2s]   H chunks 14/48
+[   481.8s]   H chunks 16/48
+[   520.7s]   H chunks 18/48
+[   559.4s]   H chunks 20/48
+[   598.3s]   H chunks 22/48
+[   638.5s]   H chunks 24/48
+[   679.7s]   H chunks 26/48
+[   720.4s]   H chunks 28/48
+[   759.4s]   H chunks 30/48
+[   798.5s]   H chunks 32/48
+[   837.4s]   H chunks 34/48
+[   877.6s]   H chunks 36/48
+[   918.8s]   H chunks 38/48
+[   959.7s]   H chunks 40/48
+[   998.6s]   H chunks 42/48
+[  1037.1s]   H chunks 44/48
+[  1074.2s]   H chunks 46/48
+[  1102.9s]   H chunks 48/48
+[  1102.9s] 计算均值场导数：Re_20p000000
+[  1104.8s] 计算均值相关 c/A：Re_20p000000
+[  1105.8s] 计算均值场导数：Re_22p535676
+[  1107.7s] 计算均值相关 c/A：Re_22p535676
+[  1108.6s] 计算均值场导数：Re_24p630436
+[  1110.5s] 计算均值相关 c/A：Re_24p630436
+[  1111.4s] 计算均值场导数：Re_26p667332
+[  1113.3s] 计算均值相关 c/A：Re_26p667332
+[  1114.2s] 计算均值场导数：Re_28p695138
+[  1116.0s] 计算均值相关 c/A：Re_28p695138
+[  1116.9s] 计算均值场导数：Re_30p720428
+[  1118.8s] 计算均值相关 c/A：Re_30p720428
+[  1119.7s] 计算均值场导数：Re_32p740068
+[  1121.6s] 计算均值相关 c/A：Re_32p740068
+[  1122.5s] 计算均值场导数：Re_34p737570
+[  1124.4s] 计算均值相关 c/A：Re_34p737570
+[  1125.3s] 计算均值场导数：Re_36p657767
+[  1127.2s] 计算均值相关 c/A：Re_36p657767
+[  1128.0s] 计算均值场导数：Re_38p357249
+[  1129.9s] 计算均值相关 c/A：Re_38p357249
+[  1130.8s] 计算均值场导数：Re_39p685479
+[  1132.7s] 计算均值相关 c/A：Re_39p685479
+[  1133.6s] 计算均值场导数：Re_40p711525
+[  1135.5s] 计算均值相关 c/A：Re_40p711525
+[  1136.4s] 计算均值场导数：Re_41p576575
+[  1138.3s] 计算均值相关 c/A：Re_41p576575
+[  1139.2s] 计算均值场导数：Re_42p359071
+[  1141.1s] 计算均值相关 c/A：Re_42p359071
+[  1142.0s] 计算均值场导数：Re_43p093925
+[  1143.9s] 计算均值相关 c/A：Re_43p093925
+[  1144.8s] 计算均值场导数：Re_43p797402
+[  1146.7s] 计算均值相关 c/A：Re_43p797402
+[  1147.6s] 计算均值场导数：Re_44p478353
+[  1149.5s] 计算均值相关 c/A：Re_44p478353
+[  1150.4s] 计算均值场导数：Re_45p142703
+[  1152.3s] 计算均值相关 c/A：Re_45p142703
+[  1153.2s] 计算均值场导数：Re_45p795194
+[  1155.1s] 计算均值相关 c/A：Re_45p795194
+[  1156.0s] 计算均值场导数：Re_46p440072
+[  1157.9s] 计算均值相关 c/A：Re_46p440072
+[  1158.8s] 保存张量: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/velocity_rom_steady.npz
+[  1158.8s] 写 Markdown 报告: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/velocity_rom_steady.md
+[  1158.8s] 完成

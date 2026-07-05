@@ -1,0 +1,133 @@
+[     1.8s] Build steady: cases=20, snapshots=1277
+[     2.2s]   first case points shape=(97368, 3)
+[     2.2s]   means Re_20p000000 (1/20)
+[     2.5s]   means Re_22p535676 (2/20)
+[     2.8s]   means Re_24p630436 (3/20)
+[     3.1s]   means Re_26p667332 (4/20)
+[     3.4s]   means Re_28p695138 (5/20)
+[     3.7s]   means Re_30p720428 (6/20)
+[     4.0s]   means Re_32p740068 (7/20)
+[     4.3s]   means Re_34p737570 (8/20)
+[     4.6s]   means Re_36p657767 (9/20)
+[     5.0s]   means Re_38p357249 (10/20)
+[     5.3s]   means Re_39p685479 (11/20)
+[     5.6s]   means Re_40p711525 (12/20)
+[     5.9s]   means Re_41p576575 (13/20)
+[     6.2s]   means Re_42p359071 (14/20)
+[     6.5s]   means Re_43p093925 (15/20)
+[     6.8s]   means Re_43p797402 (16/20)
+[     7.1s]   means Re_44p478353 (17/20)
+[     7.4s]   means Re_45p142703 (18/20)
+[     7.7s]   means Re_45p795194 (19/20)
+[     8.0s]   means Re_46p440072 (20/20)
+[     8.0s] velocity randomized range: n_snap=1277, work_rank=112
+[    19.5s] velocity power iteration 1/2
+[    37.0s] velocity power iteration 2/2
+[    53.0s] velocity small SVD
+[    59.5s] pressure randomized range: n_snap=1277, work_rank=112
+[    64.6s] pressure power iteration 1/2
+[    72.0s] pressure power iteration 2/2
+[    79.4s] pressure small SVD
+[    91.6s] Done steady: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/steady
+[     5.4s] Build hopf: cases=17, snapshots=2740
+[     6.7s]   first case points shape=(97368, 3)
+[     6.7s]   means Re_47p081355 (1/17)
+[     7.9s]   means Re_47p722947 (2/17)
+[     9.2s]   means Re_48p368688 (3/17)
+[    10.5s]   means Re_49p022357 (4/17)
+[    11.6s]   means Re_49p687640 (5/17)
+[    12.6s]   means Re_50p368054 (6/17)
+[    13.7s]   means Re_51p066785 (7/17)
+[    14.8s]   means Re_51p786450 (8/17)
+[    16.1s]   means Re_52p528767 (9/17)
+[    17.3s]   means Re_53p294175 (10/17)
+[    18.5s]   means Re_54p081508 (11/17)
+[    19.6s]   means Re_54p887950 (12/17)
+[    20.6s]   means Re_55p709610 (13/17)
+[    21.7s]   means Re_56p543246 (14/17)
+[    23.1s]   means Re_57p389970 (15/17)
+[    24.3s]   means Re_58p262636 (16/17)
+[    25.6s]   means Re_59p201432 (17/17)
+[    25.6s] velocity randomized range: n_snap=2740, work_rank=112
+[    45.4s] velocity power iteration 1/2
+[    75.0s] velocity power iteration 2/2
+[   104.2s] velocity small SVD
+[   117.3s] pressure randomized range: n_snap=2740, work_rank=112
+[   125.9s] pressure power iteration 1/2
+[   140.0s] pressure power iteration 2/2
+[   154.2s] pressure small SVD
+[   169.6s] Done hopf: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/hopf
+[    18.5s] Build periodic: cases=63, snapshots=10150
+[    22.2s]   first case points shape=(97368, 3)
+[    22.2s]   means Re_60p307745 (1/63)
+[    23.4s]   means Re_61p755954 (2/63)
+[    24.7s]   means Re_63p499817 (3/63)
+[    25.8s]   means Re_65p259829 (4/63)
+[    27.2s]   means Re_66p970112 (5/63)
+[    28.7s]   means Re_68p649714 (6/63)
+[    30.2s]   means Re_70p314635 (7/63)
+[    31.5s]   means Re_71p972931 (8/63)
+[    32.7s]   means Re_73p628287 (9/63)
+[    33.9s]   means Re_75p282340 (10/63)
+[    35.0s]   means Re_76p935803 (11/63)
+[    36.1s]   means Re_78p588971 (12/63)
+[    37.2s]   means Re_80p241943 (13/63)
+[    38.3s]   means Re_81p894708 (14/63)
+[    39.4s]   means Re_83p547164 (15/63)
+[    40.3s]   means Re_85p199103 (16/63)
+[    41.4s]   means Re_86p850168 (17/63)
+[    42.4s]   means Re_88p499815 (18/63)
+[    43.4s]   means Re_90p147341 (19/63)
+[    44.4s]   means Re_91p792204 (20/63)
+[    45.4s]   means Re_93p435204 (21/63)
+[    46.4s]   means Re_95p081752 (22/63)
+[    47.3s]   means Re_96p749308 (23/63)
+[    48.2s]   means Re_98p480345 (24/63)
+[    49.1s]   means Re_100p352251 (25/63)
+[    50.0s]   means Re_102p440042 (26/63)
+[    50.9s]   means Re_104p710911 (27/63)
+[    51.9s]   means Re_107p050737 (28/63)
+[    52.9s]   means Re_109p395985 (29/63)
+[    53.8s]   means Re_111p734011 (30/63)
+[    54.7s]   means Re_114p066308 (31/63)
+[    55.7s]   means Re_116p395488 (32/63)
+[    56.7s]   means Re_118p723173 (33/63)
+[    57.7s]   means Re_121p050171 (34/63)
+[    58.7s]   means Re_123p376833 (35/63)
+[    59.6s]   means Re_125p703274 (36/63)
+[    60.6s]   means Re_128p029461 (37/63)
+[    61.5s]   means Re_130p355225 (38/63)
+[    62.4s]   means Re_132p680203 (39/63)
+[    63.3s]   means Re_135p003744 (40/63)
+[    64.3s]   means Re_137p324830 (41/63)
+[    65.2s]   means Re_139p642302 (42/63)
+[    66.2s]   means Re_141p956319 (43/63)
+[    67.1s]   means Re_144p273459 (44/63)
+[    68.1s]   means Re_146p619578 (45/63)
+[    69.1s]   means Re_149p059229 (46/63)
+[    70.1s]   means Re_151p686208 (47/63)
+[    71.1s]   means Re_154p520852 (48/63)
+[    72.2s]   means Re_157p459588 (49/63)
+[    73.1s]   means Re_160p415176 (50/63)
+[    74.2s]   means Re_163p364123 (51/63)
+[    75.2s]   means Re_166p306373 (52/63)
+[    76.3s]   means Re_169p244893 (53/63)
+[    77.3s]   means Re_172p181708 (54/63)
+[    78.3s]   means Re_175p117940 (55/63)
+[    79.3s]   means Re_178p054368 (56/63)
+[    80.4s]   means Re_180p992055 (57/63)
+[    81.4s]   means Re_183p933395 (58/63)
+[    82.5s]   means Re_186p884600 (59/63)
+[    83.6s]   means Re_189p862278 (60/63)
+[    84.7s]   means Re_192p911664 (61/63)
+[    85.7s]   means Re_196p160723 (62/63)
+[    86.8s]   means Re_200p000000 (63/63)
+[    86.8s] velocity randomized range: n_snap=10150, work_rank=112
+[   154.1s] velocity power iteration 1/2
+[   270.7s] velocity power iteration 2/2
+[   387.5s] velocity small SVD
+[   443.0s] pressure randomized range: n_snap=10150, work_rank=112
+[   476.6s] pressure power iteration 1/2
+[   528.7s] pressure power iteration 2/2
+[   578.3s] pressure small SVD
+[   613.3s] Done periodic: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/periodic

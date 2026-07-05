@@ -1,0 +1,96 @@
+[     3.0s] 数据目录: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/steady
+[     3.0s] 网格文件: /home/ray/Desktop/Cylinder_Results/Re_100_VTK/run_Re_100_7107.vtk
+[     3.0s] Re labels: ['Re_20p000000', 'Re_22p535676', 'Re_24p630436', 'Re_26p667332', 'Re_28p695138', 'Re_30p720428', 'Re_32p740068', 'Re_34p737570', 'Re_36p657767', 'Re_38p357249', 'Re_39p685479', 'Re_40p711525', 'Re_41p576575', 'Re_42p359071', 'Re_43p093925', 'Re_43p797402', 'Re_44p478353', 'Re_45p142703', 'Re_45p795194', 'Re_46p440072']
+[     3.0s] r_u=80, r_p=80
+[     3.1s] mass sum=5.992146803695e+02, min=1.042e-05, max=1.319e-02
+[     3.1s] 计算速度模态梯度: r_u=80
+[     7.8s]   velocity mode gradients 8/80
+[    10.4s]   velocity mode gradients 16/80
+[    13.1s]   velocity mode gradients 24/80
+[    15.9s]   velocity mode gradients 32/80
+[    18.7s]   velocity mode gradients 40/80
+[    21.5s]   velocity mode gradients 48/80
+[    24.3s]   velocity mode gradients 56/80
+[    27.1s]   velocity mode gradients 64/80
+[    29.8s]   velocity mode gradients 72/80
+[    32.6s]   velocity mode gradients 80/80
+[    32.6s] 计算压力模态梯度: r_p=80
+[    34.7s]   pressure mode gradients 8/80
+[    35.8s]   pressure mode gradients 16/80
+[    36.9s]   pressure mode gradients 24/80
+[    37.9s]   pressure mode gradients 32/80
+[    39.0s]   pressure mode gradients 40/80
+[    40.1s]   pressure mode gradients 48/80
+[    41.1s]   pressure mode gradients 56/80
+[    42.3s]   pressure mode gradients 64/80
+[    43.4s]   pressure mode gradients 72/80
+[    44.6s]   pressure mode gradients 80/80
+[    44.6s] 计算压力 Laplacian 矩阵 L
+[    46.2s] 计算非线性压力源张量 H^p: shape=(80,80,80), chunks=48
+[    84.1s]   H^p chunks 2/48
+[   121.9s]   H^p chunks 4/48
+[   159.7s]   H^p chunks 6/48
+[   202.1s]   H^p chunks 8/48
+[   243.7s]   H^p chunks 10/48
+[   284.0s]   H^p chunks 12/48
+[   324.0s]   H^p chunks 14/48
+[   364.4s]   H^p chunks 16/48
+[   405.5s]   H^p chunks 18/48
+[   447.6s]   H^p chunks 20/48
+[   488.5s]   H^p chunks 22/48
+[   528.2s]   H^p chunks 24/48
+[   567.8s]   H^p chunks 26/48
+[   608.0s]   H^p chunks 28/48
+[   649.0s]   H^p chunks 30/48
+[   691.1s]   H^p chunks 32/48
+[   731.9s]   H^p chunks 34/48
+[   771.9s]   H^p chunks 36/48
+[   811.6s]   H^p chunks 38/48
+[   851.6s]   H^p chunks 40/48
+[   892.5s]   H^p chunks 42/48
+[   934.6s]   H^p chunks 44/48
+[   975.3s]   H^p chunks 46/48
+[  1005.7s]   H^p chunks 48/48
+[  1005.7s] 计算均值梯度: Re_20p000000
+[  1006.2s] 装配 c^p/A^p: Re_20p000000
+[  1008.5s] 计算均值梯度: Re_22p535676
+[  1009.0s] 装配 c^p/A^p: Re_22p535676
+[  1010.2s] 计算均值梯度: Re_24p630436
+[  1010.6s] 装配 c^p/A^p: Re_24p630436
+[  1011.4s] 计算均值梯度: Re_26p667332
+[  1011.8s] 装配 c^p/A^p: Re_26p667332
+[  1012.6s] 计算均值梯度: Re_28p695138
+[  1013.0s] 装配 c^p/A^p: Re_28p695138
+[  1013.8s] 计算均值梯度: Re_30p720428
+[  1014.3s] 装配 c^p/A^p: Re_30p720428
+[  1015.1s] 计算均值梯度: Re_32p740068
+[  1015.5s] 装配 c^p/A^p: Re_32p740068
+[  1016.3s] 计算均值梯度: Re_34p737570
+[  1016.8s] 装配 c^p/A^p: Re_34p737570
+[  1017.6s] 计算均值梯度: Re_36p657767
+[  1018.0s] 装配 c^p/A^p: Re_36p657767
+[  1018.7s] 计算均值梯度: Re_38p357249
+[  1019.2s] 装配 c^p/A^p: Re_38p357249
+[  1020.0s] 计算均值梯度: Re_39p685479
+[  1020.4s] 装配 c^p/A^p: Re_39p685479
+[  1021.1s] 计算均值梯度: Re_40p711525
+[  1021.6s] 装配 c^p/A^p: Re_40p711525
+[  1022.3s] 计算均值梯度: Re_41p576575
+[  1022.8s] 装配 c^p/A^p: Re_41p576575
+[  1023.5s] 计算均值梯度: Re_42p359071
+[  1024.0s] 装配 c^p/A^p: Re_42p359071
+[  1024.7s] 计算均值梯度: Re_43p093925
+[  1025.2s] 装配 c^p/A^p: Re_43p093925
+[  1025.9s] 计算均值梯度: Re_43p797402
+[  1026.4s] 装配 c^p/A^p: Re_43p797402
+[  1027.1s] 计算均值梯度: Re_44p478353
+[  1027.6s] 装配 c^p/A^p: Re_44p478353
+[  1028.3s] 计算均值梯度: Re_45p142703
+[  1028.8s] 装配 c^p/A^p: Re_45p142703
+[  1029.5s] 计算均值梯度: Re_45p795194
+[  1030.0s] 装配 c^p/A^p: Re_45p795194
+[  1030.7s] 计算均值梯度: Re_46p440072
+[  1031.2s] 装配 c^p/A^p: Re_46p440072
+[  1031.9s] 保存张量: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/pressure_poisson_surrogate_steady.npz
+[  1032.3s] 写技术报告: /home/ray/Desktop/Cylinder_ROM_PhysicsGeneralizable_Re20_200_100Re/Regime_ROM_Library/pressure_poisson_surrogate_steady.md
+[  1032.3s] 完成
