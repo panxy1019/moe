@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="720" viewBox="0 0 1240 720">
+<style>text{font-family:Arial,sans-serif;fill:#1d2733}.axis{stroke:#536575;stroke-width:1.2}.grid{stroke:#d9e2ec;stroke-width:1}.line{fill:none;stroke-width:2.4}.dot{stroke:white;stroke-width:1}</style>
+<rect width="1240" height="720" fill="#f8fafc"/>
+<text x="82" y="34" font-size="22" font-weight="700">AdaptiveGate modal base gate mean vs Re</text>
+<line class="axis" x1="82" y1="628" x2="1208" y2="628"/>
+<line class="axis" x1="82" y1="58" x2="82" y2="628"/>
+<line class="grid" x1="82" y1="514.0" x2="1208" y2="514.0"/>
+<text x="16" y="518.0" font-size="12">0.21600</text>
+<line class="grid" x1="82" y1="400.0" x2="1208" y2="400.0"/>
+<text x="16" y="404.0" font-size="12">0.43200</text>
+<line class="grid" x1="82" y1="286.0" x2="1208" y2="286.0"/>
+<text x="16" y="290.0" font-size="12">0.64800</text>
+<line class="grid" x1="82" y1="172.0" x2="1208" y2="172.0"/>
+<text x="16" y="176.0" font-size="12">0.86400</text>
+<line class="grid" x1="82" y1="58.0" x2="1208" y2="58.0"/>
+<text x="16" y="62.0" font-size="12">1.08</text>
+<text x="67.0" y="656" font-size="12">25</text>
+<text x="254.7" y="656" font-size="12">52</text>
+<text x="442.3" y="656" font-size="12">80</text>
+<text x="630.0" y="656" font-size="12">107</text>
+<text x="817.7" y="656" font-size="12">135</text>
+<text x="1005.3" y="656" font-size="12">162</text>
+<text x="1193.0" y="656" font-size="12">190</text>
+<polyline class="line" points="82.0,555.6 137.3,557.5 184.6,558.2 221.8,558.5 235.0,559.4 248.2,559.4 267.1,559.7 393.3,251.5 598.0,226.3 929.9,221.9 1208.0,219.7" stroke="#d95f02"/>
+<circle class="dot" cx="82.0" cy="555.6" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="137.3" cy="557.5" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="184.6" cy="558.2" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="221.8" cy="558.5" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="235.0" cy="559.4" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="248.2" cy="559.4" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="267.1" cy="559.7" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="393.3" cy="251.5" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="598.0" cy="226.3" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="929.9" cy="221.9" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="1208.0" cy="219.7" r="3.6" fill="#d95f02"/>
+<line x1="94" y1="76" x2="118" y2="76" stroke="#d95f02" stroke-width="3"/>
+<text x="126" y="80" font-size="12">V15_1_AdaptiveGate</text>
+<polyline class="line" points="82.0,100.2 137.3,100.2 184.6,100.2 221.8,100.2 235.0,100.2 248.2,100.2 267.1,100.2 393.3,100.2 598.0,100.2 929.9,100.2 1208.0,100.2" stroke="#7570b3"/>
+<circle class="dot" cx="82.0" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="137.3" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="184.6" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="221.8" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="235.0" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="248.2" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="267.1" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="393.3" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="598.0" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="929.9" cy="100.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="1208.0" cy="100.2" r="3.6" fill="#7570b3"/>
+<line x1="94" y1="98" x2="118" y2="98" stroke="#7570b3" stroke-width="3"/>
+<text x="126" y="102" font-size="12">V15_1_FiLMBase</text>
+<polyline class="line" points="82.0,100.2 137.3,100.2 184.6,100.2 221.8,100.2 235.0,100.2 248.2,100.2 267.1,100.2 393.3,100.2 598.0,100.2 929.9,100.2 1208.0,100.2" stroke="#e7298a"/>
+<circle class="dot" cx="82.0" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="137.3" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="184.6" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="221.8" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="235.0" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="248.2" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="267.1" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="393.3" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="598.0" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="929.9" cy="100.2" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="1208.0" cy="100.2" r="3.6" fill="#e7298a"/>
+<line x1="94" y1="120" x2="118" y2="120" stroke="#e7298a" stroke-width="3"/>
+<text x="126" y="124" font-size="12">V15_1_RegimeAwareROM</text>
+</svg>
