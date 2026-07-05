@@ -30,7 +30,19 @@ SwanLab project: `V15_PhysicsGeneralizable`.
 The final aggregate report is written after all three cases finish:
 
 ```text
+V15_TECHNICAL_REPORT.md
 test_results_v15/results/V15_summary/TECHNICAL_REPORT_V15_PHYSICS_GENERALIZABLE.md
 ```
+
+Final result snapshot:
+
+- `V15_LargeROM` gives the best velocity/RHS metrics: 24-step velocity mean
+  drops from 0.7462 to 0.4531 versus `V15_Base`.
+- `V15_BalancedTraining` gives the best pressure rollout metrics: 24-step
+  pressure mean drops from 3.5577 to 1.0598 versus `V15_Base`.
+- The remaining hard case is the Hopf-transition point near Re=51.786, where
+  all models still show the largest long-rollout drift.
+- True lift/drag and Strouhal metrics are not reported because the current ROM
+  coefficient/tensor artifacts do not include force-probe or Cl/Cd time series.
 
 Raw checkpoints, full metrics JSON, logs, and SwanLab cache are ignored by Git.
