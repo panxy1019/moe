@@ -31,10 +31,13 @@ The final aggregate report is written after all three cases finish:
 
 ```text
 V15_TECHNICAL_REPORT.md
+V15_TEST_ERROR_AND_EXPERT_USAGE.md
 test_results_v15/results/V15_summary/TECHNICAL_REPORT_V15_PHYSICS_GENERALIZABLE.md
 ```
 
 Final result snapshot:
+
+- Detailed relative-error and expert-activation tables are in `V15_TEST_ERROR_AND_EXPERT_USAGE.md`; the machine-readable CSV is `test_results_v15/results/V15_summary/v15_error_expert_activation.csv`.
 
 - `V15_LargeROM` gives the best velocity/RHS metrics: 24-step velocity mean
   drops from 0.7462 to 0.4531 versus `V15_Base`.
