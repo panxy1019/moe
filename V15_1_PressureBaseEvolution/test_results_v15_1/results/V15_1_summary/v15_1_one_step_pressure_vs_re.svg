@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="720" viewBox="0 0 1240 720">
+<style>text{font-family:Arial,sans-serif;fill:#1d2733}.axis{stroke:#536575;stroke-width:1.2}.grid{stroke:#d9e2ec;stroke-width:1}.line{fill:none;stroke-width:2.4}.dot{stroke:white;stroke-width:1}</style>
+<rect width="1240" height="720" fill="#f8fafc"/>
+<text x="82" y="34" font-size="22" font-weight="700">one-step autonomous pressure relative L2 vs Re</text>
+<line class="axis" x1="82" y1="628" x2="1208" y2="628"/>
+<line class="axis" x1="82" y1="58" x2="82" y2="628"/>
+<line class="grid" x1="82" y1="632.0" x2="1208" y2="632.0"/>
+<text x="16" y="636.0" font-size="12">0.01000</text>
+<line class="grid" x1="82" y1="514.5" x2="1208" y2="514.5"/>
+<text x="16" y="518.5" font-size="12">0.10000</text>
+<line class="grid" x1="82" y1="397.1" x2="1208" y2="397.1"/>
+<text x="16" y="401.1" font-size="12">1</text>
+<line class="grid" x1="82" y1="279.7" x2="1208" y2="279.7"/>
+<text x="16" y="283.7" font-size="12">10</text>
+<line class="grid" x1="82" y1="162.3" x2="1208" y2="162.3"/>
+<text x="16" y="166.3" font-size="12">100</text>
+<line class="grid" x1="82" y1="44.9" x2="1208" y2="44.9"/>
+<text x="16" y="48.9" font-size="12">1e+03</text>
+<text x="67.0" y="656" font-size="12">25</text>
+<text x="254.7" y="656" font-size="12">52</text>
+<text x="442.3" y="656" font-size="12">80</text>
+<text x="630.0" y="656" font-size="12">107</text>
+<text x="817.7" y="656" font-size="12">135</text>
+<text x="1005.3" y="656" font-size="12">162</text>
+<text x="1193.0" y="656" font-size="12">190</text>
+<polyline class="line" points="82.0,320.9 137.3,349.2 184.6,398.6 221.8,414.4 235.0,439.2 248.2,409.0 267.1,291.8 393.3,516.1 598.0,539.8 929.9,560.5 1208.0,559.4" stroke="#596579"/>
+<circle class="dot" cx="82.0" cy="320.9" r="3.6" fill="#596579"/>
+<circle class="dot" cx="137.3" cy="349.2" r="3.6" fill="#596579"/>
+<circle class="dot" cx="184.6" cy="398.6" r="3.6" fill="#596579"/>
+<circle class="dot" cx="221.8" cy="414.4" r="3.6" fill="#596579"/>
+<circle class="dot" cx="235.0" cy="439.2" r="3.6" fill="#596579"/>
+<circle class="dot" cx="248.2" cy="409.0" r="3.6" fill="#596579"/>
+<circle class="dot" cx="267.1" cy="291.8" r="3.6" fill="#596579"/>
+<circle class="dot" cx="393.3" cy="516.1" r="3.6" fill="#596579"/>
+<circle class="dot" cx="598.0" cy="539.8" r="3.6" fill="#596579"/>
+<circle class="dot" cx="929.9" cy="560.5" r="3.6" fill="#596579"/>
+<circle class="dot" cx="1208.0" cy="559.4" r="3.6" fill="#596579"/>
+<line x1="94" y1="76" x2="118" y2="76" stroke="#596579" stroke-width="3"/>
+<text x="126" y="80" font-size="12">V15_Base</text>
+<polyline class="line" points="82.0,370.9 137.3,438.7 184.6,452.1 221.8,443.5 235.0,390.9 248.2,420.4 267.1,367.7 393.3,518.6 598.0,554.4 929.9,560.4 1208.0,542.0" stroke="#2c7fb8"/>
+<circle class="dot" cx="82.0" cy="370.9" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="137.3" cy="438.7" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="184.6" cy="452.1" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="221.8" cy="443.5" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="235.0" cy="390.9" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="248.2" cy="420.4" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="267.1" cy="367.7" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="393.3" cy="518.6" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="598.0" cy="554.4" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="929.9" cy="560.4" r="3.6" fill="#2c7fb8"/>
+<circle class="dot" cx="1208.0" cy="542.0" r="3.6" fill="#2c7fb8"/>
+<line x1="94" y1="98" x2="118" y2="98" stroke="#2c7fb8" stroke-width="3"/>
+<text x="126" y="102" font-size="12">V15_LargeROM</text>
+<polyline class="line" points="82.0,365.2 137.3,396.2 184.6,459.3 221.8,460.8 235.0,430.1 248.2,434.1 267.1,365.4 393.3,532.4 598.0,550.6 929.9,563.0 1208.0,560.7" stroke="#41ab5d"/>
+<circle class="dot" cx="82.0" cy="365.2" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="137.3" cy="396.2" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="184.6" cy="459.3" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="221.8" cy="460.8" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="235.0" cy="430.1" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="248.2" cy="434.1" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="267.1" cy="365.4" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="393.3" cy="532.4" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="598.0" cy="550.6" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="929.9" cy="563.0" r="3.6" fill="#41ab5d"/>
+<circle class="dot" cx="1208.0" cy="560.7" r="3.6" fill="#41ab5d"/>
+<line x1="94" y1="120" x2="118" y2="120" stroke="#41ab5d" stroke-width="3"/>
+<text x="126" y="124" font-size="12">V15_BalancedTraining</text>
+<polyline class="line" points="82.0,437.4 137.3,457.6 184.6,471.5 221.8,471.1 235.0,477.2 248.2,474.5 267.1,427.5 393.3,567.6 598.0,608.1 929.9,613.3 1208.0,585.6" stroke="#d95f02"/>
+<circle class="dot" cx="82.0" cy="437.4" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="137.3" cy="457.6" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="184.6" cy="471.5" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="221.8" cy="471.1" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="235.0" cy="477.2" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="248.2" cy="474.5" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="267.1" cy="427.5" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="393.3" cy="567.6" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="598.0" cy="608.1" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="929.9" cy="613.3" r="3.6" fill="#d95f02"/>
+<circle class="dot" cx="1208.0" cy="585.6" r="3.6" fill="#d95f02"/>
+<line x1="394" y1="76" x2="418" y2="76" stroke="#d95f02" stroke-width="3"/>
+<text x="426" y="80" font-size="12">V15_1_AdaptiveGate</text>
+<polyline class="line" points="82.0,108.1 137.3,124.4 184.6,155.9 221.8,177.2 235.0,167.5 248.2,183.7 267.1,69.4 393.3,406.8 598.0,426.0 929.9,460.4 1208.0,495.7" stroke="#7570b3"/>
+<circle class="dot" cx="82.0" cy="108.1" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="137.3" cy="124.4" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="184.6" cy="155.9" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="221.8" cy="177.2" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="235.0" cy="167.5" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="248.2" cy="183.7" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="267.1" cy="69.4" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="393.3" cy="406.8" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="598.0" cy="426.0" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="929.9" cy="460.4" r="3.6" fill="#7570b3"/>
+<circle class="dot" cx="1208.0" cy="495.7" r="3.6" fill="#7570b3"/>
+<line x1="394" y1="98" x2="418" y2="98" stroke="#7570b3" stroke-width="3"/>
+<text x="426" y="102" font-size="12">V15_1_FiLMBase</text>
+<polyline class="line" points="82.0,210.5 137.3,195.9 184.6,203.9 221.8,208.5 235.0,194.1 248.2,204.6 267.1,82.4 393.3,424.9 598.0,456.7 929.9,473.7 1208.0,481.7" stroke="#e7298a"/>
+<circle class="dot" cx="82.0" cy="210.5" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="137.3" cy="195.9" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="184.6" cy="203.9" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="221.8" cy="208.5" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="235.0" cy="194.1" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="248.2" cy="204.6" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="267.1" cy="82.4" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="393.3" cy="424.9" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="598.0" cy="456.7" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="929.9" cy="473.7" r="3.6" fill="#e7298a"/>
+<circle class="dot" cx="1208.0" cy="481.7" r="3.6" fill="#e7298a"/>
+<line x1="394" y1="120" x2="418" y2="120" stroke="#e7298a" stroke-width="3"/>
+<text x="426" y="124" font-size="12">V15_1_RegimeAwareROM</text>
+</svg>

@@ -1,0 +1,4439 @@
+{
+  "metrics": [
+    "/root/moe/V15_PhysicsGeneralizable/test_results_v15/results/V15_Base/V15_Base_physics_generalizable_ru16_rp16/V15_Base_physics_generalizable_ru16_rp16_metrics.json",
+    "/root/moe/V15_PhysicsGeneralizable/test_results_v15/results/V15_LargeROM/V15_LargeROM_physics_generalizable_ru32_rp32/V15_LargeROM_physics_generalizable_ru32_rp32_metrics.json",
+    "/root/moe/V15_PhysicsGeneralizable/test_results_v15/results/V15_BalancedTraining/V15_BalancedTraining_physics_generalizable_ru16_rp16/V15_BalancedTraining_physics_generalizable_ru16_rp16_metrics.json"
+  ],
+  "rows": [
+    {
+      "case": "V15_Base",
+      "Re": 24.630435943603516,
+      "label": "Re_24p630436",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 190,
+      "rhs_l2": 1.7214051485061646,
+      "one_step_velocity_l2": 0.09466182440519333,
+      "one_step_pressure_l2": 4.456989288330078,
+      "one_step_pressure_energy_error": 20.819238218623266,
+      "rollout_velocity_l2": 0.6264324188232422,
+      "rollout_pressure_l2": 4.677313804626465,
+      "rollout_pressure_energy_error": 16.906588046765958,
+      "pressure_base_l2": 54.86600875854492,
+      "pressure_closure_l2": 4.507019519805908,
+      "pressure_residual_only_l2": 51.05815887451172,
+      "pressure_residual_l2": 0.08214592933654785,
+      "pressure_effective_residual_l2": 0.08214592933654785,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 14.364295138687384,
+      "residual_contribution_ratio_mean": 13.430930755177481,
+      "router_entropy": 1.0326786041259766,
+      "router_active_experts": 4.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 32.74006652832031,
+      "label": "Re_32p740068",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 190,
+      "rhs_l2": 0.9664390087127686,
+      "one_step_velocity_l2": 0.05381444841623306,
+      "one_step_pressure_l2": 2.5591726303100586,
+      "one_step_pressure_energy_error": 8.403434765936577,
+      "rollout_velocity_l2": 0.43101584911346436,
+      "rollout_pressure_l2": 3.250969886779785,
+      "rollout_pressure_energy_error": 9.197850436322934,
+      "pressure_base_l2": 68.98591613769531,
+      "pressure_closure_l2": 2.5927388668060303,
+      "pressure_residual_only_l2": 67.09233093261719,
+      "pressure_residual_l2": 0.0375836007297039,
+      "pressure_effective_residual_l2": 0.0375836007297039,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 33.84483895536329,
+      "residual_contribution_ratio_mean": 32.95586335072752,
+      "router_entropy": 1.029738426208496,
+      "router_active_experts": 4.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 39.68547821044922,
+      "label": "Re_39p685479",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 190,
+      "rhs_l2": 0.6745092868804932,
+      "one_step_velocity_l2": 0.03793010488152504,
+      "one_step_pressure_l2": 0.9720746874809265,
+      "one_step_pressure_energy_error": 1.073974960407209,
+      "rollout_velocity_l2": 0.31195518374443054,
+      "rollout_pressure_l2": 1.169685959815979,
+      "rollout_pressure_energy_error": 1.9361424420231232,
+      "pressure_base_l2": 56.0378532409668,
+      "pressure_closure_l2": 0.9633645415306091,
+      "pressure_residual_only_l2": 55.45877456665039,
+      "pressure_residual_l2": 0.017191316932439804,
+      "pressure_effective_residual_l2": 0.017191316932439804,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 57.14441383862105,
+      "residual_contribution_ratio_mean": 56.447036258509904,
+      "router_entropy": 1.0266908407211304,
+      "router_active_experts": 4.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 45.142704010009766,
+      "label": "Re_45p142703",
+      "regime": "pre_hopf_steady",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 190,
+      "rhs_l2": 0.5617855191230774,
+      "one_step_velocity_l2": 0.03126542642712593,
+      "one_step_pressure_l2": 0.7131635546684265,
+      "one_step_pressure_energy_error": 0.3669883603117042,
+      "rollout_velocity_l2": 0.22468148171901703,
+      "rollout_pressure_l2": 0.7377546429634094,
+      "rollout_pressure_energy_error": 1.1090611971973916,
+      "pressure_base_l2": 50.043724060058594,
+      "pressure_closure_l2": 0.6980946063995361,
+      "pressure_residual_only_l2": 49.719478607177734,
+      "pressure_residual_l2": 0.013949699699878693,
+      "pressure_effective_residual_l2": 0.013949699699878693,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 75.35114797998648,
+      "residual_contribution_ratio_mean": 74.81189740290407,
+      "router_entropy": 1.0214790105819702,
+      "router_active_experts": 4.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 47.081356048583984,
+      "label": "Re_47p081355",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 190,
+      "rhs_l2": 4.523136138916016,
+      "one_step_velocity_l2": 0.33624833822250366,
+      "one_step_pressure_l2": 0.4380415976047516,
+      "one_step_pressure_energy_error": 0.26524693069248684,
+      "rollout_velocity_l2": 1.0254057884216308,
+      "rollout_pressure_l2": 1.9981169939041137,
+      "rollout_pressure_energy_error": 3.3446974846981696,
+      "pressure_base_l2": 66.45255279541016,
+      "pressure_closure_l2": 0.3820924460887909,
+      "pressure_residual_only_l2": 66.63468170166016,
+      "pressure_residual_l2": 0.0057498556561768055,
+      "pressure_effective_residual_l2": 0.0057498556561768055,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 185.35818753665006,
+      "residual_contribution_ratio_mean": 184.71023629586907,
+      "router_entropy": 1.0103936195373535,
+      "router_active_experts": 4.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 49.02235794067383,
+      "label": "Re_49p022357",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 190,
+      "rhs_l2": 3.2384862899780273,
+      "one_step_velocity_l2": 0.24747586250305176,
+      "one_step_pressure_l2": 0.792386531829834,
+      "one_step_pressure_energy_error": 1.7626556424936708,
+      "rollout_velocity_l2": 0.7436416745185852,
+      "rollout_pressure_l2": 1.7440730810165406,
+      "rollout_pressure_energy_error": 3.149819301744081,
+      "pressure_base_l2": 53.88593673706055,
+      "pressure_closure_l2": 0.6943584680557251,
+      "pressure_residual_only_l2": 53.80748748779297,
+      "pressure_residual_l2": 0.012885709293186665,
+      "pressure_effective_residual_l2": 0.012885709293186665,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 73.31190017808842,
+      "residual_contribution_ratio_mean": 72.61585422105426,
+      "router_entropy": 1.0096310377120972,
+      "router_active_experts": 4.012658227848101,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 51.78644943237305,
+      "label": "Re_51p786450",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 190,
+      "rhs_l2": 3.8344311714172363,
+      "one_step_velocity_l2": 1.6214423179626465,
+      "one_step_pressure_l2": 7.893560886383057,
+      "one_step_pressure_energy_error": 63.710140651147015,
+      "rollout_velocity_l2": 4.523074722290039,
+      "rollout_pressure_l2": 25.066916275024415,
+      "rollout_pressure_energy_error": 546.1172741348645,
+      "pressure_base_l2": 591.26708984375,
+      "pressure_closure_l2": 7.333358287811279,
+      "pressure_residual_only_l2": 584.3972778320312,
+      "pressure_residual_l2": 0.012402787804603577,
+      "pressure_effective_residual_l2": 0.012402787804603577,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 88.61978074568736,
+      "residual_contribution_ratio_mean": 87.65479546559008,
+      "router_entropy": 1.0148941278457642,
+      "router_active_experts": 4.031645569620253,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 70.31463623046875,
+      "label": "Re_70p314635",
+      "regime": "developing_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 190,
+      "rhs_l2": 0.15111197531223297,
+      "one_step_velocity_l2": 0.055646877735853195,
+      "one_step_pressure_l2": 0.09706830978393555,
+      "one_step_pressure_energy_error": 0.004652380356560047,
+      "rollout_velocity_l2": 0.18547719120979309,
+      "rollout_pressure_l2": 0.2759204000234604,
+      "rollout_pressure_energy_error": 0.14481684107190823,
+      "pressure_base_l2": 1.4394993782043457,
+      "pressure_closure_l2": 0.04294669255614281,
+      "pressure_residual_only_l2": 1.7276753187179565,
+      "pressure_residual_l2": 0.029834462329745293,
+      "pressure_effective_residual_l2": 0.029834462329745293,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.7092887178252014,
+      "residual_contribution_ratio_mean": 1.4310270706309547,
+      "router_entropy": 1.1545027494430542,
+      "router_active_experts": 4.481012658227848,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 100.35224914550781,
+      "label": "Re_100p352251",
+      "regime": "mature_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 190,
+      "rhs_l2": 0.2176050990819931,
+      "one_step_velocity_l2": 0.03842875733971596,
+      "one_step_pressure_l2": 0.06097391992807388,
+      "one_step_pressure_energy_error": 0.012332179595637646,
+      "rollout_velocity_l2": 0.043546798080205916,
+      "rollout_pressure_l2": 0.08731917887926102,
+      "rollout_pressure_energy_error": 0.048323127125086414,
+      "pressure_base_l2": 0.9364879131317139,
+      "pressure_closure_l2": 0.019189253449440002,
+      "pressure_residual_only_l2": 1.3230414390563965,
+      "pressure_residual_l2": 0.020490657538175583,
+      "pressure_effective_residual_l2": 0.020490657538175583,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.3244257893743394,
+      "residual_contribution_ratio_mean": 0.9293108752256707,
+      "router_entropy": 1.1308846473693848,
+      "router_active_experts": 4.6645569620253164,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 149.05923461914062,
+      "label": "Re_149p059229",
+      "regime": "mature_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 190,
+      "rhs_l2": 0.2052537202835083,
+      "one_step_velocity_l2": 0.026043761521577835,
+      "one_step_pressure_l2": 0.04056956246495247,
+      "one_step_pressure_energy_error": 0.0069027075361762155,
+      "rollout_velocity_l2": 0.03638128526508808,
+      "rollout_pressure_l2": 0.05494492277503014,
+      "rollout_pressure_energy_error": 0.01164105708693451,
+      "pressure_base_l2": 0.8006675243377686,
+      "pressure_closure_l2": 0.022799156606197357,
+      "pressure_residual_only_l2": 1.2394222021102905,
+      "pressure_residual_l2": 0.028475185856223106,
+      "pressure_effective_residual_l2": 0.028475185856223106,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.2407813819148872,
+      "residual_contribution_ratio_mean": 0.799985719066632,
+      "router_entropy": 1.0864132642745972,
+      "router_active_experts": 4.449367088607595,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_Base",
+      "Re": 189.86227416992188,
+      "label": "Re_189p862278",
+      "regime": "high_re_2d_periodic_near_modeA",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 190,
+      "rhs_l2": 0.18047715723514557,
+      "one_step_velocity_l2": 0.025019446387887,
+      "one_step_pressure_l2": 0.041458845138549805,
+      "one_step_pressure_energy_error": 0.0015240030912060097,
+      "rollout_velocity_l2": 0.056322132050991056,
+      "rollout_pressure_l2": 0.07188607975840569,
+      "rollout_pressure_energy_error": 0.024437777125586035,
+      "pressure_base_l2": 0.7159730195999146,
+      "pressure_closure_l2": 0.0313885472714901,
+      "pressure_residual_only_l2": 1.2030649185180664,
+      "pressure_residual_l2": 0.043840404599905014,
+      "pressure_effective_residual_l2": 0.043840404599905014,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.202427794661703,
+      "residual_contribution_ratio_mean": 0.7206418767005582,
+      "router_entropy": 1.05549156665802,
+      "router_active_experts": 4.651898734177215,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 24.630435943603516,
+      "label": "Re_24p630436",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 205,
+      "rhs_l2": 0.846176028251648,
+      "one_step_velocity_l2": 0.04508695378899574,
+      "one_step_pressure_l2": 1.6728532314300537,
+      "one_step_pressure_energy_error": 2.987590824926724,
+      "rollout_velocity_l2": 0.4255087673664093,
+      "rollout_pressure_l2": 1.5048030614852905,
+      "rollout_pressure_energy_error": 1.460404044935601,
+      "pressure_base_l2": 47.47378921508789,
+      "pressure_closure_l2": 1.648290753364563,
+      "pressure_residual_only_l2": 46.75050354003906,
+      "pressure_residual_l2": 0.03472002223134041,
+      "pressure_effective_residual_l2": 0.03472002223134041,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 63.776065404297874,
+      "residual_contribution_ratio_mean": 63.42498774606673,
+      "router_entropy": 1.0115485191345215,
+      "router_active_experts": 5.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 32.74006652832031,
+      "label": "Re_32p740068",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 205,
+      "rhs_l2": 0.622505247592926,
+      "one_step_velocity_l2": 0.03385264798998833,
+      "one_step_pressure_l2": 0.4424305260181427,
+      "one_step_pressure_energy_error": 0.06940864842533664,
+      "rollout_velocity_l2": 0.25102296471595764,
+      "rollout_pressure_l2": 1.6954816579818726,
+      "rollout_pressure_energy_error": 2.2264298211203504,
+      "pressure_base_l2": 56.34028625488281,
+      "pressure_closure_l2": 0.44414493441581726,
+      "pressure_residual_only_l2": 56.62080001831055,
+      "pressure_residual_l2": 0.007883252575993538,
+      "pressure_effective_residual_l2": 0.007883252575993538,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 101.7190577397581,
+      "residual_contribution_ratio_mean": 101.88265909914111,
+      "router_entropy": 1.0124280452728271,
+      "router_active_experts": 5.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 39.68547821044922,
+      "label": "Re_39p685479",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 205,
+      "rhs_l2": 0.5062962174415588,
+      "one_step_velocity_l2": 0.027367865666747093,
+      "one_step_pressure_l2": 0.3400295078754425,
+      "one_step_pressure_energy_error": 0.08667729181577521,
+      "rollout_velocity_l2": 0.18117716908454895,
+      "rollout_pressure_l2": 0.6374210119247437,
+      "rollout_pressure_energy_error": 0.4385855413980545,
+      "pressure_base_l2": 49.46226119995117,
+      "pressure_closure_l2": 0.3570210039615631,
+      "pressure_residual_only_l2": 49.82731628417969,
+      "pressure_residual_l2": 0.007218048442155123,
+      "pressure_effective_residual_l2": 0.007218048442155123,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 99.68008479133981,
+      "residual_contribution_ratio_mean": 99.74734631522757,
+      "router_entropy": 1.0124982595443726,
+      "router_active_experts": 5.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 45.142704010009766,
+      "label": "Re_45p142703",
+      "regime": "pre_hopf_steady",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 205,
+      "rhs_l2": 0.40162619948387146,
+      "one_step_velocity_l2": 0.02186509408056736,
+      "one_step_pressure_l2": 0.40275412797927856,
+      "one_step_pressure_energy_error": 0.3882189801112871,
+      "rollout_velocity_l2": 0.1350518763065338,
+      "rollout_pressure_l2": 0.32195475697517395,
+      "rollout_pressure_energy_error": 0.09646421831207766,
+      "pressure_base_l2": 45.69498062133789,
+      "pressure_closure_l2": 0.43876951932907104,
+      "pressure_residual_only_l2": 46.04043960571289,
+      "pressure_residual_l2": 0.009602142497897148,
+      "pressure_effective_residual_l2": 0.009602142497897148,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 112.7992485859355,
+      "residual_contribution_ratio_mean": 112.85786425481078,
+      "router_entropy": 1.0112396478652954,
+      "router_active_experts": 5.0,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 47.081356048583984,
+      "label": "Re_47p081355",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 205,
+      "rhs_l2": 1.3791908025741577,
+      "one_step_velocity_l2": 0.13609512150287628,
+      "one_step_pressure_l2": 1.1305232048034668,
+      "one_step_pressure_energy_error": 0.6248264905403076,
+      "rollout_velocity_l2": 0.7160169959068299,
+      "rollout_pressure_l2": 1.4743906259536743,
+      "rollout_pressure_energy_error": 0.3716624101425859,
+      "pressure_base_l2": 67.48310852050781,
+      "pressure_closure_l2": 1.1349025964736938,
+      "pressure_residual_only_l2": 68.60442352294922,
+      "pressure_residual_l2": 0.01681758277118206,
+      "pressure_effective_residual_l2": 0.01681758277118206,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 94.36807199671298,
+      "residual_contribution_ratio_mean": 95.35113098651549,
+      "router_entropy": 1.0098903179168701,
+      "router_active_experts": 4.8734177215189876,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 49.02235794067383,
+      "label": "Re_49p022357",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 205,
+      "rhs_l2": 1.0562437772750854,
+      "one_step_velocity_l2": 0.10110095888376236,
+      "one_step_pressure_l2": 0.6338981986045837,
+      "one_step_pressure_energy_error": 0.7422123062739296,
+      "rollout_velocity_l2": 0.48878363966941835,
+      "rollout_pressure_l2": 0.7201058149337769,
+      "rollout_pressure_energy_error": 0.5986481913079396,
+      "pressure_base_l2": 54.68186950683594,
+      "pressure_closure_l2": 0.6322388648986816,
+      "pressure_residual_only_l2": 55.213829040527344,
+      "pressure_residual_l2": 0.011562132276594639,
+      "pressure_effective_residual_l2": 0.011562132276594639,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 369.5265645437603,
+      "residual_contribution_ratio_mean": 369.35639596287206,
+      "router_entropy": 1.009511947631836,
+      "router_active_experts": 4.6835443037974684,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 51.78644943237305,
+      "label": "Re_51p786450",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 205,
+      "rhs_l2": 1.3518723249435425,
+      "one_step_velocity_l2": 0.6207343339920044,
+      "one_step_pressure_l2": 1.779649257659912,
+      "one_step_pressure_energy_error": 3.0170457382623534,
+      "rollout_velocity_l2": 2.5567009925842283,
+      "rollout_pressure_l2": 9.639692115783692,
+      "rollout_pressure_energy_error": 80.74285150929863,
+      "pressure_base_l2": 588.068603515625,
+      "pressure_closure_l2": 1.550012230873108,
+      "pressure_residual_only_l2": 586.9020385742188,
+      "pressure_residual_l2": 0.0026357693132013083,
+      "pressure_effective_residual_l2": 0.0026357693132013083,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 381.1421874806851,
+      "residual_contribution_ratio_mean": 380.39790450470355,
+      "router_entropy": 1.0095683336257935,
+      "router_active_experts": 4.215189873417722,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 70.31463623046875,
+      "label": "Re_70p314635",
+      "regime": "developing_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 205,
+      "rhs_l2": 0.20178331434726715,
+      "one_step_velocity_l2": 0.06070325896143913,
+      "one_step_pressure_l2": 0.09237728267908096,
+      "one_step_pressure_energy_error": 0.03926771844988534,
+      "rollout_velocity_l2": 0.13078572750091552,
+      "rollout_pressure_l2": 0.16943258792161942,
+      "rollout_pressure_energy_error": 0.011279171569930765,
+      "pressure_base_l2": 1.4201409816741943,
+      "pressure_closure_l2": 0.04458356276154518,
+      "pressure_residual_only_l2": 1.7208895683288574,
+      "pressure_residual_l2": 0.03139375522732735,
+      "pressure_effective_residual_l2": 0.03139375522732735,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.7026392636419851,
+      "residual_contribution_ratio_mean": 1.4226355462134639,
+      "router_entropy": 1.0593690872192383,
+      "router_active_experts": 4.2784810126582276,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 100.35224914550781,
+      "label": "Re_100p352251",
+      "regime": "mature_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 205,
+      "rhs_l2": 0.22742564976215363,
+      "one_step_velocity_l2": 0.032749421894550323,
+      "one_step_pressure_l2": 0.04579773545265198,
+      "one_step_pressure_energy_error": 0.00014605435142357154,
+      "rollout_velocity_l2": 0.03310799561440945,
+      "rollout_pressure_l2": 0.051234768331050874,
+      "rollout_pressure_energy_error": 0.014833010798380238,
+      "pressure_base_l2": 1.0156852006912231,
+      "pressure_closure_l2": 0.01529525313526392,
+      "pressure_residual_only_l2": 1.391050934791565,
+      "pressure_residual_l2": 0.015059049241244793,
+      "pressure_effective_residual_l2": 0.015059049241244793,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.3879641196395778,
+      "residual_contribution_ratio_mean": 1.0199687880805777,
+      "router_entropy": 1.1058744192123413,
+      "router_active_experts": 4.2025316455696204,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 149.05923461914062,
+      "label": "Re_149p059229",
+      "regime": "mature_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 205,
+      "rhs_l2": 0.21309234201908112,
+      "one_step_velocity_l2": 0.022269943729043007,
+      "one_step_pressure_l2": 0.04065844416618347,
+      "one_step_pressure_energy_error": 0.0032186637656881783,
+      "rollout_velocity_l2": 0.029371121153235435,
+      "rollout_pressure_l2": 0.043197432160377504,
+      "rollout_pressure_energy_error": 0.005585284331763357,
+      "pressure_base_l2": 0.8301435112953186,
+      "pressure_closure_l2": 0.014197047799825668,
+      "pressure_residual_only_l2": 1.2704970836639404,
+      "pressure_residual_l2": 0.017101917415857315,
+      "pressure_effective_residual_l2": 0.017101917415857315,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.2690868272057063,
+      "residual_contribution_ratio_mean": 0.8324167147467408,
+      "router_entropy": 0.9751380085945129,
+      "router_active_experts": 4.012658227848101,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_LargeROM",
+      "Re": 189.86227416992188,
+      "label": "Re_189p862278",
+      "regime": "high_re_2d_periodic_near_modeA",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 205,
+      "rhs_l2": 0.18570111691951752,
+      "one_step_velocity_l2": 0.029273133724927902,
+      "one_step_pressure_l2": 0.05832931771874428,
+      "one_step_pressure_energy_error": 0.013314051334569994,
+      "rollout_velocity_l2": 0.03704107776284218,
+      "rollout_pressure_l2": 0.05203927904367447,
+      "rollout_pressure_energy_error": 0.028960249866225526,
+      "pressure_base_l2": 0.7147675156593323,
+      "pressure_closure_l2": 0.023610861971974373,
+      "pressure_residual_only_l2": 1.2046102285385132,
+      "pressure_residual_l2": 0.03303293138742447,
+      "pressure_effective_residual_l2": 0.03303293138742447,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.2002936827985546,
+      "residual_contribution_ratio_mean": 0.726336889251878,
+      "router_entropy": 0.9128735661506653,
+      "router_active_experts": 3.949367088607595,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 24.630435943603516,
+      "label": "Re_24p630436",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 215,
+      "rhs_l2": 0.6412465572357178,
+      "one_step_velocity_l2": 0.035959649831056595,
+      "one_step_pressure_l2": 1.8718892335891724,
+      "one_step_pressure_energy_error": 4.0552451875720426,
+      "rollout_velocity_l2": 0.25688207149505615,
+      "rollout_pressure_l2": 0.8138579726219177,
+      "rollout_pressure_energy_error": 1.6626939671790675,
+      "pressure_base_l2": 54.86600875854492,
+      "pressure_closure_l2": 1.878327488899231,
+      "pressure_residual_only_l2": 54.365867614746094,
+      "pressure_residual_l2": 0.03423481434583664,
+      "pressure_effective_residual_l2": 0.03423481434583664,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 83.7881284463601,
+      "residual_contribution_ratio_mean": 83.77389910182015,
+      "router_entropy": 1.007217288017273,
+      "router_active_experts": 4.19672131147541,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 32.74006652832031,
+      "label": "Re_32p740068",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 215,
+      "rhs_l2": 0.48989033699035645,
+      "one_step_velocity_l2": 0.02814965322613716,
+      "one_step_pressure_l2": 1.0187573432922363,
+      "one_step_pressure_energy_error": 2.22239036269185,
+      "rollout_velocity_l2": 0.22312031686306,
+      "rollout_pressure_l2": 1.0883004665374756,
+      "rollout_pressure_energy_error": 1.0938615567619574,
+      "pressure_base_l2": 68.98591613769531,
+      "pressure_closure_l2": 1.031814694404602,
+      "pressure_residual_only_l2": 68.68524169921875,
+      "pressure_residual_l2": 0.014956887811422348,
+      "pressure_effective_residual_l2": 0.014956887811422348,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 104.16710234470055,
+      "residual_contribution_ratio_mean": 103.9356512007166,
+      "router_entropy": 1.007270336151123,
+      "router_active_experts": 4.229508196721311,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 39.68547821044922,
+      "label": "Re_39p685479",
+      "regime": "steady_wake",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 215,
+      "rhs_l2": 0.4741784334182739,
+      "one_step_velocity_l2": 0.02700265869498253,
+      "one_step_pressure_l2": 0.29554566740989685,
+      "one_step_pressure_energy_error": 0.1110190137037713,
+      "rollout_velocity_l2": 0.19613637030124664,
+      "rollout_pressure_l2": 0.5926337838172913,
+      "rollout_pressure_energy_error": 0.6679779604937129,
+      "pressure_base_l2": 56.0378532409668,
+      "pressure_closure_l2": 0.2942398488521576,
+      "pressure_residual_only_l2": 56.279335021972656,
+      "pressure_residual_l2": 0.005250732880085707,
+      "pressure_effective_residual_l2": 0.005250732880085707,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 85.3079177043477,
+      "residual_contribution_ratio_mean": 85.24754155268434,
+      "router_entropy": 1.007872223854065,
+      "router_active_experts": 4.491803278688525,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 45.142704010009766,
+      "label": "Re_45p142703",
+      "regime": "pre_hopf_steady",
+      "regime_group": "Steady",
+      "num_test": 61,
+      "best_epoch": 215,
+      "rhs_l2": 0.4693491756916046,
+      "one_step_velocity_l2": 0.026860376819968224,
+      "one_step_pressure_l2": 0.2871192395687103,
+      "one_step_pressure_energy_error": 0.22622967458422627,
+      "rollout_velocity_l2": 0.22836104035377502,
+      "rollout_pressure_l2": 0.5614138245582581,
+      "rollout_pressure_energy_error": 0.33912021895948957,
+      "pressure_base_l2": 50.043724060058594,
+      "pressure_closure_l2": 0.2783757448196411,
+      "pressure_residual_only_l2": 50.30765151977539,
+      "pressure_residual_l2": 0.005562652833759785,
+      "pressure_effective_residual_l2": 0.005562652833759785,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 93.15524360781811,
+      "residual_contribution_ratio_mean": 93.15630378097784,
+      "router_entropy": 1.0084588527679443,
+      "router_active_experts": 4.901639344262295,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 47.081356048583984,
+      "label": "Re_47p081355",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 215,
+      "rhs_l2": 2.2012267112731934,
+      "one_step_velocity_l2": 0.21762259304523468,
+      "one_step_pressure_l2": 0.5240433216094971,
+      "one_step_pressure_energy_error": 0.28595998031970876,
+      "rollout_velocity_l2": 0.8506230235099792,
+      "rollout_pressure_l2": 1.2898934841156007,
+      "rollout_pressure_energy_error": 0.04701017766356602,
+      "pressure_base_l2": 66.45255279541016,
+      "pressure_closure_l2": 0.49694186449050903,
+      "pressure_residual_only_l2": 66.94219207763672,
+      "pressure_residual_l2": 0.007478147745132446,
+      "pressure_effective_residual_l2": 0.007478147745132446,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 507.9063876671127,
+      "residual_contribution_ratio_mean": 507.91823302039614,
+      "router_entropy": 1.008002519607544,
+      "router_active_experts": 4.3734177215189876,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 49.02235794067383,
+      "label": "Re_49p022357",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 215,
+      "rhs_l2": 1.875917673110962,
+      "one_step_velocity_l2": 0.18286080658435822,
+      "one_step_pressure_l2": 0.4842037558555603,
+      "one_step_pressure_energy_error": 0.4740097269052143,
+      "rollout_velocity_l2": 0.6601966857910156,
+      "rollout_pressure_l2": 0.9630750417709351,
+      "rollout_pressure_energy_error": 0.2777409318480759,
+      "pressure_base_l2": 53.88593673706055,
+      "pressure_closure_l2": 0.4672553539276123,
+      "pressure_residual_only_l2": 54.232444763183594,
+      "pressure_residual_l2": 0.008671196177601814,
+      "pressure_effective_residual_l2": 0.008671196177601814,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 295.8952443358264,
+      "residual_contribution_ratio_mean": 295.27706656274916,
+      "router_entropy": 1.0081017017364502,
+      "router_active_experts": 4.449367088607595,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 51.78644943237305,
+      "label": "Re_51p786450",
+      "regime": "hopf_transition",
+      "regime_group": "Hopf",
+      "num_test": 158,
+      "best_epoch": 215,
+      "rhs_l2": 2.8691394329071045,
+      "one_step_velocity_l2": 1.3803189992904663,
+      "one_step_pressure_l2": 1.8621399402618408,
+      "one_step_pressure_energy_error": 2.9070202681152955,
+      "rollout_velocity_l2": 2.5503915786743163,
+      "rollout_pressure_l2": 6.030486106872559,
+      "rollout_pressure_energy_error": 32.69846246343053,
+      "pressure_base_l2": 591.26708984375,
+      "pressure_closure_l2": 1.4779942035675049,
+      "pressure_residual_only_l2": 590.701904296875,
+      "pressure_residual_l2": 0.0024997100699692965,
+      "pressure_effective_residual_l2": 0.0024997100699692965,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 586.0843162053748,
+      "residual_contribution_ratio_mean": 585.690386132349,
+      "router_entropy": 1.0086413621902466,
+      "router_active_experts": 4.734177215189874,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 70.31463623046875,
+      "label": "Re_70p314635",
+      "regime": "developing_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 215,
+      "rhs_l2": 0.15384134650230408,
+      "one_step_velocity_l2": 0.043059341609478,
+      "one_step_pressure_l2": 0.07050256431102753,
+      "one_step_pressure_energy_error": 0.014972573683071456,
+      "rollout_velocity_l2": 0.09272594749927521,
+      "rollout_pressure_l2": 0.1332799419760704,
+      "rollout_pressure_energy_error": 0.02159362800386449,
+      "pressure_base_l2": 1.4394993782043457,
+      "pressure_closure_l2": 0.05877826735377312,
+      "pressure_residual_only_l2": 1.7248711585998535,
+      "pressure_residual_l2": 0.040832437574863434,
+      "pressure_effective_residual_l2": 0.040832437574863434,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.7069921161555037,
+      "residual_contribution_ratio_mean": 1.426389589339872,
+      "router_entropy": 1.0755913257598877,
+      "router_active_experts": 4.234177215189874,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 100.35224914550781,
+      "label": "Re_100p352251",
+      "regime": "mature_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 215,
+      "rhs_l2": 0.21692919731140137,
+      "one_step_velocity_l2": 0.03569748252630234,
+      "one_step_pressure_l2": 0.04926663264632225,
+      "one_step_pressure_energy_error": 0.012794139255635611,
+      "rollout_velocity_l2": 0.04754511043429375,
+      "rollout_pressure_l2": 0.06230819970369339,
+      "rollout_pressure_energy_error": 0.007019504122639545,
+      "pressure_base_l2": 0.9364879131317139,
+      "pressure_closure_l2": 0.025624293833971024,
+      "pressure_residual_only_l2": 1.3246067762374878,
+      "pressure_residual_l2": 0.027362121269106865,
+      "pressure_effective_residual_l2": 0.027362121269106865,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.3234141521816012,
+      "residual_contribution_ratio_mean": 0.9310895581788654,
+      "router_entropy": 1.1267811059951782,
+      "router_active_experts": 4.569620253164557,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 149.05923461914062,
+      "label": "Re_149p059229",
+      "regime": "mature_periodic_shedding",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 215,
+      "rhs_l2": 0.20540179312229156,
+      "one_step_velocity_l2": 0.023621292784810066,
+      "one_step_pressure_l2": 0.038679275661706924,
+      "one_step_pressure_energy_error": 0.0035387403011642228,
+      "rollout_velocity_l2": 0.04504015520215034,
+      "rollout_pressure_l2": 0.05598419979214668,
+      "rollout_pressure_energy_error": 0.00451131868036695,
+      "pressure_base_l2": 0.8006675243377686,
+      "pressure_closure_l2": 0.01927114464342594,
+      "pressure_residual_only_l2": 1.242033839225769,
+      "pressure_residual_l2": 0.02406884916126728,
+      "pressure_effective_residual_l2": 0.02406884916126728,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.2404032553298563,
+      "residual_contribution_ratio_mean": 0.8039628697347038,
+      "router_entropy": 1.1073883771896362,
+      "router_active_experts": 4.2594936708860756,
+      "group_router_entropy": 0.0
+    },
+    {
+      "case": "V15_BalancedTraining",
+      "Re": 189.86227416992188,
+      "label": "Re_189p862278",
+      "regime": "high_re_2d_periodic_near_modeA",
+      "regime_group": "Periodic",
+      "num_test": 158,
+      "best_epoch": 215,
+      "rhs_l2": 0.18223996460437775,
+      "one_step_velocity_l2": 0.023460201919078827,
+      "one_step_pressure_l2": 0.04045090079307556,
+      "one_step_pressure_energy_error": 0.003246396274215378,
+      "rollout_velocity_l2": 0.05237277522683144,
+      "rollout_pressure_l2": 0.0666507676243782,
+      "rollout_pressure_energy_error": 0.015590713088080077,
+      "pressure_base_l2": 0.7159730195999146,
+      "pressure_closure_l2": 0.03322478383779526,
+      "pressure_residual_only_l2": 1.19832181930542,
+      "pressure_residual_l2": 0.04640507698059082,
+      "pressure_effective_residual_l2": 0.04640507698059082,
+      "alpha_mean": 1.0,
+      "beta_mean": 0.0,
+      "base_contribution_ratio_mean": 1.2027085921432399,
+      "residual_contribution_ratio_mean": 0.7129853699780717,
+      "router_entropy": 1.0756175518035889,
+      "router_active_experts": 4.094936708860759,
+      "group_router_entropy": 0.0
+    }
+  ],
+  "stats": {
+    "overall": {
+      "V15_Base": {
+        "rhs_l2": {
+          "mean": 1.4795127741315148,
+          "std": 1.5487112397536178,
+          "min": 0.15111197531223297,
+          "max": 4.523136138916016
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.233452469618483,
+          "std": 0.44964961074623816,
+          "min": 0.025019446387887,
+          "max": 1.6214423179626465
+        },
+        "one_step_pressure_l2": {
+          "mean": 1.6423145285384222,
+          "std": 2.361491199329969,
+          "min": 0.04056956246495247,
+          "max": 7.893560886383057
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 8.766099163653772,
+          "std": 18.3951985209052,
+          "min": 0.0015240030912060097,
+          "max": 63.710140651147015
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.7461758659305897,
+          "std": 1.2323254513151223,
+          "min": 0.03638128526508808,
+          "max": 4.523074722290039
+        },
+        "rollout_pressure_l2": {
+          "mean": 3.5577182932333513,
+          "std": 6.945266930055273,
+          "min": 0.05494492277503014,
+          "max": 25.066916275024415
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 52.90824107691142,
+          "std": 156.04443412494066,
+          "min": 0.01164105708693451,
+          "max": 546.1172741348645
+        },
+        "pressure_base_l2": {
+          "mean": 85.94833721897818,
+          "std": 162.11000132222262,
+          "min": 0.7159730195999146,
+          "max": 591.26708984375
+        },
+        "pressure_closure_l2": {
+          "mean": 1.5715773078528317,
+          "std": 2.2501011958617574,
+          "min": 0.019189253449440002,
+          "max": 7.333358287811279
+        },
+        "pressure_residual_only_l2": {
+          "mean": 84.87830853462219,
+          "std": 160.1907222703089,
+          "min": 1.2030649185180664,
+          "max": 584.3972778320312
+        },
+        "pressure_residual_l2": {
+          "mean": 0.027686328161507845,
+          "std": 0.020481625413776003,
+          "min": 0.0057498556561768055,
+          "max": 0.08214592933654785
+        },
+        "pressure_effective_residual_l2": {
+          "mean": 0.027686328161507845,
+          "std": 0.020481625413776003,
+          "min": 0.0057498556561768055,
+          "max": 0.08214592933654785
+        },
+        "alpha_mean": {
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "beta_mean": {
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "base_contribution_ratio_mean": {
+          "mean": 48.497408005169106,
+          "std": 53.94990967624768,
+          "min": 1.202427794661703,
+          "max": 185.35818753665006
+        },
+        "residual_contribution_ratio_mean": {
+          "mean": 47.86432539013239,
+          "std": 53.87443670563624,
+          "min": 0.7206418767005582,
+          "max": 184.71023629586907
+        },
+        "router_entropy": {
+          "mean": 1.0520725358616223,
+          "std": 0.04792992148326523,
+          "min": 1.0096310377120972,
+          "max": 1.1545027494430542
+        },
+        "router_active_experts": {
+          "mean": 4.208285385500575,
+          "std": 0.2736724528538962,
+          "min": 4.0,
+          "max": 4.6645569620253164
+        },
+        "group_router_entropy": {
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "V15_LargeROM": {
+        "rhs_l2": {
+          "mean": 0.6356284564191644,
+          "std": 0.4363710254447608,
+          "min": 0.18570111691951752,
+          "max": 1.3791908025741577
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.10282715765590017,
+          "std": 0.1674034120799325,
+          "min": 0.02186509408056736,
+          "max": 0.6207343339920044
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.60357280312614,
+          "std": 0.6125549904129605,
+          "min": 0.04065844416618347,
+          "max": 1.779649257659912
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.7247206152961163,
+          "std": 1.101936542924099,
+          "min": 0.00014605435142357154,
+          "max": 3.0170457382623534
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.45314257524230256,
+          "std": 0.6970822168641537,
+          "min": 0.029371121153235435,
+          "max": 2.5567009925842283
+        },
+        "rollout_pressure_l2": {
+          "mean": 1.4827048284086315,
+          "std": 2.6477855537666626,
+          "min": 0.043197432160377504,
+          "max": 9.639692115783692
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 7.817791223007412,
+          "std": 23.070841053864818,
+          "min": 0.005585284331763357,
+          "max": 80.74285150929863
+        },
+        "pressure_base_l2": {
+          "mean": 83.01687600395896,
+          "std": 161.67468009317912,
+          "min": 0.7147675156593323,
+          "max": 588.068603515625
+        },
+        "pressure_closure_l2": {
+          "mean": 0.5730060571804643,
+          "std": 0.5811949235661293,
+          "min": 0.014197047799825668,
+          "max": 1.648290753364563
+        },
+        "pressure_residual_only_l2": {
+          "mean": 83.23149076375094,
+          "std": 161.24763985866025,
+          "min": 1.2046102285385132,
+          "max": 586.9020385742188
+        },
+        "pressure_residual_l2": {
+          "mean": 0.01700241848911074,
+          "std": 0.010666330369675237,
+          "min": 0.0026357693132013083,
+          "max": 0.03472002223134041
+        },
+        "pressure_effective_residual_l2": {
+          "mean": 0.01700241848911074,
+          "std": 0.010666330369675237,
+          "min": 0.0026357693132013083,
+          "max": 0.03472002223134041
+        },
+        "alpha_mean": {
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "beta_mean": {
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "base_contribution_ratio_mean": {
+          "mean": 111.68829676688866,
+          "std": 131.6294280907631,
+          "min": 1.2002936827985546,
+          "max": 381.1421874806851
+        },
+        "residual_contribution_ratio_mean": {
+          "mean": 111.54724061887546,
+          "std": 131.57832648689052,
+          "min": 0.726336889251878,
+          "max": 380.39790450470355
+        },
+        "router_entropy": {
+          "mean": 1.0118127411062068,
+          "std": 0.0449833051857529,
+          "min": 0.9128735661506653,
+          "max": 1.1058744192123413
+        },
+        "router_active_experts": {
+          "mean": 4.565017261219793,
+          "std": 0.41407104322546384,
+          "min": 3.949367088607595,
+          "max": 5.0
+        },
+        "group_router_entropy": {
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      },
+      "V15_BalancedTraining": {
+        "rhs_l2": {
+          "mean": 0.889032783833417,
+          "std": 0.9117767520256983,
+          "min": 0.15384134650230408,
+          "max": 2.8691394329071045
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.18405573239380663,
+          "std": 0.3839045164207941,
+          "min": 0.023460201919078827,
+          "max": 1.3803189992904663
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.5947816249999133,
+          "std": 0.6610854395623788,
+          "min": 0.038679275661706924,
+          "max": 1.8718892335891724
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.9378569148551089,
+          "std": 1.366143946992047,
+          "min": 0.003246396274215378,
+          "max": 4.0552451875720426
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.473035915941,
+          "std": 0.7022394772923741,
+          "min": 0.04504015520215034,
+          "max": 2.5503915786743163
+        },
+        "rollout_pressure_l2": {
+          "mean": 1.059807617217302,
+          "std": 1.6277528509162664,
+          "min": 0.05598419979214668,
+          "max": 6.030486106872559
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 3.3486893127483044,
+          "std": 9.295360214062558,
+          "min": 0.00451131868036695,
+          "max": 32.69846246343053
+        },
+        "pressure_base_l2": {
+          "mean": 85.94833721897818,
+          "std": 162.11000132222262,
+          "min": 0.7159730195999146,
+          "max": 591.26708984375
+        },
+        "pressure_closure_l2": {
+          "mean": 0.5510770626027476,
+          "std": 0.6083967788425269,
+          "min": 0.01927114464342594,
+          "max": 1.878327488899231
+        },
+        "pressure_residual_only_l2": {
+          "mean": 86.0913155078888,
+          "std": 161.86457188538782,
+          "min": 1.19832181930542,
+          "max": 590.701904296875
+        },
+        "pressure_residual_l2": {
+          "mean": 0.01975660244087604,
+          "std": 0.014914187156726199,
+          "min": 0.0024997100699692965,
+          "max": 0.04640507698059082
+        },
+        "pressure_effective_residual_l2": {
+          "mean": 0.01975660244087604,
+          "std": 0.014914187156726199,
+          "min": 0.0024997100699692965,
+          "max": 0.04640507698059082
+        },
+        "alpha_mean": {
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0
+        },
+        "beta_mean": {
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        },
+        "base_contribution_ratio_mean": {
+          "mean": 160.16162349339552,
+          "std": 200.15510898584913,
+          "min": 1.2027085921432399,
+          "max": 586.0843162053748
+        },
+        "residual_contribution_ratio_mean": {
+          "mean": 159.8975917035386,
+          "std": 200.16653293455104,
+          "min": 0.7129853699780717,
+          "max": 585.690386132349
+        },
+        "router_entropy": {
+          "mean": 1.0400856950066306,
+          "std": 0.04452282850823505,
+          "min": 1.007217288017273,
+          "max": 1.1267811059951782
+        },
+        "router_active_experts": {
+          "mean": 4.412260182233205,
+          "std": 0.23600811342323125,
+          "min": 4.094936708860759,
+          "max": 4.901639344262295
+        },
+        "group_router_entropy": {
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0
+        }
+      }
+    },
+    "by_regime_group": {
+      "Hopf": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 3.8653512001037598,
+            "std": 0.5249116400084752,
+            "min": 3.2384862899780273,
+            "max": 4.523136138916016
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.7350555062294006,
+            "std": 0.6278170238332778,
+            "min": 0.24747586250305176,
+            "max": 1.6214423179626465
+          },
+          "one_step_pressure_l2": {
+            "mean": 3.041329671939214,
+            "std": 3.434093854465844,
+            "min": 0.4380415976047516,
+            "max": 7.893560886383057
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 21.912681074777723,
+            "std": 29.561588573588907,
+            "min": 0.26524693069248684,
+            "max": 63.710140651147015
+          },
+          "rollout_velocity_l2": {
+            "mean": 2.0973740617434182,
+            "std": 1.7190822212066386,
+            "min": 0.7436416745185852,
+            "max": 4.523074722290039
+          },
+          "rollout_pressure_l2": {
+            "mean": 9.60303544998169,
+            "std": 10.935106833977796,
+            "min": 1.7440730810165406,
+            "max": 25.066916275024415
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 184.20393030710224,
+            "std": 255.91139198925939,
+            "min": 3.149819301744081,
+            "max": 546.1172741348645
+          },
+          "pressure_base_l2": {
+            "mean": 237.20185979207358,
+            "std": 250.41448348481418,
+            "min": 53.88593673706055,
+            "max": 591.26708984375
+          },
+          "pressure_closure_l2": {
+            "mean": 2.8032697339852652,
+            "std": 3.2057920754209728,
+            "min": 0.3820924460887909,
+            "max": 7.333358287811279
+          },
+          "pressure_residual_only_l2": {
+            "mean": 234.94648234049478,
+            "std": 247.1545104856485,
+            "min": 53.80748748779297,
+            "max": 584.3972778320312
+          },
+          "pressure_residual_l2": {
+            "mean": 0.010346117584655682,
+            "std": 0.0032560222232474703,
+            "min": 0.0057498556561768055,
+            "max": 0.012885709293186665
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.010346117584655682,
+            "std": 0.0032560222232474703,
+            "min": 0.0057498556561768055,
+            "max": 0.012885709293186665
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 115.76328948680862,
+            "std": 49.60625080097492,
+            "min": 73.31190017808842,
+            "max": 185.35818753665006
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 114.99362866083781,
+            "std": 49.67793925907035,
+            "min": 72.61585422105426,
+            "max": 184.71023629586907
+          },
+          "router_entropy": {
+            "mean": 1.0116395950317383,
+            "std": 0.002322264790849833,
+            "min": 1.0096310377120972,
+            "max": 1.0148941278457642
+          },
+          "router_active_experts": {
+            "mean": 4.014767932489452,
+            "std": 0.013005092833267952,
+            "min": 4.0,
+            "max": 4.031645569620253
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 1.2624356349309285,
+            "std": 0.14622559381013345,
+            "min": 1.0562437772750854,
+            "max": 1.3791908025741577
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.285976804792881,
+            "std": 0.23714004353402612,
+            "min": 0.10110095888376236,
+            "max": 0.6207343339920044
+          },
+          "one_step_pressure_l2": {
+            "mean": 1.1813568870226543,
+            "std": 0.46912998892813823,
+            "min": 0.6338981986045837,
+            "max": 1.779649257659912
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 1.461361511692197,
+            "std": 1.1010782342877221,
+            "min": 0.6248264905403076,
+            "max": 3.0170457382623534
+          },
+          "rollout_velocity_l2": {
+            "mean": 1.2538338760534922,
+            "std": 0.9259250481003906,
+            "min": 0.48878363966941835,
+            "max": 2.5567009925842283
+          },
+          "rollout_pressure_l2": {
+            "mean": 3.9447295188903815,
+            "std": 4.038703226618183,
+            "min": 0.7201058149337769,
+            "max": 9.639692115783692
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 27.23772070358305,
+            "std": 37.833954305083886,
+            "min": 0.3716624101425859,
+            "max": 80.74285150929863
+          },
+          "pressure_base_l2": {
+            "mean": 236.7445271809896,
+            "std": 248.47860121059364,
+            "min": 54.68186950683594,
+            "max": 588.068603515625
+          },
+          "pressure_closure_l2": {
+            "mean": 1.1057178974151611,
+            "std": 0.3752472942983599,
+            "min": 0.6322388648986816,
+            "max": 1.550012230873108
+          },
+          "pressure_residual_only_l2": {
+            "mean": 236.9067637125651,
+            "std": 247.54440184104553,
+            "min": 55.213829040527344,
+            "max": 586.9020385742188
+          },
+          "pressure_residual_l2": {
+            "mean": 0.010338494786992669,
+            "std": 0.0058539971967144265,
+            "min": 0.0026357693132013083,
+            "max": 0.01681758277118206
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.010338494786992669,
+            "std": 0.0058539971967144265,
+            "min": 0.0026357693132013083,
+            "max": 0.01681758277118206
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 281.6789413403861,
+            "std": 132.53364856962463,
+            "min": 94.36807199671298,
+            "max": 381.1421874806851
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 281.70181048469703,
+            "std": 131.84690753495212,
+            "min": 95.35113098651549,
+            "max": 380.39790450470355
+          },
+          "router_entropy": {
+            "mean": 1.0096568663914998,
+            "std": 0.00016667244543700519,
+            "min": 1.009511947631836,
+            "max": 1.0098903179168701
+          },
+          "router_active_experts": {
+            "mean": 4.590717299578059,
+            "std": 0.2766208169296837,
+            "min": 4.215189873417722,
+            "max": 4.8734177215189876
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 2.3154279390970864,
+            "std": 0.4134439150682957,
+            "min": 1.875917673110962,
+            "max": 2.8691394329071045
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.5936007996400198,
+            "std": 0.5564747611499962,
+            "min": 0.18286080658435822,
+            "max": 1.3803189992904663
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.9567956725756327,
+            "std": 0.6403816466368957,
+            "min": 0.4842037558555603,
+            "max": 1.8621399402618408
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 1.2223299917800727,
+            "std": 1.1937271246482744,
+            "min": 0.28595998031970876,
+            "max": 2.9070202681152955
+          },
+          "rollout_velocity_l2": {
+            "mean": 1.3537370959917705,
+            "std": 0.8497262346259679,
+            "min": 0.6601966857910156,
+            "max": 2.5503915786743163
+          },
+          "rollout_pressure_l2": {
+            "mean": 2.7611515442530314,
+            "std": 2.3156156755555832,
+            "min": 0.9630750417709351,
+            "max": 6.030486106872559
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 11.007737857647392,
+            "std": 15.337947703070235,
+            "min": 0.04701017766356602,
+            "max": 32.69846246343053
+          },
+          "pressure_base_l2": {
+            "mean": 237.20185979207358,
+            "std": 250.41448348481418,
+            "min": 53.88593673706055,
+            "max": 591.26708984375
+          },
+          "pressure_closure_l2": {
+            "mean": 0.8140638073285421,
+            "std": 0.46962609276946404,
+            "min": 0.4672553539276123,
+            "max": 1.4779942035675049
+          },
+          "pressure_residual_only_l2": {
+            "mean": 237.29218037923178,
+            "std": 249.95227429632496,
+            "min": 54.232444763183594,
+            "max": 590.701904296875
+          },
+          "pressure_residual_l2": {
+            "mean": 0.006216351330901186,
+            "std": 0.0026728147257651363,
+            "min": 0.0024997100699692965,
+            "max": 0.008671196177601814
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.006216351330901186,
+            "std": 0.0026728147257651363,
+            "min": 0.0024997100699692965,
+            "max": 0.008671196177601814
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 463.295316069438,
+            "std": 122.59699599350473,
+            "min": 295.8952443358264,
+            "max": 586.0843162053748
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 462.9618952384981,
+            "std": 122.74846441925786,
+            "min": 295.27706656274916,
+            "max": 585.690386132349
+          },
+          "router_entropy": {
+            "mean": 1.0082485278447468,
+            "std": 0.00028071146625044516,
+            "min": 1.008002519607544,
+            "max": 1.0086413621902466
+          },
+          "router_active_experts": {
+            "mean": 4.518987341772152,
+            "std": 0.15528916640994062,
+            "min": 4.3734177215189876,
+            "max": 4.734177215189874
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "Periodic": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 0.18861198797821999,
+            "std": 0.025445894397546062,
+            "min": 0.15111197531223297,
+            "max": 0.2176050990819931
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.0362847107462585,
+            "std": 0.012361974644189635,
+            "min": 0.025019446387887,
+            "max": 0.055646877735853195
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.060017659328877926,
+            "std": 0.02289281104001968,
+            "min": 0.04056956246495247,
+            "max": 0.09706830978393555
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.00635281764489498,
+            "std": 0.003945379740785439,
+            "min": 0.0015240030912060097,
+            "max": 0.012332179595637646
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.08043185165151955,
+            "std": 0.061067097356213795,
+            "min": 0.03638128526508808,
+            "max": 0.18547719120979309
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.1225176453590393,
+            "std": 0.08930420686304114,
+            "min": 0.05494492277503014,
+            "max": 0.2759204000234604
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.05730470060237879,
+            "std": 0.05221217863109521,
+            "min": 0.01164105708693451,
+            "max": 0.14481684107190823
+          },
+          "pressure_base_l2": {
+            "mean": 0.9731569588184357,
+            "std": 0.2804977961721336,
+            "min": 0.7159730195999146,
+            "max": 1.4394993782043457
+          },
+          "pressure_closure_l2": {
+            "mean": 0.029080912470817566,
+            "std": 0.009150005610459585,
+            "min": 0.019189253449440002,
+            "max": 0.04294669255614281
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.3733009696006775,
+            "std": 0.2091716025155979,
+            "min": 1.2030649185180664,
+            "max": 1.7276753187179565
+          },
+          "pressure_residual_l2": {
+            "mean": 0.03066017758101225,
+            "std": 0.008405259018685555,
+            "min": 0.020490657538175583,
+            "max": 0.043840404599905014
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.03066017758101225,
+            "std": 0.008405259018685555,
+            "min": 0.020490657538175583,
+            "max": 0.043840404599905014
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.3692309209440328,
+            "std": 0.20122709313671613,
+            "min": 1.202427794661703,
+            "max": 1.7092887178252014
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.970241385405954,
+            "std": 0.2762633078416826,
+            "min": 0.7206418767005582,
+            "max": 1.4310270706309547
+          },
+          "router_entropy": {
+            "mean": 1.106823056936264,
+            "std": 0.0384180775885227,
+            "min": 1.05549156665802,
+            "max": 1.1545027494430542
+          },
+          "router_active_experts": {
+            "mean": 4.561708860759493,
+            "std": 0.09726830942597275,
+            "min": 4.449367088607595,
+            "max": 4.6645569620253164
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 0.20700060576200485,
+            "std": 0.015290356664343455,
+            "min": 0.18570111691951752,
+            "max": 0.22742564976215363
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.03624893957749009,
+            "std": 0.01461450095597636,
+            "min": 0.022269943729043007,
+            "max": 0.06070325896143913
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.05929069500416517,
+            "std": 0.02015482112921778,
+            "min": 0.04065844416618347,
+            "max": 0.09237728267908096
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.013986621975391769,
+            "std": 0.015387465892562574,
+            "min": 0.00014605435142357154,
+            "max": 0.03926771844988534
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.05757648050785064,
+            "std": 0.04235429630065532,
+            "min": 0.029371121153235435,
+            "max": 0.13078572750091552
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.07897601686418056,
+            "std": 0.0523394284585346,
+            "min": 0.043197432160377504,
+            "max": 0.16943258792161942
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.01516442914157497,
+            "std": 0.008621046184632454,
+            "min": 0.005585284331763357,
+            "max": 0.028960249866225526
+          },
+          "pressure_base_l2": {
+            "mean": 0.9951843023300171,
+            "std": 0.2678061346874441,
+            "min": 0.7147675156593323,
+            "max": 1.4201409816741943
+          },
+          "pressure_closure_l2": {
+            "mean": 0.024421681417152286,
+            "std": 0.012196246485200624,
+            "min": 0.014197047799825668,
+            "max": 0.04458356276154518
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.396761953830719,
+            "std": 0.1987186636867082,
+            "min": 1.2046102285385132,
+            "max": 1.7208895683288574
+          },
+          "pressure_residual_l2": {
+            "mean": 0.02414691331796348,
+            "std": 0.008119410008241153,
+            "min": 0.015059049241244793,
+            "max": 0.03303293138742447
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.02414691331796348,
+            "std": 0.008119410008241153,
+            "min": 0.015059049241244793,
+            "max": 0.03303293138742447
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.389995973321456,
+            "std": 0.1925850046446414,
+            "min": 1.2002936827985546,
+            "max": 1.7026392636419851
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 1.000339484573165,
+            "std": 0.26551589034466117,
+            "min": 0.726336889251878,
+            "max": 1.4226355462134639
+          },
+          "router_entropy": {
+            "mean": 1.0133137702941895,
+            "std": 0.07455566600694973,
+            "min": 0.9128735661506653,
+            "max": 1.1058744192123413
+          },
+          "router_active_experts": {
+            "mean": 4.110759493670886,
+            "std": 0.13437261864279826,
+            "min": 3.949367088607595,
+            "max": 4.2784810126582276
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 0.1896030753850937,
+            "std": 0.02413210037857422,
+            "min": 0.15384134650230408,
+            "max": 0.21692919731140137
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.03145957970991731,
+            "std": 0.00833581254840359,
+            "min": 0.023460201919078827,
+            "max": 0.043059341609478
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.049724843353033066,
+            "std": 0.01264846059298409,
+            "min": 0.038679275661706924,
+            "max": 0.07050256431102753
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.008637962378521668,
+            "std": 0.005302644563444279,
+            "min": 0.003246396274215378,
+            "max": 0.014972573683071456
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.05942099709063768,
+            "std": 0.019408390263358017,
+            "min": 0.04504015520215034,
+            "max": 0.09272594749927521
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.07955577727407218,
+            "std": 0.03124869334875771,
+            "min": 0.05598419979214668,
+            "max": 0.1332799419760704
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.012178790973737766,
+            "std": 0.006813382805180324,
+            "min": 0.00451131868036695,
+            "max": 0.02159362800386449
+          },
+          "pressure_base_l2": {
+            "mean": 0.9731569588184357,
+            "std": 0.2804977961721336,
+            "min": 0.7159730195999146,
+            "max": 1.4394993782043457
+          },
+          "pressure_closure_l2": {
+            "mean": 0.034224622417241335,
+            "std": 0.015012105999213009,
+            "min": 0.01927114464342594,
+            "max": 0.05877826735377312
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.3724583983421326,
+            "std": 0.20845781654199172,
+            "min": 1.19832181930542,
+            "max": 1.7248711585998535
+          },
+          "pressure_residual_l2": {
+            "mean": 0.0346671212464571,
+            "std": 0.00923954985519583,
+            "min": 0.02406884916126728,
+            "max": 0.04640507698059082
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.0346671212464571,
+            "std": 0.00923954985519583,
+            "min": 0.02406884916126728,
+            "max": 0.04640507698059082
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.3683795289525502,
+            "std": 0.20031547321291504,
+            "min": 1.2027085921432399,
+            "max": 1.7069921161555037
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.9686068468078781,
+            "std": 0.27541902844089655,
+            "min": 0.7129853699780717,
+            "max": 1.426389589339872
+          },
+          "router_entropy": {
+            "mean": 1.0963445901870728,
+            "std": 0.02184407717454621,
+            "min": 1.0755913257598877,
+            "max": 1.1267811059951782
+          },
+          "router_active_experts": {
+            "mean": 4.289556962025317,
+            "std": 0.17340934794530258,
+            "min": 4.094936708860759,
+            "max": 4.569620253164557
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "Steady": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 0.9810347408056259,
+            "std": 0.4522414011839859,
+            "min": 0.5617855191230774,
+            "max": 1.7214051485061646
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.05441795103251934,
+            "std": 0.024636467003945024,
+            "min": 0.03126542642712593,
+            "max": 0.09466182440519333
+          },
+          "one_step_pressure_l2": {
+            "mean": 2.1753500401973724,
+            "std": 1.4949129014944957,
+            "min": 0.7131635546684265,
+            "max": 4.456989288330078
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 7.665909076319689,
+            "std": 8.22012546552239,
+            "min": 0.3669883603117042,
+            "max": 20.819238218623266
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.39852123335003853,
+            "std": 0.1505932839711565,
+            "min": 0.22468148171901703,
+            "max": 0.6264324188232422
+          },
+          "rollout_pressure_l2": {
+            "mean": 2.4589310735464096,
+            "std": 1.5947686894730664,
+            "min": 0.7377546429634094,
+            "max": 4.677313804626465
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 7.287410530577351,
+            "std": 6.383306889110632,
+            "min": 1.1090611971973916,
+            "max": 16.906588046765958
+          },
+          "pressure_base_l2": {
+            "mean": 57.483375549316406,
+            "std": 7.010652571806172,
+            "min": 50.043724060058594,
+            "max": 68.98591613769531
+          },
+          "pressure_closure_l2": {
+            "mean": 2.190304383635521,
+            "std": 1.521610489812421,
+            "min": 0.6980946063995361,
+            "max": 4.507019519805908
+          },
+          "pressure_residual_only_l2": {
+            "mean": 55.83218574523926,
+            "std": 6.8389843300606845,
+            "min": 49.719478607177734,
+            "max": 67.09233093261719
+          },
+          "pressure_residual_l2": {
+            "mean": 0.03771763667464256,
+            "std": 0.02720356495333807,
+            "min": 0.013949699699878693,
+            "max": 0.08214592933654785
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.03771763667464256,
+            "std": 0.02720356495333807,
+            "min": 0.013949699699878693,
+            "max": 0.08214592933654785
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 45.17617397816455,
+            "std": 23.08429581114417,
+            "min": 14.364295138687384,
+            "max": 75.35114797998648
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 44.41143194182974,
+            "std": 23.23825282287415,
+            "min": 13.430930755177481,
+            "max": 74.81189740290407
+          },
+          "router_entropy": {
+            "mean": 1.0276467204093933,
+            "std": 0.004142747801307152,
+            "min": 1.0214790105819702,
+            "max": 1.0326786041259766
+          },
+          "router_active_experts": {
+            "mean": 4.0,
+            "std": 0.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 0.5941509231925011,
+            "std": 0.16515510880226153,
+            "min": 0.40162619948387146,
+            "max": 0.846176028251648
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.03204314038157463,
+            "std": 0.008643873642023571,
+            "min": 0.02186509408056736,
+            "max": 0.04508695378899574
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.7145168483257294,
+            "std": 0.5544989521910061,
+            "min": 0.3400295078754425,
+            "max": 1.6728532314300537
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.8829739363197807,
+            "std": 1.221696723640686,
+            "min": 0.06940864842533664,
+            "max": 2.987590824926724
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.24819019436836243,
+            "std": 0.11038673549101632,
+            "min": 0.1350518763065338,
+            "max": 0.4255087673664093
+          },
+          "rollout_pressure_l2": {
+            "mean": 1.0399151220917702,
+            "std": 0.5751862467431755,
+            "min": 0.32195475697517395,
+            "max": 1.6954816579818726
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 1.0554709064415209,
+            "std": 0.8419259183559891,
+            "min": 0.09646421831207766,
+            "max": 2.2264298211203504
+          },
+          "pressure_base_l2": {
+            "mean": 49.74282932281494,
+            "std": 4.035429920175208,
+            "min": 45.69498062133789,
+            "max": 56.34028625488281
+          },
+          "pressure_closure_l2": {
+            "mean": 0.7220565527677536,
+            "std": 0.535874788821262,
+            "min": 0.3570210039615631,
+            "max": 1.648290753364563
+          },
+          "pressure_residual_only_l2": {
+            "mean": 49.80976486206055,
+            "std": 4.1820270407019375,
+            "min": 46.04043960571289,
+            "max": 56.62080001831055
+          },
+          "pressure_residual_l2": {
+            "mean": 0.014855866436846554,
+            "std": 0.011501520643236764,
+            "min": 0.007218048442155123,
+            "max": 0.03472002223134041
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.014855866436846554,
+            "std": 0.011501520643236764,
+            "min": 0.007218048442155123,
+            "max": 0.03472002223134041
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 94.49361413033283,
+            "std": 18.42396921016852,
+            "min": 63.776065404297874,
+            "max": 112.7992485859355
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 94.47821435381155,
+            "std": 18.605805322860295,
+            "min": 63.42498774606673,
+            "max": 112.85786425481078
+          },
+          "router_entropy": {
+            "mean": 1.0119286179542542,
+            "std": 0.000546139653378974,
+            "min": 1.0112396478652954,
+            "max": 1.0124982595443726
+          },
+          "router_active_experts": {
+            "mean": 5.0,
+            "std": 0.0,
+            "min": 5.0,
+            "max": 5.0
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 0.5186661258339882,
+            "std": 0.07117816472421329,
+            "min": 0.4693491756916046,
+            "max": 0.6412465572357178
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.029493084643036127,
+            "std": 0.003766783946127351,
+            "min": 0.026860376819968224,
+            "max": 0.035959649831056595
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.868327870965004,
+            "std": 0.651085125121079,
+            "min": 0.2871192395687103,
+            "max": 1.8718892335891724
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 1.6537210596379728,
+            "std": 1.6208303558837913,
+            "min": 0.1110190137037713,
+            "max": 4.0552451875720426
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.22612494975328445,
+            "std": 0.02156005192113397,
+            "min": 0.19613637030124664,
+            "max": 0.25688207149505615
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.7640515118837357,
+            "std": 0.2109882330518616,
+            "min": 0.5614138245582581,
+            "max": 1.0883004665374756
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.9409134258485569,
+            "std": 0.495229520702159,
+            "min": 0.33912021895948957,
+            "max": 1.6626939671790675
+          },
+          "pressure_base_l2": {
+            "mean": 57.483375549316406,
+            "std": 7.010652571806172,
+            "min": 50.043724060058594,
+            "max": 68.98591613769531
+          },
+          "pressure_closure_l2": {
+            "mean": 0.8706894442439079,
+            "std": 0.6565869001566209,
+            "min": 0.2783757448196411,
+            "max": 1.878327488899231
+          },
+          "pressure_residual_only_l2": {
+            "mean": 57.40952396392822,
+            "std": 6.857834455485893,
+            "min": 50.30765151977539,
+            "max": 68.68524169921875
+          },
+          "pressure_residual_l2": {
+            "mean": 0.01500127196777612,
+            "std": 0.011769575884665331,
+            "min": 0.005250732880085707,
+            "max": 0.03423481434583664
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.01500127196777612,
+            "std": 0.011769575884665331,
+            "min": 0.005250732880085707,
+            "max": 0.03423481434583664
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 91.60459802580661,
+            "std": 8.077227188836234,
+            "min": 83.7881284463601,
+            "max": 104.16710234470055
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 91.52834890904973,
+            "std": 8.002677990561239,
+            "min": 83.77389910182015,
+            "max": 103.9356512007166
+          },
+          "router_entropy": {
+            "mean": 1.0077046751976013,
+            "std": 0.000505730419970797,
+            "min": 1.007217288017273,
+            "max": 1.0084588527679443
+          },
+          "router_active_experts": {
+            "mean": 4.454918032786885,
+            "std": 0.2821327668769791,
+            "min": 4.19672131147541,
+            "max": 4.901639344262295
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      }
+    },
+    "by_regime": {
+      "developing_periodic_shedding": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 0.15111197531223297,
+            "std": 0.0,
+            "min": 0.15111197531223297,
+            "max": 0.15111197531223297
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.055646877735853195,
+            "std": 0.0,
+            "min": 0.055646877735853195,
+            "max": 0.055646877735853195
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.09706830978393555,
+            "std": 0.0,
+            "min": 0.09706830978393555,
+            "max": 0.09706830978393555
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.004652380356560047,
+            "std": 0.0,
+            "min": 0.004652380356560047,
+            "max": 0.004652380356560047
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.18547719120979309,
+            "std": 0.0,
+            "min": 0.18547719120979309,
+            "max": 0.18547719120979309
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.2759204000234604,
+            "std": 0.0,
+            "min": 0.2759204000234604,
+            "max": 0.2759204000234604
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.14481684107190823,
+            "std": 0.0,
+            "min": 0.14481684107190823,
+            "max": 0.14481684107190823
+          },
+          "pressure_base_l2": {
+            "mean": 1.4394993782043457,
+            "std": 0.0,
+            "min": 1.4394993782043457,
+            "max": 1.4394993782043457
+          },
+          "pressure_closure_l2": {
+            "mean": 0.04294669255614281,
+            "std": 0.0,
+            "min": 0.04294669255614281,
+            "max": 0.04294669255614281
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.7276753187179565,
+            "std": 0.0,
+            "min": 1.7276753187179565,
+            "max": 1.7276753187179565
+          },
+          "pressure_residual_l2": {
+            "mean": 0.029834462329745293,
+            "std": 0.0,
+            "min": 0.029834462329745293,
+            "max": 0.029834462329745293
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.029834462329745293,
+            "std": 0.0,
+            "min": 0.029834462329745293,
+            "max": 0.029834462329745293
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.7092887178252014,
+            "std": 0.0,
+            "min": 1.7092887178252014,
+            "max": 1.7092887178252014
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 1.4310270706309547,
+            "std": 0.0,
+            "min": 1.4310270706309547,
+            "max": 1.4310270706309547
+          },
+          "router_entropy": {
+            "mean": 1.1545027494430542,
+            "std": 0.0,
+            "min": 1.1545027494430542,
+            "max": 1.1545027494430542
+          },
+          "router_active_experts": {
+            "mean": 4.481012658227848,
+            "std": 0.0,
+            "min": 4.481012658227848,
+            "max": 4.481012658227848
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 0.20178331434726715,
+            "std": 0.0,
+            "min": 0.20178331434726715,
+            "max": 0.20178331434726715
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.06070325896143913,
+            "std": 0.0,
+            "min": 0.06070325896143913,
+            "max": 0.06070325896143913
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.09237728267908096,
+            "std": 0.0,
+            "min": 0.09237728267908096,
+            "max": 0.09237728267908096
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.03926771844988534,
+            "std": 0.0,
+            "min": 0.03926771844988534,
+            "max": 0.03926771844988534
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.13078572750091552,
+            "std": 0.0,
+            "min": 0.13078572750091552,
+            "max": 0.13078572750091552
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.16943258792161942,
+            "std": 0.0,
+            "min": 0.16943258792161942,
+            "max": 0.16943258792161942
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.011279171569930765,
+            "std": 0.0,
+            "min": 0.011279171569930765,
+            "max": 0.011279171569930765
+          },
+          "pressure_base_l2": {
+            "mean": 1.4201409816741943,
+            "std": 0.0,
+            "min": 1.4201409816741943,
+            "max": 1.4201409816741943
+          },
+          "pressure_closure_l2": {
+            "mean": 0.04458356276154518,
+            "std": 0.0,
+            "min": 0.04458356276154518,
+            "max": 0.04458356276154518
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.7208895683288574,
+            "std": 0.0,
+            "min": 1.7208895683288574,
+            "max": 1.7208895683288574
+          },
+          "pressure_residual_l2": {
+            "mean": 0.03139375522732735,
+            "std": 0.0,
+            "min": 0.03139375522732735,
+            "max": 0.03139375522732735
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.03139375522732735,
+            "std": 0.0,
+            "min": 0.03139375522732735,
+            "max": 0.03139375522732735
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.7026392636419851,
+            "std": 0.0,
+            "min": 1.7026392636419851,
+            "max": 1.7026392636419851
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 1.4226355462134639,
+            "std": 0.0,
+            "min": 1.4226355462134639,
+            "max": 1.4226355462134639
+          },
+          "router_entropy": {
+            "mean": 1.0593690872192383,
+            "std": 0.0,
+            "min": 1.0593690872192383,
+            "max": 1.0593690872192383
+          },
+          "router_active_experts": {
+            "mean": 4.2784810126582276,
+            "std": 0.0,
+            "min": 4.2784810126582276,
+            "max": 4.2784810126582276
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 0.15384134650230408,
+            "std": 0.0,
+            "min": 0.15384134650230408,
+            "max": 0.15384134650230408
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.043059341609478,
+            "std": 0.0,
+            "min": 0.043059341609478,
+            "max": 0.043059341609478
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.07050256431102753,
+            "std": 0.0,
+            "min": 0.07050256431102753,
+            "max": 0.07050256431102753
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.014972573683071456,
+            "std": 0.0,
+            "min": 0.014972573683071456,
+            "max": 0.014972573683071456
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.09272594749927521,
+            "std": 0.0,
+            "min": 0.09272594749927521,
+            "max": 0.09272594749927521
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.1332799419760704,
+            "std": 0.0,
+            "min": 0.1332799419760704,
+            "max": 0.1332799419760704
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.02159362800386449,
+            "std": 0.0,
+            "min": 0.02159362800386449,
+            "max": 0.02159362800386449
+          },
+          "pressure_base_l2": {
+            "mean": 1.4394993782043457,
+            "std": 0.0,
+            "min": 1.4394993782043457,
+            "max": 1.4394993782043457
+          },
+          "pressure_closure_l2": {
+            "mean": 0.05877826735377312,
+            "std": 0.0,
+            "min": 0.05877826735377312,
+            "max": 0.05877826735377312
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.7248711585998535,
+            "std": 0.0,
+            "min": 1.7248711585998535,
+            "max": 1.7248711585998535
+          },
+          "pressure_residual_l2": {
+            "mean": 0.040832437574863434,
+            "std": 0.0,
+            "min": 0.040832437574863434,
+            "max": 0.040832437574863434
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.040832437574863434,
+            "std": 0.0,
+            "min": 0.040832437574863434,
+            "max": 0.040832437574863434
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.7069921161555037,
+            "std": 0.0,
+            "min": 1.7069921161555037,
+            "max": 1.7069921161555037
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 1.426389589339872,
+            "std": 0.0,
+            "min": 1.426389589339872,
+            "max": 1.426389589339872
+          },
+          "router_entropy": {
+            "mean": 1.0755913257598877,
+            "std": 0.0,
+            "min": 1.0755913257598877,
+            "max": 1.0755913257598877
+          },
+          "router_active_experts": {
+            "mean": 4.234177215189874,
+            "std": 0.0,
+            "min": 4.234177215189874,
+            "max": 4.234177215189874
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "high_re_2d_periodic_near_modeA": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 0.18047715723514557,
+            "std": 0.0,
+            "min": 0.18047715723514557,
+            "max": 0.18047715723514557
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.025019446387887,
+            "std": 0.0,
+            "min": 0.025019446387887,
+            "max": 0.025019446387887
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.041458845138549805,
+            "std": 0.0,
+            "min": 0.041458845138549805,
+            "max": 0.041458845138549805
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.0015240030912060097,
+            "std": 0.0,
+            "min": 0.0015240030912060097,
+            "max": 0.0015240030912060097
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.056322132050991056,
+            "std": 0.0,
+            "min": 0.056322132050991056,
+            "max": 0.056322132050991056
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.07188607975840569,
+            "std": 0.0,
+            "min": 0.07188607975840569,
+            "max": 0.07188607975840569
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.024437777125586035,
+            "std": 0.0,
+            "min": 0.024437777125586035,
+            "max": 0.024437777125586035
+          },
+          "pressure_base_l2": {
+            "mean": 0.7159730195999146,
+            "std": 0.0,
+            "min": 0.7159730195999146,
+            "max": 0.7159730195999146
+          },
+          "pressure_closure_l2": {
+            "mean": 0.0313885472714901,
+            "std": 0.0,
+            "min": 0.0313885472714901,
+            "max": 0.0313885472714901
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.2030649185180664,
+            "std": 0.0,
+            "min": 1.2030649185180664,
+            "max": 1.2030649185180664
+          },
+          "pressure_residual_l2": {
+            "mean": 0.043840404599905014,
+            "std": 0.0,
+            "min": 0.043840404599905014,
+            "max": 0.043840404599905014
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.043840404599905014,
+            "std": 0.0,
+            "min": 0.043840404599905014,
+            "max": 0.043840404599905014
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.202427794661703,
+            "std": 0.0,
+            "min": 1.202427794661703,
+            "max": 1.202427794661703
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.7206418767005582,
+            "std": 0.0,
+            "min": 0.7206418767005582,
+            "max": 0.7206418767005582
+          },
+          "router_entropy": {
+            "mean": 1.05549156665802,
+            "std": 0.0,
+            "min": 1.05549156665802,
+            "max": 1.05549156665802
+          },
+          "router_active_experts": {
+            "mean": 4.651898734177215,
+            "std": 0.0,
+            "min": 4.651898734177215,
+            "max": 4.651898734177215
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 0.18570111691951752,
+            "std": 0.0,
+            "min": 0.18570111691951752,
+            "max": 0.18570111691951752
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.029273133724927902,
+            "std": 0.0,
+            "min": 0.029273133724927902,
+            "max": 0.029273133724927902
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.05832931771874428,
+            "std": 0.0,
+            "min": 0.05832931771874428,
+            "max": 0.05832931771874428
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.013314051334569994,
+            "std": 0.0,
+            "min": 0.013314051334569994,
+            "max": 0.013314051334569994
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.03704107776284218,
+            "std": 0.0,
+            "min": 0.03704107776284218,
+            "max": 0.03704107776284218
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.05203927904367447,
+            "std": 0.0,
+            "min": 0.05203927904367447,
+            "max": 0.05203927904367447
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.028960249866225526,
+            "std": 0.0,
+            "min": 0.028960249866225526,
+            "max": 0.028960249866225526
+          },
+          "pressure_base_l2": {
+            "mean": 0.7147675156593323,
+            "std": 0.0,
+            "min": 0.7147675156593323,
+            "max": 0.7147675156593323
+          },
+          "pressure_closure_l2": {
+            "mean": 0.023610861971974373,
+            "std": 0.0,
+            "min": 0.023610861971974373,
+            "max": 0.023610861971974373
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.2046102285385132,
+            "std": 0.0,
+            "min": 1.2046102285385132,
+            "max": 1.2046102285385132
+          },
+          "pressure_residual_l2": {
+            "mean": 0.03303293138742447,
+            "std": 0.0,
+            "min": 0.03303293138742447,
+            "max": 0.03303293138742447
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.03303293138742447,
+            "std": 0.0,
+            "min": 0.03303293138742447,
+            "max": 0.03303293138742447
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.2002936827985546,
+            "std": 0.0,
+            "min": 1.2002936827985546,
+            "max": 1.2002936827985546
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.726336889251878,
+            "std": 0.0,
+            "min": 0.726336889251878,
+            "max": 0.726336889251878
+          },
+          "router_entropy": {
+            "mean": 0.9128735661506653,
+            "std": 0.0,
+            "min": 0.9128735661506653,
+            "max": 0.9128735661506653
+          },
+          "router_active_experts": {
+            "mean": 3.949367088607595,
+            "std": 0.0,
+            "min": 3.949367088607595,
+            "max": 3.949367088607595
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 0.18223996460437775,
+            "std": 0.0,
+            "min": 0.18223996460437775,
+            "max": 0.18223996460437775
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.023460201919078827,
+            "std": 0.0,
+            "min": 0.023460201919078827,
+            "max": 0.023460201919078827
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.04045090079307556,
+            "std": 0.0,
+            "min": 0.04045090079307556,
+            "max": 0.04045090079307556
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.003246396274215378,
+            "std": 0.0,
+            "min": 0.003246396274215378,
+            "max": 0.003246396274215378
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.05237277522683144,
+            "std": 0.0,
+            "min": 0.05237277522683144,
+            "max": 0.05237277522683144
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.0666507676243782,
+            "std": 0.0,
+            "min": 0.0666507676243782,
+            "max": 0.0666507676243782
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.015590713088080077,
+            "std": 0.0,
+            "min": 0.015590713088080077,
+            "max": 0.015590713088080077
+          },
+          "pressure_base_l2": {
+            "mean": 0.7159730195999146,
+            "std": 0.0,
+            "min": 0.7159730195999146,
+            "max": 0.7159730195999146
+          },
+          "pressure_closure_l2": {
+            "mean": 0.03322478383779526,
+            "std": 0.0,
+            "min": 0.03322478383779526,
+            "max": 0.03322478383779526
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.19832181930542,
+            "std": 0.0,
+            "min": 1.19832181930542,
+            "max": 1.19832181930542
+          },
+          "pressure_residual_l2": {
+            "mean": 0.04640507698059082,
+            "std": 0.0,
+            "min": 0.04640507698059082,
+            "max": 0.04640507698059082
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.04640507698059082,
+            "std": 0.0,
+            "min": 0.04640507698059082,
+            "max": 0.04640507698059082
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.2027085921432399,
+            "std": 0.0,
+            "min": 1.2027085921432399,
+            "max": 1.2027085921432399
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.7129853699780717,
+            "std": 0.0,
+            "min": 0.7129853699780717,
+            "max": 0.7129853699780717
+          },
+          "router_entropy": {
+            "mean": 1.0756175518035889,
+            "std": 0.0,
+            "min": 1.0756175518035889,
+            "max": 1.0756175518035889
+          },
+          "router_active_experts": {
+            "mean": 4.094936708860759,
+            "std": 0.0,
+            "min": 4.094936708860759,
+            "max": 4.094936708860759
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "hopf_transition": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 3.8653512001037598,
+            "std": 0.5249116400084752,
+            "min": 3.2384862899780273,
+            "max": 4.523136138916016
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.7350555062294006,
+            "std": 0.6278170238332778,
+            "min": 0.24747586250305176,
+            "max": 1.6214423179626465
+          },
+          "one_step_pressure_l2": {
+            "mean": 3.041329671939214,
+            "std": 3.434093854465844,
+            "min": 0.4380415976047516,
+            "max": 7.893560886383057
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 21.912681074777723,
+            "std": 29.561588573588907,
+            "min": 0.26524693069248684,
+            "max": 63.710140651147015
+          },
+          "rollout_velocity_l2": {
+            "mean": 2.0973740617434182,
+            "std": 1.7190822212066386,
+            "min": 0.7436416745185852,
+            "max": 4.523074722290039
+          },
+          "rollout_pressure_l2": {
+            "mean": 9.60303544998169,
+            "std": 10.935106833977796,
+            "min": 1.7440730810165406,
+            "max": 25.066916275024415
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 184.20393030710224,
+            "std": 255.91139198925939,
+            "min": 3.149819301744081,
+            "max": 546.1172741348645
+          },
+          "pressure_base_l2": {
+            "mean": 237.20185979207358,
+            "std": 250.41448348481418,
+            "min": 53.88593673706055,
+            "max": 591.26708984375
+          },
+          "pressure_closure_l2": {
+            "mean": 2.8032697339852652,
+            "std": 3.2057920754209728,
+            "min": 0.3820924460887909,
+            "max": 7.333358287811279
+          },
+          "pressure_residual_only_l2": {
+            "mean": 234.94648234049478,
+            "std": 247.1545104856485,
+            "min": 53.80748748779297,
+            "max": 584.3972778320312
+          },
+          "pressure_residual_l2": {
+            "mean": 0.010346117584655682,
+            "std": 0.0032560222232474703,
+            "min": 0.0057498556561768055,
+            "max": 0.012885709293186665
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.010346117584655682,
+            "std": 0.0032560222232474703,
+            "min": 0.0057498556561768055,
+            "max": 0.012885709293186665
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 115.76328948680862,
+            "std": 49.60625080097492,
+            "min": 73.31190017808842,
+            "max": 185.35818753665006
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 114.99362866083781,
+            "std": 49.67793925907035,
+            "min": 72.61585422105426,
+            "max": 184.71023629586907
+          },
+          "router_entropy": {
+            "mean": 1.0116395950317383,
+            "std": 0.002322264790849833,
+            "min": 1.0096310377120972,
+            "max": 1.0148941278457642
+          },
+          "router_active_experts": {
+            "mean": 4.014767932489452,
+            "std": 0.013005092833267952,
+            "min": 4.0,
+            "max": 4.031645569620253
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 1.2624356349309285,
+            "std": 0.14622559381013345,
+            "min": 1.0562437772750854,
+            "max": 1.3791908025741577
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.285976804792881,
+            "std": 0.23714004353402612,
+            "min": 0.10110095888376236,
+            "max": 0.6207343339920044
+          },
+          "one_step_pressure_l2": {
+            "mean": 1.1813568870226543,
+            "std": 0.46912998892813823,
+            "min": 0.6338981986045837,
+            "max": 1.779649257659912
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 1.461361511692197,
+            "std": 1.1010782342877221,
+            "min": 0.6248264905403076,
+            "max": 3.0170457382623534
+          },
+          "rollout_velocity_l2": {
+            "mean": 1.2538338760534922,
+            "std": 0.9259250481003906,
+            "min": 0.48878363966941835,
+            "max": 2.5567009925842283
+          },
+          "rollout_pressure_l2": {
+            "mean": 3.9447295188903815,
+            "std": 4.038703226618183,
+            "min": 0.7201058149337769,
+            "max": 9.639692115783692
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 27.23772070358305,
+            "std": 37.833954305083886,
+            "min": 0.3716624101425859,
+            "max": 80.74285150929863
+          },
+          "pressure_base_l2": {
+            "mean": 236.7445271809896,
+            "std": 248.47860121059364,
+            "min": 54.68186950683594,
+            "max": 588.068603515625
+          },
+          "pressure_closure_l2": {
+            "mean": 1.1057178974151611,
+            "std": 0.3752472942983599,
+            "min": 0.6322388648986816,
+            "max": 1.550012230873108
+          },
+          "pressure_residual_only_l2": {
+            "mean": 236.9067637125651,
+            "std": 247.54440184104553,
+            "min": 55.213829040527344,
+            "max": 586.9020385742188
+          },
+          "pressure_residual_l2": {
+            "mean": 0.010338494786992669,
+            "std": 0.0058539971967144265,
+            "min": 0.0026357693132013083,
+            "max": 0.01681758277118206
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.010338494786992669,
+            "std": 0.0058539971967144265,
+            "min": 0.0026357693132013083,
+            "max": 0.01681758277118206
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 281.6789413403861,
+            "std": 132.53364856962463,
+            "min": 94.36807199671298,
+            "max": 381.1421874806851
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 281.70181048469703,
+            "std": 131.84690753495212,
+            "min": 95.35113098651549,
+            "max": 380.39790450470355
+          },
+          "router_entropy": {
+            "mean": 1.0096568663914998,
+            "std": 0.00016667244543700519,
+            "min": 1.009511947631836,
+            "max": 1.0098903179168701
+          },
+          "router_active_experts": {
+            "mean": 4.590717299578059,
+            "std": 0.2766208169296837,
+            "min": 4.215189873417722,
+            "max": 4.8734177215189876
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 2.3154279390970864,
+            "std": 0.4134439150682957,
+            "min": 1.875917673110962,
+            "max": 2.8691394329071045
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.5936007996400198,
+            "std": 0.5564747611499962,
+            "min": 0.18286080658435822,
+            "max": 1.3803189992904663
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.9567956725756327,
+            "std": 0.6403816466368957,
+            "min": 0.4842037558555603,
+            "max": 1.8621399402618408
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 1.2223299917800727,
+            "std": 1.1937271246482744,
+            "min": 0.28595998031970876,
+            "max": 2.9070202681152955
+          },
+          "rollout_velocity_l2": {
+            "mean": 1.3537370959917705,
+            "std": 0.8497262346259679,
+            "min": 0.6601966857910156,
+            "max": 2.5503915786743163
+          },
+          "rollout_pressure_l2": {
+            "mean": 2.7611515442530314,
+            "std": 2.3156156755555832,
+            "min": 0.9630750417709351,
+            "max": 6.030486106872559
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 11.007737857647392,
+            "std": 15.337947703070235,
+            "min": 0.04701017766356602,
+            "max": 32.69846246343053
+          },
+          "pressure_base_l2": {
+            "mean": 237.20185979207358,
+            "std": 250.41448348481418,
+            "min": 53.88593673706055,
+            "max": 591.26708984375
+          },
+          "pressure_closure_l2": {
+            "mean": 0.8140638073285421,
+            "std": 0.46962609276946404,
+            "min": 0.4672553539276123,
+            "max": 1.4779942035675049
+          },
+          "pressure_residual_only_l2": {
+            "mean": 237.29218037923178,
+            "std": 249.95227429632496,
+            "min": 54.232444763183594,
+            "max": 590.701904296875
+          },
+          "pressure_residual_l2": {
+            "mean": 0.006216351330901186,
+            "std": 0.0026728147257651363,
+            "min": 0.0024997100699692965,
+            "max": 0.008671196177601814
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.006216351330901186,
+            "std": 0.0026728147257651363,
+            "min": 0.0024997100699692965,
+            "max": 0.008671196177601814
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 463.295316069438,
+            "std": 122.59699599350473,
+            "min": 295.8952443358264,
+            "max": 586.0843162053748
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 462.9618952384981,
+            "std": 122.74846441925786,
+            "min": 295.27706656274916,
+            "max": 585.690386132349
+          },
+          "router_entropy": {
+            "mean": 1.0082485278447468,
+            "std": 0.00028071146625044516,
+            "min": 1.008002519607544,
+            "max": 1.0086413621902466
+          },
+          "router_active_experts": {
+            "mean": 4.518987341772152,
+            "std": 0.15528916640994062,
+            "min": 4.3734177215189876,
+            "max": 4.734177215189874
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "mature_periodic_shedding": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 0.2114294096827507,
+            "std": 0.006175689399242401,
+            "min": 0.2052537202835083,
+            "max": 0.2176050990819931
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.032236259430646896,
+            "std": 0.006192497909069061,
+            "min": 0.026043761521577835,
+            "max": 0.03842875733971596
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.050771741196513176,
+            "std": 0.010202178731560707,
+            "min": 0.04056956246495247,
+            "max": 0.06097391992807388
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.00961744356590693,
+            "std": 0.002714736029730715,
+            "min": 0.0069027075361762155,
+            "max": 0.012332179595637646
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.039964041672647,
+            "std": 0.0035827564075589166,
+            "min": 0.03638128526508808,
+            "max": 0.043546798080205916
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.07113205082714558,
+            "std": 0.016187128052115442,
+            "min": 0.05494492277503014,
+            "max": 0.08731917887926102
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.029982092106010463,
+            "std": 0.01834103501907595,
+            "min": 0.01164105708693451,
+            "max": 0.048323127125086414
+          },
+          "pressure_base_l2": {
+            "mean": 0.8685777187347412,
+            "std": 0.06791019439697266,
+            "min": 0.8006675243377686,
+            "max": 0.9364879131317139
+          },
+          "pressure_closure_l2": {
+            "mean": 0.02099420502781868,
+            "std": 0.0018049515783786774,
+            "min": 0.019189253449440002,
+            "max": 0.022799156606197357
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.2812318205833435,
+            "std": 0.04180961847305298,
+            "min": 1.2394222021102905,
+            "max": 1.3230414390563965
+          },
+          "pressure_residual_l2": {
+            "mean": 0.024482921697199345,
+            "std": 0.003992264159023762,
+            "min": 0.020490657538175583,
+            "max": 0.028475185856223106
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.024482921697199345,
+            "std": 0.003992264159023762,
+            "min": 0.020490657538175583,
+            "max": 0.028475185856223106
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.2826035856446132,
+            "std": 0.041822203729726115,
+            "min": 1.2407813819148872,
+            "max": 1.3244257893743394
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.8646482971461513,
+            "std": 0.06466257807951936,
+            "min": 0.799985719066632,
+            "max": 0.9293108752256707
+          },
+          "router_entropy": {
+            "mean": 1.108648955821991,
+            "std": 0.0222356915473938,
+            "min": 1.0864132642745972,
+            "max": 1.1308846473693848
+          },
+          "router_active_experts": {
+            "mean": 4.556962025316455,
+            "std": 0.10759493670886089,
+            "min": 4.449367088607595,
+            "max": 4.6645569620253164
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 0.22025899589061737,
+            "std": 0.007166653871536255,
+            "min": 0.21309234201908112,
+            "max": 0.22742564976215363
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.027509682811796665,
+            "std": 0.005239739082753658,
+            "min": 0.022269943729043007,
+            "max": 0.032749421894550323
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.043228089809417725,
+            "std": 0.002569645643234253,
+            "min": 0.04065844416618347,
+            "max": 0.04579773545265198
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.001682359058555875,
+            "std": 0.0015363047071323035,
+            "min": 0.00014605435142357154,
+            "max": 0.0032186637656881783
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.03123955838382244,
+            "std": 0.0018684372305870067,
+            "min": 0.029371121153235435,
+            "max": 0.03310799561440945
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.04721610024571419,
+            "std": 0.004018668085336685,
+            "min": 0.043197432160377504,
+            "max": 0.051234768331050874
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.010209147565071797,
+            "std": 0.004623863233308441,
+            "min": 0.005585284331763357,
+            "max": 0.014833010798380238
+          },
+          "pressure_base_l2": {
+            "mean": 0.9229143559932709,
+            "std": 0.09277084469795227,
+            "min": 0.8301435112953186,
+            "max": 1.0156852006912231
+          },
+          "pressure_closure_l2": {
+            "mean": 0.014746150467544794,
+            "std": 0.0005491026677191257,
+            "min": 0.014197047799825668,
+            "max": 0.01529525313526392
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.3307740092277527,
+            "std": 0.060276925563812256,
+            "min": 1.2704970836639404,
+            "max": 1.391050934791565
+          },
+          "pressure_residual_l2": {
+            "mean": 0.016080483328551054,
+            "std": 0.001021434087306261,
+            "min": 0.015059049241244793,
+            "max": 0.017101917415857315
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.016080483328551054,
+            "std": 0.001021434087306261,
+            "min": 0.015059049241244793,
+            "max": 0.017101917415857315
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.328525473422642,
+            "std": 0.05943864621693573,
+            "min": 1.2690868272057063,
+            "max": 1.3879641196395778
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.9261927514136592,
+            "std": 0.09377603666691842,
+            "min": 0.8324167147467408,
+            "max": 1.0199687880805777
+          },
+          "router_entropy": {
+            "mean": 1.0405062139034271,
+            "std": 0.06536820530891418,
+            "min": 0.9751380085945129,
+            "max": 1.1058744192123413
+          },
+          "router_active_experts": {
+            "mean": 4.1075949367088604,
+            "std": 0.09493670886075956,
+            "min": 4.012658227848101,
+            "max": 4.2025316455696204
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 0.21116549521684647,
+            "std": 0.005763702094554901,
+            "min": 0.20540179312229156,
+            "max": 0.21692919731140137
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.029659387655556202,
+            "std": 0.006038094870746136,
+            "min": 0.023621292784810066,
+            "max": 0.03569748252630234
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.04397295415401459,
+            "std": 0.005293678492307663,
+            "min": 0.038679275661706924,
+            "max": 0.04926663264632225
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.008166439778399917,
+            "std": 0.004627699477235694,
+            "min": 0.0035387403011642228,
+            "max": 0.012794139255635611
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.046292632818222046,
+            "std": 0.0012524776160717024,
+            "min": 0.04504015520215034,
+            "max": 0.04754511043429375
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.059146199747920035,
+            "std": 0.003161999955773355,
+            "min": 0.05598419979214668,
+            "max": 0.06230819970369339
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.005765411401503247,
+            "std": 0.0012540927211362979,
+            "min": 0.00451131868036695,
+            "max": 0.007019504122639545
+          },
+          "pressure_base_l2": {
+            "mean": 0.8685777187347412,
+            "std": 0.06791019439697266,
+            "min": 0.8006675243377686,
+            "max": 0.9364879131317139
+          },
+          "pressure_closure_l2": {
+            "mean": 0.022447719238698483,
+            "std": 0.003176574595272541,
+            "min": 0.01927114464342594,
+            "max": 0.025624293833971024
+          },
+          "pressure_residual_only_l2": {
+            "mean": 1.2833203077316284,
+            "std": 0.041286468505859375,
+            "min": 1.242033839225769,
+            "max": 1.3246067762374878
+          },
+          "pressure_residual_l2": {
+            "mean": 0.025715485215187073,
+            "std": 0.0016466360539197922,
+            "min": 0.02406884916126728,
+            "max": 0.027362121269106865
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.025715485215187073,
+            "std": 0.0016466360539197922,
+            "min": 0.02406884916126728,
+            "max": 0.027362121269106865
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 1.2819087037557289,
+            "std": 0.04150544842587245,
+            "min": 1.2404032553298563,
+            "max": 1.3234141521816012
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 0.8675262139567845,
+            "std": 0.06356334422208082,
+            "min": 0.8039628697347038,
+            "max": 0.9310895581788654
+          },
+          "router_entropy": {
+            "mean": 1.1170847415924072,
+            "std": 0.009696364402770996,
+            "min": 1.1073883771896362,
+            "max": 1.1267811059951782
+          },
+          "router_active_experts": {
+            "mean": 4.4145569620253164,
+            "std": 0.1550632911392409,
+            "min": 4.2594936708860756,
+            "max": 4.569620253164557
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "pre_hopf_steady": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 0.5617855191230774,
+            "std": 0.0,
+            "min": 0.5617855191230774,
+            "max": 0.5617855191230774
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.03126542642712593,
+            "std": 0.0,
+            "min": 0.03126542642712593,
+            "max": 0.03126542642712593
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.7131635546684265,
+            "std": 0.0,
+            "min": 0.7131635546684265,
+            "max": 0.7131635546684265
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.3669883603117042,
+            "std": 0.0,
+            "min": 0.3669883603117042,
+            "max": 0.3669883603117042
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.22468148171901703,
+            "std": 0.0,
+            "min": 0.22468148171901703,
+            "max": 0.22468148171901703
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.7377546429634094,
+            "std": 0.0,
+            "min": 0.7377546429634094,
+            "max": 0.7377546429634094
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 1.1090611971973916,
+            "std": 0.0,
+            "min": 1.1090611971973916,
+            "max": 1.1090611971973916
+          },
+          "pressure_base_l2": {
+            "mean": 50.043724060058594,
+            "std": 0.0,
+            "min": 50.043724060058594,
+            "max": 50.043724060058594
+          },
+          "pressure_closure_l2": {
+            "mean": 0.6980946063995361,
+            "std": 0.0,
+            "min": 0.6980946063995361,
+            "max": 0.6980946063995361
+          },
+          "pressure_residual_only_l2": {
+            "mean": 49.719478607177734,
+            "std": 0.0,
+            "min": 49.719478607177734,
+            "max": 49.719478607177734
+          },
+          "pressure_residual_l2": {
+            "mean": 0.013949699699878693,
+            "std": 0.0,
+            "min": 0.013949699699878693,
+            "max": 0.013949699699878693
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.013949699699878693,
+            "std": 0.0,
+            "min": 0.013949699699878693,
+            "max": 0.013949699699878693
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 75.35114797998648,
+            "std": 0.0,
+            "min": 75.35114797998648,
+            "max": 75.35114797998648
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 74.81189740290407,
+            "std": 0.0,
+            "min": 74.81189740290407,
+            "max": 74.81189740290407
+          },
+          "router_entropy": {
+            "mean": 1.0214790105819702,
+            "std": 0.0,
+            "min": 1.0214790105819702,
+            "max": 1.0214790105819702
+          },
+          "router_active_experts": {
+            "mean": 4.0,
+            "std": 0.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 0.40162619948387146,
+            "std": 0.0,
+            "min": 0.40162619948387146,
+            "max": 0.40162619948387146
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.02186509408056736,
+            "std": 0.0,
+            "min": 0.02186509408056736,
+            "max": 0.02186509408056736
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.40275412797927856,
+            "std": 0.0,
+            "min": 0.40275412797927856,
+            "max": 0.40275412797927856
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.3882189801112871,
+            "std": 0.0,
+            "min": 0.3882189801112871,
+            "max": 0.3882189801112871
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.1350518763065338,
+            "std": 0.0,
+            "min": 0.1350518763065338,
+            "max": 0.1350518763065338
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.32195475697517395,
+            "std": 0.0,
+            "min": 0.32195475697517395,
+            "max": 0.32195475697517395
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.09646421831207766,
+            "std": 0.0,
+            "min": 0.09646421831207766,
+            "max": 0.09646421831207766
+          },
+          "pressure_base_l2": {
+            "mean": 45.69498062133789,
+            "std": 0.0,
+            "min": 45.69498062133789,
+            "max": 45.69498062133789
+          },
+          "pressure_closure_l2": {
+            "mean": 0.43876951932907104,
+            "std": 0.0,
+            "min": 0.43876951932907104,
+            "max": 0.43876951932907104
+          },
+          "pressure_residual_only_l2": {
+            "mean": 46.04043960571289,
+            "std": 0.0,
+            "min": 46.04043960571289,
+            "max": 46.04043960571289
+          },
+          "pressure_residual_l2": {
+            "mean": 0.009602142497897148,
+            "std": 0.0,
+            "min": 0.009602142497897148,
+            "max": 0.009602142497897148
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.009602142497897148,
+            "std": 0.0,
+            "min": 0.009602142497897148,
+            "max": 0.009602142497897148
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 112.7992485859355,
+            "std": 0.0,
+            "min": 112.7992485859355,
+            "max": 112.7992485859355
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 112.85786425481078,
+            "std": 0.0,
+            "min": 112.85786425481078,
+            "max": 112.85786425481078
+          },
+          "router_entropy": {
+            "mean": 1.0112396478652954,
+            "std": 0.0,
+            "min": 1.0112396478652954,
+            "max": 1.0112396478652954
+          },
+          "router_active_experts": {
+            "mean": 5.0,
+            "std": 0.0,
+            "min": 5.0,
+            "max": 5.0
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 0.4693491756916046,
+            "std": 0.0,
+            "min": 0.4693491756916046,
+            "max": 0.4693491756916046
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.026860376819968224,
+            "std": 0.0,
+            "min": 0.026860376819968224,
+            "max": 0.026860376819968224
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.2871192395687103,
+            "std": 0.0,
+            "min": 0.2871192395687103,
+            "max": 0.2871192395687103
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 0.22622967458422627,
+            "std": 0.0,
+            "min": 0.22622967458422627,
+            "max": 0.22622967458422627
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.22836104035377502,
+            "std": 0.0,
+            "min": 0.22836104035377502,
+            "max": 0.22836104035377502
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.5614138245582581,
+            "std": 0.0,
+            "min": 0.5614138245582581,
+            "max": 0.5614138245582581
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 0.33912021895948957,
+            "std": 0.0,
+            "min": 0.33912021895948957,
+            "max": 0.33912021895948957
+          },
+          "pressure_base_l2": {
+            "mean": 50.043724060058594,
+            "std": 0.0,
+            "min": 50.043724060058594,
+            "max": 50.043724060058594
+          },
+          "pressure_closure_l2": {
+            "mean": 0.2783757448196411,
+            "std": 0.0,
+            "min": 0.2783757448196411,
+            "max": 0.2783757448196411
+          },
+          "pressure_residual_only_l2": {
+            "mean": 50.30765151977539,
+            "std": 0.0,
+            "min": 50.30765151977539,
+            "max": 50.30765151977539
+          },
+          "pressure_residual_l2": {
+            "mean": 0.005562652833759785,
+            "std": 0.0,
+            "min": 0.005562652833759785,
+            "max": 0.005562652833759785
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.005562652833759785,
+            "std": 0.0,
+            "min": 0.005562652833759785,
+            "max": 0.005562652833759785
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 93.15524360781811,
+            "std": 0.0,
+            "min": 93.15524360781811,
+            "max": 93.15524360781811
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 93.15630378097784,
+            "std": 0.0,
+            "min": 93.15630378097784,
+            "max": 93.15630378097784
+          },
+          "router_entropy": {
+            "mean": 1.0084588527679443,
+            "std": 0.0,
+            "min": 1.0084588527679443,
+            "max": 1.0084588527679443
+          },
+          "router_active_experts": {
+            "mean": 4.901639344262295,
+            "std": 0.0,
+            "min": 4.901639344262295,
+            "max": 4.901639344262295
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      },
+      "steady_wake": {
+        "V15_Base": {
+          "rhs_l2": {
+            "mean": 1.1207844813664753,
+            "std": 0.4411081726506257,
+            "min": 0.6745092868804932,
+            "max": 1.7214051485061646
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.062135459234317146,
+            "std": 0.023896323508077494,
+            "min": 0.03793010488152504,
+            "max": 0.09466182440519333
+          },
+          "one_step_pressure_l2": {
+            "mean": 2.6627455353736877,
+            "std": 1.4245942004188163,
+            "min": 0.9720746874809265,
+            "max": 4.456989288330078
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 10.09888264832235,
+            "std": 8.149632422200773,
+            "min": 1.073974960407209,
+            "max": 20.819238218623266
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.4564678172270457,
+            "std": 0.1296401040222369,
+            "min": 0.31195518374443054,
+            "max": 0.6264324188232422
+          },
+          "rollout_pressure_l2": {
+            "mean": 3.0326565504074097,
+            "std": 1.4402797897286004,
+            "min": 1.169685959815979,
+            "max": 4.677313804626465
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 9.34686030837067,
+            "std": 6.1125670198161846,
+            "min": 1.9361424420231232,
+            "max": 16.906588046765958
+          },
+          "pressure_base_l2": {
+            "mean": 59.96325937906901,
+            "std": 6.397893200668187,
+            "min": 54.86600875854492,
+            "max": 68.98591613769531
+          },
+          "pressure_closure_l2": {
+            "mean": 2.6877076427141824,
+            "std": 1.4482488166890721,
+            "min": 0.9633645415306091,
+            "max": 4.507019519805908
+          },
+          "pressure_residual_only_l2": {
+            "mean": 57.869754791259766,
+            "std": 6.7642830430541885,
+            "min": 51.05815887451172,
+            "max": 67.09233093261719
+          },
+          "pressure_residual_l2": {
+            "mean": 0.045640282332897186,
+            "std": 0.027122659739086574,
+            "min": 0.017191316932439804,
+            "max": 0.08214592933654785
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.045640282332897186,
+            "std": 0.027122659739086574,
+            "min": 0.017191316932439804,
+            "max": 0.08214592933654785
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 35.11784931089057,
+            "std": 17.488092244325628,
+            "min": 14.364295138687384,
+            "max": 57.14441383862105
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 34.27794345480496,
+            "std": 17.58611677848286,
+            "min": 13.430930755177481,
+            "max": 56.447036258509904
+          },
+          "router_entropy": {
+            "mean": 1.029702623685201,
+            "std": 0.0024446252628449396,
+            "min": 1.0266908407211304,
+            "max": 1.0326786041259766
+          },
+          "router_active_experts": {
+            "mean": 4.0,
+            "std": 0.0,
+            "min": 4.0,
+            "max": 4.0
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_LargeROM": {
+          "rhs_l2": {
+            "mean": 0.6583258310953776,
+            "std": 0.14104823548681863,
+            "min": 0.5062962174415588,
+            "max": 0.846176028251648
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.035435822481910385,
+            "std": 0.007319897634753636,
+            "min": 0.027367865666747093,
+            "max": 0.04508695378899574
+          },
+          "one_step_pressure_l2": {
+            "mean": 0.8184377551078796,
+            "std": 0.6056075994477508,
+            "min": 0.3400295078754425,
+            "max": 1.6728532314300537
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 1.0478922550559453,
+            "std": 1.3715921303313154,
+            "min": 0.06940864842533664,
+            "max": 2.987590824926724
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.2859029670556386,
+            "std": 0.10275194532515093,
+            "min": 0.18117716908454895,
+            "max": 0.4255087673664093
+          },
+          "rollout_pressure_l2": {
+            "mean": 1.2792352437973022,
+            "std": 0.4604589833098408,
+            "min": 0.6374210119247437,
+            "max": 1.6954816579818726
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 1.3751398024846686,
+            "std": 0.7323702549095789,
+            "min": 0.4385855413980545,
+            "max": 2.2264298211203504
+          },
+          "pressure_base_l2": {
+            "mean": 51.09211222330729,
+            "std": 3.7987720128066185,
+            "min": 47.47378921508789,
+            "max": 56.34028625488281
+          },
+          "pressure_closure_l2": {
+            "mean": 0.8164855639139811,
+            "std": 0.5892495508198758,
+            "min": 0.3570210039615631,
+            "max": 1.648290753364563
+          },
+          "pressure_residual_only_l2": {
+            "mean": 51.06620661417643,
+            "std": 4.123657363681274,
+            "min": 46.75050354003906,
+            "max": 56.62080001831055
+          },
+          "pressure_residual_l2": {
+            "mean": 0.01660710774982969,
+            "std": 0.012810643423752752,
+            "min": 0.007218048442155123,
+            "max": 0.03472002223134041
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.01660710774982969,
+            "std": 0.012810643423752752,
+            "min": 0.007218048442155123,
+            "max": 0.03472002223134041
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 88.39173597846526,
+            "std": 17.425800431793522,
+            "min": 63.776065404297874,
+            "max": 101.7190577397581
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 88.3516643868118,
+            "std": 17.647366119537228,
+            "min": 63.42498774606673,
+            "max": 101.88265909914111
+          },
+          "router_entropy": {
+            "mean": 1.0121582746505737,
+            "std": 0.0004321140690444819,
+            "min": 1.0115485191345215,
+            "max": 1.0124982595443726
+          },
+          "router_active_experts": {
+            "mean": 5.0,
+            "std": 0.0,
+            "min": 5.0,
+            "max": 5.0
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        },
+        "V15_BalancedTraining": {
+          "rhs_l2": {
+            "mean": 0.5351051092147827,
+            "std": 0.07532693727766648,
+            "min": 0.4741784334182739,
+            "max": 0.6412465572357178
+          },
+          "one_step_velocity_l2": {
+            "mean": 0.030370653917392094,
+            "std": 0.003979661259105982,
+            "min": 0.02700265869498253,
+            "max": 0.035959649831056595
+          },
+          "one_step_pressure_l2": {
+            "mean": 1.0620640814304352,
+            "std": 0.6442677315292802,
+            "min": 0.29554566740989685,
+            "max": 1.8718892335891724
+          },
+          "one_step_pressure_energy_error": {
+            "mean": 2.1295515213225547,
+            "std": 1.6115612131319494,
+            "min": 0.1110190137037713,
+            "max": 4.0552451875720426
+          },
+          "rollout_velocity_l2": {
+            "mean": 0.2253795862197876,
+            "std": 0.024850731403073884,
+            "min": 0.19613637030124664,
+            "max": 0.25688207149505615
+          },
+          "rollout_pressure_l2": {
+            "mean": 0.8315974076588949,
+            "std": 0.2027434844925665,
+            "min": 0.5926337838172913,
+            "max": 1.0883004665374756
+          },
+          "rollout_pressure_energy_error": {
+            "mean": 1.141511161478246,
+            "std": 0.4074864800303019,
+            "min": 0.6679779604937129,
+            "max": 1.6626939671790675
+          },
+          "pressure_base_l2": {
+            "mean": 59.96325937906901,
+            "std": 6.397893200668187,
+            "min": 54.86600875854492,
+            "max": 68.98591613769531
+          },
+          "pressure_closure_l2": {
+            "mean": 1.068127344051997,
+            "std": 0.6472106144735201,
+            "min": 0.2942398488521576,
+            "max": 1.878327488899231
+          },
+          "pressure_residual_only_l2": {
+            "mean": 59.776814778645836,
+            "std": 6.347461016239526,
+            "min": 54.365867614746094,
+            "max": 68.68524169921875
+          },
+          "pressure_residual_l2": {
+            "mean": 0.018147478345781565,
+            "std": 0.012045860854024468,
+            "min": 0.005250732880085707,
+            "max": 0.03423481434583664
+          },
+          "pressure_effective_residual_l2": {
+            "mean": 0.018147478345781565,
+            "std": 0.012045860854024468,
+            "min": 0.005250732880085707,
+            "max": 0.03423481434583664
+          },
+          "alpha_mean": {
+            "mean": 1.0,
+            "std": 0.0,
+            "min": 1.0,
+            "max": 1.0
+          },
+          "beta_mean": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          },
+          "base_contribution_ratio_mean": {
+            "mean": 91.08771616513611,
+            "std": 9.269311264339239,
+            "min": 83.7881284463601,
+            "max": 104.16710234470055
+          },
+          "residual_contribution_ratio_mean": {
+            "mean": 90.98569728507368,
+            "std": 9.1767418085507,
+            "min": 83.77389910182015,
+            "max": 103.9356512007166
+          },
+          "router_entropy": {
+            "mean": 1.0074532826741536,
+            "std": 0.00029702672191274403,
+            "min": 1.007217288017273,
+            "max": 1.007872223854065
+          },
+          "router_active_experts": {
+            "mean": 4.306010928961748,
+            "std": 0.13205514725239972,
+            "min": 4.19672131147541,
+            "max": 4.491803278688525
+          },
+          "group_router_entropy": {
+            "mean": 0.0,
+            "std": 0.0,
+            "min": 0.0,
+            "max": 0.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_tag": "V15_3_StrongBaseline32_AdaptiveGate_Balanced",
+  "r_u": 32,
+  "r_p": 32,
+  "regime_balanced_sampling": true,
+  "closure_mode": "adaptive_gate",
+  "pressure_base_mode": "static",
+  "curriculum_steps": [4, 8, 12, 16],
+  "hopf_pair": [0, 1],
+  "lambda_hopf_log_amp": 0.0,
+  "lambda_hopf_energy": 0.0,
+  "lambda_hopf_overshoot": 0.0,
+  "hopf_sample_weight": 1.0,
+  "hopf_focus_sample_weight": 1.0,
+  "hopf_rollout_weight": 1.0
+}
