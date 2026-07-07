@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="980" viewBox="0 0 1560 980" role="img" aria-labelledby="title desc">
+  <title id="title">V14 HPRS-MoE Training Flow</title>
+  <desc id="desc">Closed-loop training workflow for the V14 Hierarchical Physics-Regime Sparse Mixture of Experts ROM.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f4858"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .lane { fill: #ffffff; stroke: #c7d2df; stroke-width: 1.4; }
+      .title { font: 700 30px Arial, sans-serif; fill: #172a3a; }
+      .subtitle { font: 400 15px Arial, sans-serif; fill: #526577; }
+      .lane-title { font: 700 18px Arial, sans-serif; fill: #203242; }
+      .box { fill: #ffffff; stroke: #607d95; stroke-width: 2; rx: 10; }
+      .blue { fill: #e8f2ff; stroke: #3d73a3; }
+      .green { fill: #e9f8ef; stroke: #43815c; }
+      .amber { fill: #fff4df; stroke: #a47728; }
+      .rose { fill: #fdecec; stroke: #a85858; }
+      .violet { fill: #f0ecff; stroke: #6656a6; }
+      .label { font: 700 15px Arial, sans-serif; fill: #1f3242; }
+      .small { font: 400 13px Arial, sans-serif; fill: #3f5160; }
+      .tiny { font: 400 12px Arial, sans-serif; fill: #526577; }
+      .arrow { stroke: #2f4858; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .soft { stroke: #7d8c99; stroke-width: 1.8; fill: none; marker-end: url(#arrow); stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1560" height="980"/>
+  <text class="title" x="48" y="54">V14 Training Flow: HPRS-MoE-ROM</text>
+  <text class="subtitle" x="48" y="82">Shared encoder, regime group router, group-local sparse experts, Galerkin closure, RK4, scheduled sampling, and closed-loop rollout losses.</text>
+
+  <rect class="lane" x="38" y="118" width="290" height="790" rx="18"/>
+  <rect class="lane" x="358" y="118" width="270" height="790" rx="18"/>
+  <rect class="lane" x="658" y="118" width="430" height="790" rx="18"/>
+  <rect class="lane" x="1118" y="118" width="400" height="790" rx="18"/>
+
+  <text class="lane-title" x="64" y="154">1. Data and Physics Features</text>
+  <text class="lane-title" x="384" y="154">2. Split and Targets</text>
+  <text class="lane-title" x="684" y="154">3. HPRS-MoE + RK4 Forward</text>
+  <text class="lane-title" x="1144" y="154">4. Closed-loop Optimize</text>
+
+  <rect class="box blue" x="72" y="190" width="220" height="100"/>
+  <text class="label" x="94" y="222">POD Trajectories</text>
+  <text class="small" x="94" y="248">a_t, b_t, Re, phase</text>
+  <text class="small" x="94" y="270">snapshot and history index</text>
+
+  <rect class="box blue" x="72" y="335" width="220" height="116"/>
+  <text class="label" x="94" y="367">Physics Inputs</text>
+  <text class="small" x="94" y="393">Galerkin tensors</text>
+  <text class="small" x="94" y="415">pressure surrogate</text>
+  <text class="small" x="94" y="437">dt and Re grid metadata</text>
+
+  <rect class="box green" x="72" y="500" width="220" height="146"/>
+  <text class="label" x="94" y="532">Descriptor Builder</text>
+  <text class="small" x="94" y="558">energy and modal norms</text>
+  <text class="small" x="94" y="580">state and RHS deltas</text>
+  <text class="small" x="94" y="602">phase harmonics</text>
+  <text class="small" x="94" y="624">short history buffers</text>
+
+  <rect class="box" x="394" y="205" width="198" height="96"/>
+  <text class="label" x="416" y="237">Leave-One-Re-Out</text>
+  <text class="small" x="416" y="263">train / val / test</text>
+  <text class="small" x="416" y="285">held-out Re split</text>
+
+  <rect class="box" x="394" y="350" width="198" height="138"/>
+  <text class="label" x="416" y="382">Training Targets</text>
+  <text class="small" x="416" y="408">velocity RHS closure</text>
+  <text class="small" x="416" y="430">pressure closure or state</text>
+  <text class="small" x="416" y="452">one-step a, b</text>
+  <text class="small" x="416" y="474">rollout trajectory</text>
+
+  <rect class="box" x="394" y="548" width="198" height="112"/>
+  <text class="label" x="416" y="580">Scaling and Floors</text>
+  <text class="small" x="416" y="606">feature standardizers</text>
+  <text class="small" x="416" y="628">relative loss floor</text>
+  <text class="small" x="416" y="650">pressure weighting</text>
+
+  <rect class="box violet" x="700" y="178" width="310" height="82"/>
+  <text class="label" x="724" y="210">Shared Encoder</text>
+  <text class="small" x="724" y="236">latent h_t from state, Re, descriptors</text>
+
+  <rect class="box violet" x="700" y="300" width="310" height="96"/>
+  <text class="label" x="724" y="332">Group Router</text>
+  <text class="small" x="724" y="358">select physics regime group</text>
+  <text class="small" x="724" y="380">Low-Re / Transition / High-Re</text>
+
+  <rect class="box amber" x="690" y="442" width="170" height="128"/>
+  <text class="label" x="714" y="474">Velocity Group</text>
+  <text class="small" x="714" y="500">1 shared expert</text>
+  <text class="small" x="714" y="522">Top-2 routed experts</text>
+  <text class="small" x="714" y="544">local operator c_u</text>
+
+  <rect class="box amber" x="884" y="442" width="170" height="128"/>
+  <text class="label" x="908" y="474">Pressure Group</text>
+  <text class="small" x="908" y="500">1 shared expert</text>
+  <text class="small" x="908" y="522">Top-2 routed experts</text>
+  <text class="small" x="908" y="544">operator or state c_p</text>
+
+  <rect class="box green" x="700" y="622" width="310" height="130"/>
+  <text class="label" x="724" y="654">Galerkin + RK4 Rollout</text>
+  <text class="small" x="724" y="680">f = Galerkin(a_t, Re) + c_u</text>
+  <text class="small" x="724" y="702">RK4 stages k1, k2, k3, k4</text>
+  <text class="small" x="724" y="724">curriculum: 4 -> 8 -> 12 -> 16 steps</text>
+
+  <rect class="box rose" x="1158" y="182" width="310" height="176"/>
+  <text class="label" x="1182" y="214">Trajectory Losses</text>
+  <text class="small" x="1182" y="240">one-step coefficient and RHS loss</text>
+  <text class="small" x="1182" y="262">pressure closure/state loss</text>
+  <text class="small" x="1182" y="284">multi-step rollout loss</text>
+  <text class="small" x="1182" y="306">energy consistency loss</text>
+  <text class="small" x="1182" y="328">final trajectory consistency</text>
+
+  <rect class="box rose" x="1158" y="410" width="310" height="150"/>
+  <text class="label" x="1182" y="442">Router Regularization</text>
+  <text class="small" x="1182" y="468">group load balance</text>
+  <text class="small" x="1182" y="490">expert load balance and entropy</text>
+  <text class="small" x="1182" y="512">router smoothness</text>
+  <text class="small" x="1182" y="534">expert diversity loss</text>
+
+  <rect class="box green" x="1158" y="612" width="310" height="118"/>
+  <text class="label" x="1182" y="644">Scheduled Sampling</text>
+  <text class="small" x="1182" y="670">teacher forcing at early epochs</text>
+  <text class="small" x="1182" y="692">model feedback up to 85 percent</text>
+  <text class="small" x="1182" y="714">reduces exposure bias</text>
+
+  <rect class="box" x="1158" y="782" width="310" height="84"/>
+  <text class="label" x="1182" y="814">Diagnostics</text>
+  <text class="small" x="1182" y="840">group load, active experts, collapse</text>
+  <text class="small" x="1182" y="862">one-step and rollout errors by Re</text>
+
+  <path class="arrow" d="M292 240 L394 253"/>
+  <path class="arrow" d="M292 393 L394 420"/>
+  <path class="arrow" d="M292 573 L394 604"/>
+  <path class="arrow" d="M592 253 L700 219"/>
+  <path class="arrow" d="M592 420 L700 348"/>
+  <path class="arrow" d="M1010 219 L855 300"/>
+  <path class="arrow" d="M855 396 L775 442"/>
+  <path class="arrow" d="M855 396 L969 442"/>
+  <path class="arrow" d="M775 570 L790 622"/>
+  <path class="arrow" d="M969 570 L925 622"/>
+  <path class="arrow" d="M1010 687 L1158 270"/>
+  <path class="arrow" d="M1010 687 L1158 670"/>
+  <path class="arrow" d="M855 396 L1158 485"/>
+  <path class="arrow" d="M1468 670 C1510 760, 1120 880, 868 752"/>
+  <path class="soft" d="M1313 866 C1040 925, 630 895, 182 646"/>
+</svg>

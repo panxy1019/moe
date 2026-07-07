@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700">
+<style>text{font-family:Arial,sans-serif;fill:#1f2d3a}.axis{stroke:#4d5d6c;stroke-width:1.4}.grid{stroke:#d8e0e8;stroke-width:1}</style>
+<rect width="1180" height="700" fill="#f8fafc"/>
+<text x="85" y="34" font-size="24" font-weight="700">Pressure rollout relative L2 vs Re</text>
+<line class="axis" x1="85" y1="615" x2="1145" y2="615"/>
+<line class="axis" x1="85" y1="55" x2="85" y2="615"/>
+<line class="grid" x1="85" y1="615.0" x2="1145" y2="615.0"/>
+<text x="18" y="619.0" font-size="12">0.00</text>
+<line class="grid" x1="85" y1="503.0" x2="1145" y2="503.0"/>
+<text x="18" y="507.0" font-size="12">0.36</text>
+<line class="grid" x1="85" y1="391.0" x2="1145" y2="391.0"/>
+<text x="18" y="395.0" font-size="12">0.72</text>
+<line class="grid" x1="85" y1="279.0" x2="1145" y2="279.0"/>
+<text x="18" y="283.0" font-size="12">1.08</text>
+<line class="grid" x1="85" y1="167.0" x2="1145" y2="167.0"/>
+<text x="18" y="171.0" font-size="12">1.44</text>
+<line class="grid" x1="85" y1="55.0" x2="1145" y2="55.0"/>
+<text x="18" y="59.0" font-size="12">1.80</text>
+<text x="67.0" y="643" font-size="12">50</text>
+<text x="279.0" y="643" font-size="12">100</text>
+<text x="491.0" y="643" font-size="12">150</text>
+<text x="703.0" y="643" font-size="12">200</text>
+<text x="915.0" y="643" font-size="12">250</text>
+<text x="1127.0" y="643" font-size="12">300</text>
+<text x="580.0" y="675" font-size="14">Reynolds number</text>
+<polyline points="85.0,175.9 204.1,286.9 322.4,426.2 435.8,468.1 554.7,498.9 667.1,511.2 785.7,504.6 909.1,505.1 1036.4,496.5 1145.0,491.9" fill="none" stroke="#1f77b4" stroke-width="2.5"/>
+<circle cx="85.0" cy="175.9" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="204.1" cy="286.9" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="322.4" cy="426.2" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="435.8" cy="468.1" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="554.7" cy="498.9" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="667.1" cy="511.2" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="785.7" cy="504.6" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="909.1" cy="505.1" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="1036.4" cy="496.5" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="1145.0" cy="491.9" r="4" fill="#1f77b4" stroke="#fff"/>
+<rect x="103" y="65" width="18" height="5" fill="#1f77b4"/>
+<text x="129" y="71" font-size="13">BaseOnly</text>
+<polyline points="85.0,96.5 204.1,150.2 322.4,292.3 435.8,315.5 554.7,325.6 667.1,332.3 785.7,334.4 909.1,336.2 1036.4,325.9 1145.0,325.7" fill="none" stroke="#ff7f0e" stroke-width="2.5"/>
+<circle cx="85.0" cy="96.5" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="204.1" cy="150.2" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="322.4" cy="292.3" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="435.8" cy="315.5" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="554.7" cy="325.6" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="667.1" cy="332.3" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="785.7" cy="334.4" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="909.1" cy="336.2" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="1036.4" cy="325.9" r="4" fill="#ff7f0e" stroke="#fff"/>
+<circle cx="1145.0" cy="325.7" r="4" fill="#ff7f0e" stroke="#fff"/>
+<rect x="348" y="65" width="18" height="5" fill="#ff7f0e"/>
+<text x="374" y="71" font-size="13">ResidualOnlyState</text>
+<polyline points="85.0,254.0 204.1,590.2 322.4,605.7 435.8,600.0 554.7,598.0 667.1,598.2 785.7,604.0 909.1,605.1 1036.4,601.6 1145.0,581.9" fill="none" stroke="#2ca02c" stroke-width="2.5"/>
+<circle cx="85.0" cy="254.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="204.1" cy="590.2" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="322.4" cy="605.7" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="435.8" cy="600.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="554.7" cy="598.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="667.1" cy="598.2" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="785.7" cy="604.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="909.1" cy="605.1" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="1036.4" cy="601.6" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="1145.0" cy="581.9" r="4" fill="#2ca02c" stroke="#fff"/>
+<rect x="593" y="65" width="18" height="5" fill="#2ca02c"/>
+<text x="619" y="71" font-size="13">ClosureCurrent</text>
+</svg>

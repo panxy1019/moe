@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700">
+<style>text{font-family:Arial,sans-serif;fill:#1f2d3a}.axis{stroke:#4d5d6c;stroke-width:1.4}.grid{stroke:#d8e0e8;stroke-width:1}</style>
+<rect width="1180" height="700" fill="#f8fafc"/>
+<text x="85" y="34" font-size="24" font-weight="700">Base error and residual magnitude vs Re</text>
+<line class="axis" x1="85" y1="615" x2="1145" y2="615"/>
+<line class="axis" x1="85" y1="55" x2="85" y2="615"/>
+<line class="grid" x1="85" y1="615.0" x2="1145" y2="615.0"/>
+<text x="18" y="619.0" font-size="12">0.00</text>
+<line class="grid" x1="85" y1="503.0" x2="1145" y2="503.0"/>
+<text x="18" y="507.0" font-size="12">0.29</text>
+<line class="grid" x1="85" y1="391.0" x2="1145" y2="391.0"/>
+<text x="18" y="395.0" font-size="12">0.58</text>
+<line class="grid" x1="85" y1="279.0" x2="1145" y2="279.0"/>
+<text x="18" y="283.0" font-size="12">0.86</text>
+<line class="grid" x1="85" y1="167.0" x2="1145" y2="167.0"/>
+<text x="18" y="171.0" font-size="12">1.15</text>
+<line class="grid" x1="85" y1="55.0" x2="1145" y2="55.0"/>
+<text x="18" y="59.0" font-size="12">1.44</text>
+<text x="67.0" y="643" font-size="12">50</text>
+<text x="279.0" y="643" font-size="12">100</text>
+<text x="491.0" y="643" font-size="12">150</text>
+<text x="703.0" y="643" font-size="12">200</text>
+<text x="915.0" y="643" font-size="12">250</text>
+<text x="1127.0" y="643" font-size="12">300</text>
+<polyline points="85.0,96.5 204.1,283.4 322.4,399.0 435.8,449.1 554.7,482.5 667.1,495.8 785.7,488.4 909.1,497.3 1036.4,489.9 1145.0,483.7" fill="none" stroke="#1f77b4" stroke-width="2.5"/>
+<circle cx="85.0" cy="96.5" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="204.1" cy="283.4" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="322.4" cy="399.0" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="435.8" cy="449.1" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="554.7" cy="482.5" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="667.1" cy="495.8" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="785.7" cy="488.4" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="909.1" cy="497.3" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="1036.4" cy="489.9" r="4" fill="#1f77b4" stroke="#fff"/>
+<circle cx="1145.0" cy="483.7" r="4" fill="#1f77b4" stroke="#fff"/>
+<rect x="103" y="65" width="18" height="5" fill="#1f77b4"/>
+<text x="129" y="71" font-size="13">Base error one-step</text>
+<polyline points="85.0,237.4 204.1,593.1 322.4,608.3 435.8,609.0 554.7,607.2 667.1,608.0 785.7,607.8 909.1,607.0 1036.4,605.6 1145.0,595.0" fill="none" stroke="#2ca02c" stroke-width="2.5"/>
+<circle cx="85.0" cy="237.4" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="204.1" cy="593.1" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="322.4" cy="608.3" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="435.8" cy="609.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="554.7" cy="607.2" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="667.1" cy="608.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="785.7" cy="607.8" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="909.1" cy="607.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="1036.4" cy="605.6" r="4" fill="#2ca02c" stroke="#fff"/>
+<circle cx="1145.0" cy="595.0" r="4" fill="#2ca02c" stroke="#fff"/>
+<rect x="463" y="65" width="18" height="5" fill="#2ca02c"/>
+<text x="489" y="71" font-size="13">Closure error one-step</text>
+<polyline points="85.0,144.9 204.1,277.0 322.4,396.9 435.8,449.1 554.7,481.7 667.1,494.7 785.7,488.2 909.1,497.2 1036.4,489.6 1145.0,489.3" fill="none" stroke="#d62728" stroke-width="2.5"/>
+<circle cx="85.0" cy="144.9" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="204.1" cy="277.0" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="322.4" cy="396.9" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="435.8" cy="449.1" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="554.7" cy="481.7" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="667.1" cy="494.7" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="785.7" cy="488.2" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="909.1" cy="497.2" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="1036.4" cy="489.6" r="4" fill="#d62728" stroke="#fff"/>
+<circle cx="1145.0" cy="489.3" r="4" fill="#d62728" stroke="#fff"/>
+<rect x="103" y="89" width="18" height="5" fill="#d62728"/>
+<text x="129" y="95" font-size="13">Residual magnitude / true</text>
+<polyline points="85.0,213.1 204.1,341.4 322.4,411.9 435.8,453.7 554.7,479.5 667.1,488.2 785.7,475.3 909.1,480.8 1036.4,470.9 1145.0,464.0" fill="none" stroke="#9467bd" stroke-width="2.5"/>
+<circle cx="85.0" cy="213.1" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="204.1" cy="341.4" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="322.4" cy="411.9" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="435.8" cy="453.7" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="554.7" cy="479.5" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="667.1" cy="488.2" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="785.7" cy="475.3" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="909.1" cy="480.8" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="1036.4" cy="470.9" r="4" fill="#9467bd" stroke="#fff"/>
+<circle cx="1145.0" cy="464.0" r="4" fill="#9467bd" stroke="#fff"/>
+<rect x="463" y="89" width="18" height="5" fill="#9467bd"/>
+<text x="489" y="95" font-size="13">Residual / base</text>
+</svg>
