@@ -1,0 +1,23 @@
+{
+  "experiment": "V16_AttractorMoEROM_AttractorConditionedFramework32",
+  "database_interpretation": "Physics-Generalizable Attractor Database",
+  "ru": 32,
+  "rp": 32,
+  "attractor_conditioned": true,
+  "attractor_adapter_dim": 64,
+  "attractor_balanced_sampling": true,
+  "closure_mode": "adaptive_gate",
+  "curriculum_steps": [4, 8, 12, 16],
+  "loss_weights": {
+    "lambda_steady_rhs": 0.02,
+    "lambda_steady_state": 0.01,
+    "lambda_attractor_hopf_radius": 0.02,
+    "lambda_attractor_hopf_overshoot": 0.02,
+    "lambda_attractor_hopf_onset": 0.01,
+    "lambda_periodic_energy": 0.02,
+    "lambda_periodic_radius": 0.01,
+    "lambda_attractor_ce": 0.02,
+    "lambda_proto_energy": 0.01,
+    "lambda_proto_radius": 0.01
+  }
+}
