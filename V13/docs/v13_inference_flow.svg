@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">V13 Inference Flow</title>
+  <desc id="desc">Inference and rollout workflow for the V13 hierarchical physics-aware MoE-ROM.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f4858"/>
+    </marker>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .title { font: 700 30px Arial, sans-serif; fill: #172a3a; }
+      .subtitle { font: 400 15px Arial, sans-serif; fill: #536575; }
+      .box { fill: #ffffff; stroke: #607d95; stroke-width: 2; rx: 10; }
+      .box-blue { fill: #e8f2ff; stroke: #3d73a3; stroke-width: 2; rx: 10; }
+      .box-green { fill: #e9f8ef; stroke: #43815c; stroke-width: 2; rx: 10; }
+      .box-amber { fill: #fff4df; stroke: #a47728; stroke-width: 2; rx: 10; }
+      .box-purple { fill: #f0ecff; stroke: #6656a6; stroke-width: 2; rx: 10; }
+      .box-red { fill: #fdecec; stroke: #a85858; stroke-width: 2; rx: 10; }
+      .label { font: 700 15px Arial, sans-serif; fill: #1f3242; }
+      .small { font: 400 13px Arial, sans-serif; fill: #3f5160; }
+      .tiny { font: 400 12px Arial, sans-serif; fill: #536575; }
+      .arrow { stroke: #2f4858; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .soft-arrow { stroke: #7d8c99; stroke-width: 1.8; fill: none; marker-end: url(#arrow); stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1500" height="900"/>
+  <text class="title" x="50" y="55">V13 Inference Flow</text>
+  <text class="subtitle" x="50" y="82">One-step prediction and autonomous rollout with cached standardizers, best checkpoint weights, shared experts, routed experts, and RK4.</text>
+
+  <rect class="box-blue" x="60" y="160" width="250" height="124"/>
+  <text class="label" x="85" y="192">Current ROM State</text>
+  <text class="small" x="85" y="218">a_t, b_t</text>
+  <text class="small" x="85" y="240">Re, phase, dt</text>
+  <text class="small" x="85" y="262">short history buffers</text>
+
+  <rect class="box-blue" x="60" y="350" width="250" height="118"/>
+  <text class="label" x="85" y="382">Physics Inputs</text>
+  <text class="small" x="85" y="408">Galerkin tensors</text>
+  <text class="small" x="85" y="430">pressure surrogate tensors</text>
+  <text class="small" x="85" y="452">trained scalers</text>
+
+  <rect class="box-green" x="380" y="230" width="260" height="150"/>
+  <text class="label" x="405" y="262">Build Features</text>
+  <text class="small" x="405" y="288">Galerkin RHS at current state</text>
+  <text class="small" x="405" y="310">Re and phase harmonics</text>
+  <text class="small" x="405" y="332">energy, norms, ratios</text>
+  <text class="small" x="405" y="354">history state/rhs deltas</text>
+  <text class="small" x="405" y="376">standardize x</text>
+
+  <rect class="box-purple" x="715" y="105" width="270" height="92"/>
+  <text class="label" x="740" y="137">Shared Encoder</text>
+  <text class="small" x="740" y="163">context latent h_t</text>
+  <text class="small" x="740" y="185">refinement blocks</text>
+
+  <rect class="box-purple" x="690" y="250" width="140" height="96"/>
+  <text class="label" x="714" y="280">Velocity</text>
+  <text class="label" x="714" y="301">Router</text>
+  <text class="small" x="714" y="324">Top-2 gates</text>
+
+  <rect class="box-purple" x="870" y="250" width="140" height="96"/>
+  <text class="label" x="894" y="280">Pressure</text>
+  <text class="label" x="894" y="301">Router</text>
+  <text class="small" x="894" y="324">Top-2 gates</text>
+
+  <rect class="box-amber" x="680" y="405" width="155" height="128"/>
+  <text class="label" x="705" y="435">Velocity</text>
+  <text class="label" x="705" y="456">Experts</text>
+  <text class="small" x="705" y="482">2 routed</text>
+  <text class="small" x="705" y="504">+ 4 shared</text>
+  <text class="small" x="705" y="526">closure c_u</text>
+
+  <rect class="box-amber" x="865" y="405" width="155" height="128"/>
+  <text class="label" x="890" y="435">Pressure</text>
+  <text class="label" x="890" y="456">Experts</text>
+  <text class="small" x="890" y="482">2 routed</text>
+  <text class="small" x="890" y="504">+ 4 shared</text>
+  <text class="small" x="890" y="526">closure/state c_p</text>
+
+  <rect class="box-green" x="1080" y="170" width="270" height="130"/>
+  <text class="label" x="1105" y="202">Velocity RHS</text>
+  <text class="small" x="1105" y="228">de-standardize c_u</text>
+  <text class="small" x="1105" y="250">f = Galerkin RHS + c_u</text>
+  <text class="small" x="1105" y="272">reuse model_rhs in RK4 stages</text>
+
+  <rect class="box-green" x="1080" y="355" width="270" height="130"/>
+  <text class="label" x="1105" y="387">RK4 Advance</text>
+  <text class="small" x="1105" y="413">k1, k2, k3, k4</text>
+  <text class="small" x="1105" y="435">a_{t+1} = a_t + weighted sum</text>
+  <text class="small" x="1105" y="457">keep ROM time integrator explicit</text>
+
+  <rect class="box-green" x="1080" y="545" width="270" height="130"/>
+  <text class="label" x="1105" y="577">Pressure Update</text>
+  <text class="small" x="1105" y="603">closure: b_base(a_{t+1}) + c_p</text>
+  <text class="small" x="1105" y="625">state: c_p is b_{t+1}</text>
+  <text class="small" x="1105" y="647">shared pressure router branch</text>
+
+  <rect class="box-red" x="1185" y="735" width="245" height="90"/>
+  <text class="label" x="1210" y="767">Rollout Loop</text>
+  <text class="small" x="1210" y="793">update a, b, rhs history</text>
+  <text class="small" x="1210" y="815">advance to next time step</text>
+
+  <rect class="box" x="60" y="650" width="250" height="104"/>
+  <text class="label" x="85" y="682">Outputs</text>
+  <text class="small" x="85" y="708">one-step prediction</text>
+  <text class="small" x="85" y="730">autonomous rollout trajectory</text>
+  <text class="small" x="85" y="752">routing diagnostics if requested</text>
+
+  <path class="arrow" d="M310 222 L380 280"/>
+  <path class="arrow" d="M310 409 L380 330"/>
+  <path class="arrow" d="M640 305 L715 151"/>
+  <path class="arrow" d="M850 197 L760 250"/>
+  <path class="arrow" d="M850 197 L940 250"/>
+  <path class="arrow" d="M760 346 L760 405"/>
+  <path class="arrow" d="M940 346 L940 405"/>
+  <path class="arrow" d="M835 469 L1080 235"/>
+  <path class="arrow" d="M1215 300 L1215 355"/>
+  <path class="arrow" d="M1020 469 L1080 610"/>
+  <path class="arrow" d="M1215 485 L1215 545"/>
+  <path class="arrow" d="M1215 675 L1307 735"/>
+  <path class="soft-arrow" d="M1185 780 C880 845, 410 820, 185 754"/>
+  <path class="soft-arrow" d="M1185 785 C845 760, 450 635, 185 284"/>
+  <text class="tiny" x="767" y="826">autonomous rollout feeds predictions back into feature/history buffers</text>
+  <path class="arrow" d="M1080 610 C750 680, 390 705, 310 705"/>
+</svg>

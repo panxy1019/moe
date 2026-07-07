@@ -1,0 +1,6 @@
+*.pt
+*.log
+*.pid
+swanlog/
+v14_adaptive_pressure_closure_*_dense_uniform10/*_metrics.json
+v14_adaptive_pressure_closure_summary/v14_adaptive_pressure_closure_aggregate.json

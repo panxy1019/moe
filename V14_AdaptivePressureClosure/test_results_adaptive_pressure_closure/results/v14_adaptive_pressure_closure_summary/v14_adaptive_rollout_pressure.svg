@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img">
+<style>text{font-family:Arial,sans-serif;fill:#1f2d3a}.axis{stroke:#536575;stroke-width:1.4}.grid{stroke:#d8e0e8;stroke-width:1}.line{fill:none;stroke-width:2.4}.dot{stroke:#fff;stroke-width:1.2}</style>
+<rect x="0" y="0" width="1180" height="720" fill="#f8fafc"/>
+<text x="88" y="34" font-size="23" font-weight="700">24-step Rollout Pressure vs Re</text>
+<line class="axis" x1="88" y1="628" x2="1145" y2="628"/>
+<line class="axis" x1="88" y1="58" x2="88" y2="628"/>
+<line class="grid" x1="88" y1="628.0" x2="1145" y2="628.0"/>
+<text x="18" y="632.0" font-size="12">0</text>
+<line class="grid" x1="88" y1="514.0" x2="1145" y2="514.0"/>
+<text x="18" y="518.0" font-size="12">0.285</text>
+<line class="grid" x1="88" y1="400.0" x2="1145" y2="400.0"/>
+<text x="18" y="404.0" font-size="12">0.57</text>
+<line class="grid" x1="88" y1="286.0" x2="1145" y2="286.0"/>
+<text x="18" y="290.0" font-size="12">0.855</text>
+<line class="grid" x1="88" y1="172.0" x2="1145" y2="172.0"/>
+<text x="18" y="176.0" font-size="12">1.14</text>
+<line class="grid" x1="88" y1="58.0" x2="1145" y2="58.0"/>
+<text x="18" y="62.0" font-size="12">1.43</text>
+<text x="66.0" y="656" font-size="12">50</text>
+<text x="277.4" y="656" font-size="12">100</text>
+<text x="488.8" y="656" font-size="12">150</text>
+<text x="700.2" y="656" font-size="12">200</text>
+<text x="911.6" y="656" font-size="12">250</text>
+<text x="1123.0" y="656" font-size="12">300</text>
+<text x="578.5" y="692" font-size="14">Reynolds number</text>
+<text x="18" y="40" font-size="14">relative L2</text>
+<polyline class="line" points="88.0,100.2 206.8,576.0 324.7,608.3 437.8,605.4 556.4,601.1 668.4,598.2 786.7,606.4 909.7,606.0 1036.7,608.3 1145.0,568.8" stroke="#2ca02c"/>
+<circle class="dot" cx="88.0" cy="100.2" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="206.8" cy="576.0" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="324.7" cy="608.3" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="437.8" cy="605.4" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="556.4" cy="601.1" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="668.4" cy="598.2" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="786.7" cy="606.4" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="909.7" cy="606.0" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="1036.7" cy="608.3" r="4.2" fill="#2ca02c"/>
+<circle class="dot" cx="1145.0" cy="568.8" r="4.2" fill="#2ca02c"/>
+<line x1="100" y1="78" x2="124" y2="78" stroke="#2ca02c" stroke-width="3"/>
+<text x="132" y="82" font-size="13">AdaptiveBaseScaling</text>
+<polyline class="line" points="88.0,130.9 206.8,600.3 324.7,610.7 437.8,608.3 556.4,602.3 668.4,607.6 786.7,613.7 909.7,603.2 1036.7,604.0 1145.0,567.9" stroke="#ff7f0e"/>
+<circle class="dot" cx="88.0" cy="130.9" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="206.8" cy="600.3" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="324.7" cy="610.7" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="437.8" cy="608.3" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="556.4" cy="602.3" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="668.4" cy="607.6" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="786.7" cy="613.7" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="909.7" cy="603.2" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="1036.7" cy="604.0" r="4.2" fill="#ff7f0e"/>
+<circle class="dot" cx="1145.0" cy="567.9" r="4.2" fill="#ff7f0e"/>
+<line x1="100" y1="100" x2="124" y2="100" stroke="#ff7f0e" stroke-width="3"/>
+<text x="132" y="104" font-size="13">AdaptiveResidualScaling</text>
+<polyline class="line" points="88.0,164.5 206.8,596.1 324.7,616.1 437.8,608.7 556.4,606.2 668.4,606.5 786.7,613.8 909.7,615.3 1036.7,610.8 1145.0,585.5" stroke="#1f77b4"/>
+<circle class="dot" cx="88.0" cy="164.5" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="206.8" cy="596.1" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="324.7" cy="616.1" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="437.8" cy="608.7" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="556.4" cy="606.2" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="668.4" cy="606.5" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="786.7" cy="613.8" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="909.7" cy="615.3" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="1036.7" cy="610.8" r="4.2" fill="#1f77b4"/>
+<circle class="dot" cx="1145.0" cy="585.5" r="4.2" fill="#1f77b4"/>
+<line x1="100" y1="122" x2="124" y2="122" stroke="#1f77b4" stroke-width="3"/>
+<text x="132" y="126" font-size="13">Baseline</text>
+<polyline class="line" points="88.0,212.3 206.8,573.0 324.7,611.2 437.8,610.2 556.4,604.1 668.4,582.3 786.7,598.9 909.7,589.5 1036.7,590.6 1145.0,575.3" stroke="#d62728"/>
+<circle class="dot" cx="88.0" cy="212.3" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="206.8" cy="573.0" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="324.7" cy="611.2" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="437.8" cy="610.2" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="556.4" cy="604.1" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="668.4" cy="582.3" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="786.7" cy="598.9" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="909.7" cy="589.5" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="1036.7" cy="590.6" r="4.2" fill="#d62728"/>
+<circle class="dot" cx="1145.0" cy="575.3" r="4.2" fill="#d62728"/>
+<line x1="100" y1="144" x2="124" y2="144" stroke="#d62728" stroke-width="3"/>
+<text x="132" y="148" font-size="13">DualAdaptiveClosure</text>
+</svg>

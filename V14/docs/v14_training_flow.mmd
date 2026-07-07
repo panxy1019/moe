@@ -1,0 +1,54 @@
+flowchart LR
+  subgraph D["Data and features"]
+    A["POD trajectories<br/>a_t, b_t, Re, phase"]
+    B["Physics descriptors<br/>energy, norms, deltas, Galerkin RHS"]
+    C["Leave-one-Re-out split<br/>train / val / held-out test"]
+  end
+
+  subgraph M["HPRS-MoE forward"]
+    E["Shared encoder<br/>context latent h_t"]
+    G["Group router<br/>Low / Transition / High regime"]
+    V["Selected velocity group<br/>1 shared expert + Top-2 routed experts"]
+    P["Selected pressure group<br/>1 shared expert + Top-2 routed experts"]
+    O["Weighted local operators<br/>c_u, c_p"]
+    R["Galerkin RHS + velocity closure"]
+    K["RK4 multi-step rollout<br/>4 -> 8 -> 12 -> 16 steps"]
+  end
+
+  subgraph L["Closed-loop training losses"]
+    L1["One-step coefficient and RHS loss"]
+    L2["Pressure closure/state loss"]
+    L3["Rollout trajectory loss"]
+    L4["Energy / dissipation consistency"]
+    L5["Router balance, entropy, smoothness"]
+    L6["Group supervision and expert diversity"]
+  end
+
+  subgraph U["Optimization and diagnostics"]
+    S["Scheduled sampling<br/>teacher forcing -> model feedback"]
+    W["AdamW + clipping + early stopping"]
+    Q["Routing diagnostics<br/>group load, active experts, collapse check"]
+  end
+
+  A --> B --> C --> E
+  E --> G
+  G --> V
+  G --> P
+  V --> O
+  P --> O
+  O --> R --> K
+  K --> L1
+  K --> L2
+  K --> L3
+  K --> L4
+  G --> L5
+  V --> L6
+  P --> L6
+  S --> K
+  L1 --> W
+  L2 --> W
+  L3 --> W
+  L4 --> W
+  L5 --> W
+  L6 --> W
+  W --> Q

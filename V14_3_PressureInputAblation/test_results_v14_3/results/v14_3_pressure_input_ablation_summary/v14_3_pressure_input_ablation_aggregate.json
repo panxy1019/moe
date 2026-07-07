@@ -1,0 +1,1008 @@
+{
+  "experiments": [
+    {
+      "mode": "VelocityOnly",
+      "path": "results/v14_3_pressure_input_velocity_only_dense_uniform10/v14_3_pressure_input_velocity_only_dense_uniform10_metrics.json",
+      "settings": {
+        "experiment_name": "v14_3_pressure_input_velocity_only_dense_uniform10",
+        "r_u": 16,
+        "r_p": 16,
+        "phase_harmonics": 4,
+        "hidden_dim": 224,
+        "num_blocks": 3,
+        "num_experts": 21,
+        "legacy_num_experts_arg": 6,
+        "num_operator_spaces": 3,
+        "num_regime_groups": 3,
+        "experts_per_group": 6,
+        "shared_experts_per_group": 1,
+        "top_k": 2,
+        "group_top_k": 1,
+        "expert_hidden": 768,
+        "expert_blocks": 3,
+        "quadratic_rank": 4,
+        "quadratic_scale": 0.05,
+        "dropout": 0.04,
+        "temperature": 0.95,
+        "gate_floor": 0.0,
+        "group_temperature": 0.9,
+        "group_gate_floor": 0.0,
+        "shared_scale": 1.0,
+        "routed_scale": 0.85,
+        "epochs": 240,
+        "batch_size": 256,
+        "lr": 0.00055,
+        "weight_decay": 0.00015,
+        "patience": 70,
+        "min_epochs": 130,
+        "eval_every": 5,
+        "early_stop_min_delta": 0.0008,
+        "curriculum_steps": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "train_rollout_steps": 16,
+        "rollout_steps": 24,
+        "rollout_batch": 2,
+        "rollout_every_batches": 1,
+        "recon_dim": 2048,
+        "loss_weights": {
+          "coeff": 0.75,
+          "dyn": 0.9,
+          "pressure": 0.95,
+          "recon": 0.08,
+          "rollout": 0.45,
+          "pressure_rollout": 0.45,
+          "consistency": 0.15,
+          "router_balance": 0.06,
+          "router_entropy": -0.002,
+          "group_balance": 0.04,
+          "group_entropy": 0.0,
+          "group_supervision": 0.04,
+          "router_smooth": 0.04,
+          "expert_diversity": 0.006,
+          "regime_router": 0.004,
+          "energy": 0.05,
+          "trajectory_consistency": 0.18,
+          "alpha_rel": 0.04,
+          "rhs_rel": 0.06,
+          "pressure_rel": 0.7,
+          "rollout_relative_mix": 0.35,
+          "relative_floor_frac": 0.05
+        },
+        "scheduled_sampling": {
+          "start": 0.0,
+          "end": 0.85,
+          "warmup_frac": 0.7
+        },
+        "history_len": 3,
+        "rhs_target": "residual",
+        "pressure_target": "closure",
+        "pressure_input_mode": "velocity_only",
+        "pressure_amplitude_weight_power": 0.0,
+        "pressure_amplitude_weight_max": 6.0,
+        "test_re_indices": [
+          0,
+          30,
+          50,
+          63,
+          70,
+          76,
+          82,
+          88,
+          94,
+          99
+        ],
+        "test_re_selection": "uniform",
+        "num_uniform_test_re": 10,
+        "train_time_stride": 1,
+        "train_time_offset": 0,
+        "train_re_stride": 1,
+        "train_re_offset": 0,
+        "allow_tf32": true,
+        "integrator": "rk4",
+        "analysis_bins": 4,
+        "eval_routing_every": 0,
+        "eval_routing_max_samples": 2048,
+        "skip_expert_error_analysis": true,
+        "pressure_surrogate_path": "/root/moe/V8/data/pressure_poisson_surrogate_tensors_allRe100_weightedL2_ru80_rp80.npz",
+        "device": "cuda",
+        "torch_version": "2.11.0+cu126"
+      },
+      "aggregate_metrics": {
+        "rhs_l2": {
+          "mean": 0.09167612716555595,
+          "std": 0.017800449951504035,
+          "min": 0.07007689774036407,
+          "max": 0.12096698582172394
+        },
+        "pressure_head_l2": {
+          "mean": 0.11496088700369,
+          "std": 0.2925528576022895,
+          "min": 0.006304756738245487,
+          "max": 0.9908603429794312
+        },
+        "one_step_a_l2": {
+          "mean": 0.025900281313806773,
+          "std": 0.014864031619598362,
+          "min": 0.011169226840138435,
+          "max": 0.06567364931106567
+        },
+        "one_step_b_l2": {
+          "mean": 0.1268762349151075,
+          "std": 0.29091394836050866,
+          "min": 0.013987254351377487,
+          "max": 0.9983119964599609
+        },
+        "rollout_a_l2": {
+          "mean": 0.09989761374890804,
+          "std": 0.07307349520399162,
+          "min": 0.036155912559479475,
+          "max": 0.2816104255616665
+        },
+        "rollout_b_l2": {
+          "mean": 0.20869334335438908,
+          "std": 0.3615649960412546,
+          "min": 0.038131209556013346,
+          "max": 1.2857047319412231
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.044906702046316624,
+          "std": 0.10047231625187623,
+          "min": 0.0035415496310022498,
+          "max": 0.3439176424814146
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.0669514409522733,
+          "std": 0.07889609517198239,
+          "min": 0.004417010637040798,
+          "max": 0.26551434654832407
+        },
+        "num_test_re": 10
+      },
+      "runtime_seconds": 29129.72305703163
+    },
+    {
+      "mode": "PressureOnly",
+      "path": "results/v14_3_pressure_input_pressure_only_dense_uniform10/v14_3_pressure_input_pressure_only_dense_uniform10_metrics.json",
+      "settings": {
+        "experiment_name": "v14_3_pressure_input_pressure_only_dense_uniform10",
+        "r_u": 16,
+        "r_p": 16,
+        "phase_harmonics": 4,
+        "hidden_dim": 224,
+        "num_blocks": 3,
+        "num_experts": 21,
+        "legacy_num_experts_arg": 6,
+        "num_operator_spaces": 3,
+        "num_regime_groups": 3,
+        "experts_per_group": 6,
+        "shared_experts_per_group": 1,
+        "top_k": 2,
+        "group_top_k": 1,
+        "expert_hidden": 768,
+        "expert_blocks": 3,
+        "quadratic_rank": 4,
+        "quadratic_scale": 0.05,
+        "dropout": 0.04,
+        "temperature": 0.95,
+        "gate_floor": 0.0,
+        "group_temperature": 0.9,
+        "group_gate_floor": 0.0,
+        "shared_scale": 1.0,
+        "routed_scale": 0.85,
+        "epochs": 240,
+        "batch_size": 256,
+        "lr": 0.00055,
+        "weight_decay": 0.00015,
+        "patience": 70,
+        "min_epochs": 130,
+        "eval_every": 5,
+        "early_stop_min_delta": 0.0008,
+        "curriculum_steps": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "train_rollout_steps": 16,
+        "rollout_steps": 24,
+        "rollout_batch": 2,
+        "rollout_every_batches": 1,
+        "recon_dim": 2048,
+        "loss_weights": {
+          "coeff": 0.75,
+          "dyn": 0.9,
+          "pressure": 0.95,
+          "recon": 0.08,
+          "rollout": 0.45,
+          "pressure_rollout": 0.45,
+          "consistency": 0.15,
+          "router_balance": 0.06,
+          "router_entropy": -0.002,
+          "group_balance": 0.04,
+          "group_entropy": 0.0,
+          "group_supervision": 0.04,
+          "router_smooth": 0.04,
+          "expert_diversity": 0.006,
+          "regime_router": 0.004,
+          "energy": 0.05,
+          "trajectory_consistency": 0.18,
+          "alpha_rel": 0.04,
+          "rhs_rel": 0.06,
+          "pressure_rel": 0.7,
+          "rollout_relative_mix": 0.35,
+          "relative_floor_frac": 0.05
+        },
+        "scheduled_sampling": {
+          "start": 0.0,
+          "end": 0.85,
+          "warmup_frac": 0.7
+        },
+        "history_len": 3,
+        "rhs_target": "residual",
+        "pressure_target": "closure",
+        "pressure_input_mode": "pressure_only",
+        "pressure_amplitude_weight_power": 0.0,
+        "pressure_amplitude_weight_max": 6.0,
+        "test_re_indices": [
+          0,
+          30,
+          50,
+          63,
+          70,
+          76,
+          82,
+          88,
+          94,
+          99
+        ],
+        "test_re_selection": "uniform",
+        "num_uniform_test_re": 10,
+        "train_time_stride": 1,
+        "train_time_offset": 0,
+        "train_re_stride": 1,
+        "train_re_offset": 0,
+        "allow_tf32": true,
+        "integrator": "rk4",
+        "analysis_bins": 4,
+        "eval_routing_every": 0,
+        "eval_routing_max_samples": 2048,
+        "skip_expert_error_analysis": true,
+        "pressure_surrogate_path": "/root/moe/V8/data/pressure_poisson_surrogate_tensors_allRe100_weightedL2_ru80_rp80.npz",
+        "device": "cuda",
+        "torch_version": "2.11.0+cu126"
+      },
+      "aggregate_metrics": {
+        "rhs_l2": {
+          "mean": 0.09257237017154693,
+          "std": 0.018252187280097126,
+          "min": 0.070768341422081,
+          "max": 0.12091333419084549
+        },
+        "pressure_head_l2": {
+          "mean": 0.10768166347406805,
+          "std": 0.2836047087747152,
+          "min": 0.004196614492684603,
+          "max": 0.9577175974845886
+        },
+        "one_step_a_l2": {
+          "mean": 0.023002209048718213,
+          "std": 0.016116057032479897,
+          "min": 0.009257677011191845,
+          "max": 0.06624467670917511
+        },
+        "one_step_b_l2": {
+          "mean": 0.12113195108249783,
+          "std": 0.283364790955798,
+          "min": 0.015303038991987705,
+          "max": 0.9702011346817017
+        },
+        "rollout_a_l2": {
+          "mean": 0.07318297540768981,
+          "std": 0.07860070966889388,
+          "min": 0.026788230519741774,
+          "max": 0.3029431700706482
+        },
+        "rollout_b_l2": {
+          "mean": 0.16415862755384297,
+          "std": 0.33239508259357564,
+          "min": 0.029859251575544477,
+          "max": 1.1591041088104248
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.0445221133575126,
+          "std": 0.10834804929562504,
+          "min": 0.003431473852905601,
+          "max": 0.36895132113326123
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.07213081538453298,
+          "std": 0.12356675608933845,
+          "min": 0.0005510487214794442,
+          "max": 0.43255386729208345
+        },
+        "num_test_re": 10
+      },
+      "runtime_seconds": 25568.9739382267
+    },
+    {
+      "mode": "Hybrid",
+      "path": "results/v14_3_pressure_input_hybrid_dense_uniform10/v14_3_pressure_input_hybrid_dense_uniform10_metrics.json",
+      "settings": {
+        "experiment_name": "v14_3_pressure_input_hybrid_dense_uniform10",
+        "r_u": 16,
+        "r_p": 16,
+        "phase_harmonics": 4,
+        "hidden_dim": 224,
+        "num_blocks": 3,
+        "num_experts": 21,
+        "legacy_num_experts_arg": 6,
+        "num_operator_spaces": 3,
+        "num_regime_groups": 3,
+        "experts_per_group": 6,
+        "shared_experts_per_group": 1,
+        "top_k": 2,
+        "group_top_k": 1,
+        "expert_hidden": 768,
+        "expert_blocks": 3,
+        "quadratic_rank": 4,
+        "quadratic_scale": 0.05,
+        "dropout": 0.04,
+        "temperature": 0.95,
+        "gate_floor": 0.0,
+        "group_temperature": 0.9,
+        "group_gate_floor": 0.0,
+        "shared_scale": 1.0,
+        "routed_scale": 0.85,
+        "epochs": 240,
+        "batch_size": 256,
+        "lr": 0.00055,
+        "weight_decay": 0.00015,
+        "patience": 70,
+        "min_epochs": 130,
+        "eval_every": 5,
+        "early_stop_min_delta": 0.0008,
+        "curriculum_steps": [
+          4,
+          8,
+          12,
+          16
+        ],
+        "train_rollout_steps": 16,
+        "rollout_steps": 24,
+        "rollout_batch": 2,
+        "rollout_every_batches": 1,
+        "recon_dim": 2048,
+        "loss_weights": {
+          "coeff": 0.75,
+          "dyn": 0.9,
+          "pressure": 0.95,
+          "recon": 0.08,
+          "rollout": 0.45,
+          "pressure_rollout": 0.45,
+          "consistency": 0.15,
+          "router_balance": 0.06,
+          "router_entropy": -0.002,
+          "group_balance": 0.04,
+          "group_entropy": 0.0,
+          "group_supervision": 0.04,
+          "router_smooth": 0.04,
+          "expert_diversity": 0.006,
+          "regime_router": 0.004,
+          "energy": 0.05,
+          "trajectory_consistency": 0.18,
+          "alpha_rel": 0.04,
+          "rhs_rel": 0.06,
+          "pressure_rel": 0.7,
+          "rollout_relative_mix": 0.35,
+          "relative_floor_frac": 0.05
+        },
+        "scheduled_sampling": {
+          "start": 0.0,
+          "end": 0.85,
+          "warmup_frac": 0.7
+        },
+        "history_len": 3,
+        "rhs_target": "residual",
+        "pressure_target": "closure",
+        "pressure_input_mode": "hybrid",
+        "pressure_amplitude_weight_power": 0.0,
+        "pressure_amplitude_weight_max": 6.0,
+        "test_re_indices": [
+          0,
+          30,
+          50,
+          63,
+          70,
+          76,
+          82,
+          88,
+          94,
+          99
+        ],
+        "test_re_selection": "uniform",
+        "num_uniform_test_re": 10,
+        "train_time_stride": 1,
+        "train_time_offset": 0,
+        "train_re_stride": 1,
+        "train_re_offset": 0,
+        "allow_tf32": true,
+        "integrator": "rk4",
+        "analysis_bins": 4,
+        "eval_routing_every": 0,
+        "eval_routing_max_samples": 2048,
+        "skip_expert_error_analysis": true,
+        "pressure_surrogate_path": "/root/moe/V8/data/pressure_poisson_surrogate_tensors_allRe100_weightedL2_ru80_rp80.npz",
+        "device": "cuda",
+        "torch_version": "2.11.0+cu126"
+      },
+      "aggregate_metrics": {
+        "rhs_l2": {
+          "mean": 0.09377448484301568,
+          "std": 0.020499370439771753,
+          "min": 0.069851815700531,
+          "max": 0.12461528182029724
+        },
+        "pressure_head_l2": {
+          "mean": 0.11831120932474733,
+          "std": 0.29070719464598477,
+          "min": 0.00901377946138382,
+          "max": 0.9885765314102173
+        },
+        "one_step_a_l2": {
+          "mean": 0.03423010408878326,
+          "std": 0.015924783311406676,
+          "min": 0.01985691860318184,
+          "max": 0.07723265141248703
+        },
+        "one_step_b_l2": {
+          "mean": 0.13336266595870255,
+          "std": 0.29140364512560685,
+          "min": 0.02065236307680607,
+          "max": 1.006274938583374
+        },
+        "rollout_a_l2": {
+          "mean": 0.18517038002610206,
+          "std": 0.06590167229099458,
+          "min": 0.11370161175727844,
+          "max": 0.3508663885295391
+        },
+        "rollout_b_l2": {
+          "mean": 0.2924299085512757,
+          "std": 0.29775022551184543,
+          "min": 0.13583883829414845,
+          "max": 1.179788202047348
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.05980099106956588,
+          "std": 0.12389594930315737,
+          "min": 0.0016346200281837535,
+          "max": 0.4283277677999746
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.15093947660415677,
+          "std": 0.11526575899382448,
+          "min": 0.014893598931295675,
+          "max": 0.44218466575254334
+        },
+        "num_test_re": 10
+      },
+      "runtime_seconds": 22796.14204645157
+    }
+  ],
+  "aggregate": {
+    "Hybrid": {
+      "rhs_l2": {
+        "mean": 0.09377448484301568,
+        "std": 0.020499370439771757,
+        "min": 0.069851815700531,
+        "max": 0.12461528182029724
+      },
+      "one_step_velocity_l2": {
+        "mean": 0.03423010408878326,
+        "std": 0.015924783311406676,
+        "min": 0.01985691860318184,
+        "max": 0.07723265141248703
+      },
+      "one_step_pressure_l2": {
+        "mean": 0.13336266595870255,
+        "std": 0.2914036451256069,
+        "min": 0.02065236307680607,
+        "max": 1.006274938583374
+      },
+      "one_step_pressure_energy_error": {
+        "mean": 0.059800991069565886,
+        "std": 0.12389594930315737,
+        "min": 0.0016346200281837535,
+        "max": 0.4283277677999746
+      },
+      "rollout_velocity_l2": {
+        "mean": 0.18517038002610206,
+        "std": 0.06590167229099458,
+        "min": 0.11370161175727844,
+        "max": 0.3508663885295391
+      },
+      "rollout_pressure_l2": {
+        "mean": 0.2924299085512757,
+        "std": 0.29775022551184543,
+        "min": 0.13583883829414845,
+        "max": 1.179788202047348
+      },
+      "rollout_pressure_energy_error": {
+        "mean": 0.15093947660415677,
+        "std": 0.11526575899382448,
+        "min": 0.014893598931295675,
+        "max": 0.44218466575254334
+      },
+      "pressure_head_l2": {
+        "mean": 0.11831120932474733,
+        "std": 0.29070719464598477,
+        "min": 0.00901377946138382,
+        "max": 0.9885765314102173
+      },
+      "pressure_head_energy_error": {
+        "mean": 0.05099865550115492,
+        "std": 0.12857852686286977,
+        "min": 1.2175137363011222e-05,
+        "max": 0.4347241943617402
+      },
+      "low_Re_le_80": {
+        "rhs_l2": {
+          "mean": 0.12005174532532692,
+          "std": 0.001191314309835434,
+          "min": 0.11886043101549149,
+          "max": 0.12124305963516235
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.059131721034646034,
+          "std": 0.018100930377840996,
+          "min": 0.04103079065680504,
+          "max": 0.07723265141248703
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.5314705409109592,
+          "std": 0.4748043976724148,
+          "min": 0.056666143238544464,
+          "max": 1.006274938583374
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.23086159352986327,
+          "std": 0.19746617427011134,
+          "min": 0.033395419259751945,
+          "max": 0.4283277677999746
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.2767487093806267,
+          "std": 0.07411767914891243,
+          "min": 0.20263103023171425,
+          "max": 0.3508663885295391
+        },
+        "rollout_pressure_l2": {
+          "mean": 0.6990981120616198,
+          "std": 0.48069008998572826,
+          "min": 0.2184080220758915,
+          "max": 1.179788202047348
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.34858482337101354,
+          "std": 0.0935998423815298,
+          "min": 0.25498498098948374,
+          "max": 0.44218466575254334
+        },
+        "pressure_head_l2": {
+          "mean": 0.5106105450540781,
+          "std": 0.4779659863561392,
+          "min": 0.03264455869793892,
+          "max": 0.9885765314102173
+        },
+        "pressure_head_energy_error": {
+          "mean": 0.22615398679195953,
+          "std": 0.20857020756978067,
+          "min": 0.01758377922217888,
+          "max": 0.4347241943617402
+        }
+      },
+      "high_Re_ge_240": {
+        "rhs_l2": {
+          "mean": 0.07236115634441376,
+          "std": 0.0020082576854281993,
+          "min": 0.069851815700531,
+          "max": 0.07476780563592911
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.030945980921387672,
+          "std": 0.007098474602147004,
+          "min": 0.02364264242351055,
+          "max": 0.04056241735816002
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.04141156810025374,
+          "std": 0.02282411643149814,
+          "min": 0.021257126703858376,
+          "max": 0.07332360744476318
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.028739409182526716,
+          "std": 0.021915082522159884,
+          "min": 0.0109480606205623,
+          "max": 0.05961250824872048
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.14769587914148966,
+          "std": 0.04513038720248057,
+          "min": 0.11370161175727844,
+          "max": 0.21147356554865837
+        },
+        "rollout_pressure_l2": {
+          "mean": 0.16740355143944421,
+          "std": 0.032435184517937365,
+          "min": 0.13583883829414845,
+          "max": 0.2120097428560257
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.07282170313571595,
+          "std": 0.061367751371873766,
+          "min": 0.014893598931295675,
+          "max": 0.15775228470082509
+        },
+        "pressure_head_l2": {
+          "mean": 0.03162863074491421,
+          "std": 0.03042579786864461,
+          "min": 0.009454566985368729,
+          "max": 0.07465039193630219
+        },
+        "pressure_head_energy_error": {
+          "mean": 0.01778249922526162,
+          "std": 0.01899606421455929,
+          "min": 0.003237111567721918,
+          "max": 0.04461534276931762
+        }
+      }
+    },
+    "PressureOnly": {
+      "rhs_l2": {
+        "mean": 0.09257237017154693,
+        "std": 0.01825218728009713,
+        "min": 0.070768341422081,
+        "max": 0.12091333419084549
+      },
+      "one_step_velocity_l2": {
+        "mean": 0.023002209048718213,
+        "std": 0.016116057032479897,
+        "min": 0.009257677011191845,
+        "max": 0.06624467670917511
+      },
+      "one_step_pressure_l2": {
+        "mean": 0.12113195108249783,
+        "std": 0.283364790955798,
+        "min": 0.015303038991987705,
+        "max": 0.9702011346817017
+      },
+      "one_step_pressure_energy_error": {
+        "mean": 0.0445221133575126,
+        "std": 0.10834804929562504,
+        "min": 0.003431473852905601,
+        "max": 0.36895132113326123
+      },
+      "rollout_velocity_l2": {
+        "mean": 0.07318297540768981,
+        "std": 0.07860070966889388,
+        "min": 0.026788230519741774,
+        "max": 0.3029431700706482
+      },
+      "rollout_pressure_l2": {
+        "mean": 0.16415862755384297,
+        "std": 0.3323950825935756,
+        "min": 0.029859251575544477,
+        "max": 1.1591041088104248
+      },
+      "rollout_pressure_energy_error": {
+        "mean": 0.07213081538453296,
+        "std": 0.12356675608933844,
+        "min": 0.0005510487214794442,
+        "max": 0.43255386729208345
+      },
+      "pressure_head_l2": {
+        "mean": 0.10768166347406805,
+        "std": 0.2836047087747152,
+        "min": 0.004196614492684603,
+        "max": 0.9577175974845886
+      },
+      "pressure_head_energy_error": {
+        "mean": 0.0419328665335286,
+        "std": 0.11232663963605617,
+        "min": 0.0005133898906682106,
+        "max": 0.3784411177270512
+      },
+      "low_Re_le_80": {
+        "rhs_l2": {
+          "mean": 0.11505427956581116,
+          "std": 0.004158176481723785,
+          "min": 0.11089610308408737,
+          "max": 0.11921245604753494
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.04967528209090233,
+          "std": 0.01656939461827278,
+          "min": 0.03310588747262955,
+          "max": 0.06624467670917511
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.5131678767502308,
+          "std": 0.45703325793147087,
+          "min": 0.05613461881875992,
+          "max": 0.9702011346817017
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.18753151470351612,
+          "std": 0.18141980642974512,
+          "min": 0.0061117082737710176,
+          "max": 0.36895132113326123
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.18909920961596072,
+          "std": 0.11384396045468748,
+          "min": 0.07525524916127324,
+          "max": 0.3029431700706482
+        },
+        "rollout_pressure_l2": {
+          "mean": 0.6193869111593813,
+          "std": 0.5397171976510435,
+          "min": 0.07966971350833774,
+          "max": 1.1591041088104248
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.26688299146924144,
+          "std": 0.165670875822842,
+          "min": 0.1012121156463994,
+          "max": 0.43255386729208345
+        },
+        "pressure_head_l2": {
+          "mean": 0.4907617811113596,
+          "std": 0.466955816373229,
+          "min": 0.02380596473813057,
+          "max": 0.9577175974845886
+        },
+        "pressure_head_energy_error": {
+          "mean": 0.1916222321921355,
+          "std": 0.18681888553491569,
+          "min": 0.00480334665721984,
+          "max": 0.3784411177270512
+        }
+      },
+      "high_Re_ge_240": {
+        "rhs_l2": {
+          "mean": 0.07311941186587016,
+          "std": 0.0020017590163665775,
+          "min": 0.070768341422081,
+          "max": 0.07566056400537491
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.02239215187728405,
+          "std": 0.004781564743590596,
+          "min": 0.017460897564888,
+          "max": 0.02886490896344185
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.032068850472569466,
+          "std": 0.013789853497030198,
+          "min": 0.02067083865404129,
+          "max": 0.0514720194041729
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.014152242538193536,
+          "std": 0.00964653368163472,
+          "min": 0.007085010420986749,
+          "max": 0.02779150507574672
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.05250793835148215,
+          "std": 0.023395183266405255,
+          "min": 0.03261366579681635,
+          "max": 0.08534973207861185
+        },
+        "rollout_pressure_l2": {
+          "mean": 0.06032426826034983,
+          "std": 0.03274464777562082,
+          "min": 0.03183970646932721,
+          "max": 0.10618600901216269
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.026619354857810345,
+          "std": 0.03062917761020883,
+          "min": 0.0005510487214794442,
+          "max": 0.06961268586869439
+        },
+        "pressure_head_l2": {
+          "mean": 0.01840156689286232,
+          "std": 0.01927010026093671,
+          "min": 0.004196614492684603,
+          "max": 0.04564528539776802
+        },
+        "pressure_head_energy_error": {
+          "mean": 0.008145012251100564,
+          "std": 0.009430679151439232,
+          "min": 0.0008811162616649094,
+          "max": 0.02146372571098174
+        }
+      }
+    },
+    "VelocityOnly": {
+      "rhs_l2": {
+        "mean": 0.09167612716555595,
+        "std": 0.017800449951504035,
+        "min": 0.07007689774036407,
+        "max": 0.12096698582172394
+      },
+      "one_step_velocity_l2": {
+        "mean": 0.025900281313806773,
+        "std": 0.014864031619598362,
+        "min": 0.011169226840138435,
+        "max": 0.06567364931106567
+      },
+      "one_step_pressure_l2": {
+        "mean": 0.1268762349151075,
+        "std": 0.29091394836050866,
+        "min": 0.013987254351377487,
+        "max": 0.9983119964599609
+      },
+      "one_step_pressure_energy_error": {
+        "mean": 0.04490670204631662,
+        "std": 0.10047231625187623,
+        "min": 0.0035415496310022498,
+        "max": 0.3439176424814146
+      },
+      "rollout_velocity_l2": {
+        "mean": 0.09989761374890804,
+        "std": 0.07307349520399162,
+        "min": 0.036155912559479475,
+        "max": 0.2816104255616665
+      },
+      "rollout_pressure_l2": {
+        "mean": 0.20869334335438908,
+        "std": 0.3615649960412546,
+        "min": 0.038131209556013346,
+        "max": 1.2857047319412231
+      },
+      "rollout_pressure_energy_error": {
+        "mean": 0.0669514409522733,
+        "std": 0.07889609517198239,
+        "min": 0.004417010637040798,
+        "max": 0.26551434654832407
+      },
+      "pressure_head_l2": {
+        "mean": 0.11496088700369,
+        "std": 0.2925528576022895,
+        "min": 0.006304756738245487,
+        "max": 0.9908603429794312
+      },
+      "pressure_head_energy_error": {
+        "mean": 0.040503262261738164,
+        "std": 0.10327045687988544,
+        "min": 0.0001479767266805395,
+        "max": 0.34794983869650953
+      },
+      "low_Re_le_80": {
+        "rhs_l2": {
+          "mean": 0.11243854835629463,
+          "std": 0.00021051988005638123,
+          "min": 0.11222802847623825,
+          "max": 0.11264906823635101
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.048981115221977234,
+          "std": 0.01669253408908844,
+          "min": 0.032288581132888794,
+          "max": 0.06567364931106567
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.5262318588793278,
+          "std": 0.47208013758063316,
+          "min": 0.05415172129869461,
+          "max": 0.9983119964599609
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.17703108594384545,
+          "std": 0.16688655653756915,
+          "min": 0.010144529406276316,
+          "max": 0.3439176424814146
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.20703235547989607,
+          "std": 0.07457807008177042,
+          "min": 0.13245428539812565,
+          "max": 0.2816104255616665
+        },
+        "rollout_pressure_l2": {
+          "mean": 0.7210614802315831,
+          "std": 0.56464325170964,
+          "min": 0.1564182285219431,
+          "max": 1.2857047319412231
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.1983336411582928,
+          "std": 0.06718070539003126,
+          "min": 0.13115293576826154,
+          "max": 0.26551434654832407
+        },
+        "pressure_head_l2": {
+          "mean": 0.5121070872992277,
+          "std": 0.47875325568020344,
+          "min": 0.03335383161902428,
+          "max": 0.9908603429794312
+        },
+        "pressure_head_energy_error": {
+          "mean": 0.17588038634906117,
+          "std": 0.17206945234744836,
+          "min": 0.0038109340016128294,
+          "max": 0.34794983869650953
+        }
+      },
+      "high_Re_ge_240": {
+        "rhs_l2": {
+          "mean": 0.07270996520916621,
+          "std": 0.002238647400468499,
+          "min": 0.07007689774036407,
+          "max": 0.07554884254932404
+        },
+        "one_step_velocity_l2": {
+          "mean": 0.02521655336022377,
+          "std": 0.0051651746097036546,
+          "min": 0.021160274744033813,
+          "max": 0.03250572830438614
+        },
+        "one_step_pressure_l2": {
+          "mean": 0.03875375290711721,
+          "std": 0.01925691009327096,
+          "min": 0.024217862635850906,
+          "max": 0.06596596539020538
+        },
+        "one_step_pressure_energy_error": {
+          "mean": 0.022548228591977564,
+          "std": 0.01864338995701429,
+          "min": 0.009131930168700874,
+          "max": 0.04891257748964727
+        },
+        "rollout_velocity_l2": {
+          "mean": 0.09329278844719131,
+          "std": 0.057376169022804735,
+          "min": 0.049976817797869444,
+          "max": 0.17437157966196537
+        },
+        "rollout_pressure_l2": {
+          "mean": 0.09666528707991044,
+          "std": 0.05554152756684228,
+          "min": 0.050284748896956444,
+          "max": 0.17475479282438755
+        },
+        "rollout_pressure_energy_error": {
+          "mean": 0.05459033938142285,
+          "std": 0.04908074297563018,
+          "min": 0.015460637851924737,
+          "max": 0.1238042469370023
+        },
+        "pressure_head_l2": {
+          "mean": 0.027017725786815088,
+          "std": 0.02889198993681081,
+          "min": 0.006304756738245487,
+          "max": 0.06787585467100143
+        },
+        "pressure_head_energy_error": {
+          "mean": 0.01566199458460767,
+          "std": 0.020188591734658222,
+          "min": 0.0011603528885309581,
+          "max": 0.04421177422015539
+        }
+      }
+    }
+  },
+  "combined_csv": "results/v14_3_pressure_input_ablation_summary/v14_3_pressure_input_ablation_combined.csv",
+  "figures": {
+    "one_step_pressure_vs_re": "results/v14_3_pressure_input_ablation_summary/v14_3_one_step_pressure_vs_re.svg",
+    "rollout_pressure_vs_re": "results/v14_3_pressure_input_ablation_summary/v14_3_rollout_pressure_vs_re.svg",
+    "pressure_energy_vs_re": "results/v14_3_pressure_input_ablation_summary/v14_3_pressure_energy_vs_re.svg"
+  }
+}
