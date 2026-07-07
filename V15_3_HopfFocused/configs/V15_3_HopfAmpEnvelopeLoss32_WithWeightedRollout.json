@@ -1,0 +1,17 @@
+{
+  "experiment_tag": "V15_3_HopfAmpEnvelopeLoss32_WithWeightedRollout",
+  "r_u": 32,
+  "r_p": 32,
+  "regime_balanced_sampling": true,
+  "closure_mode": "adaptive_gate",
+  "pressure_base_mode": "static",
+  "curriculum_steps": [8, 16, 24, 32],
+  "hopf_pair": [0, 1],
+  "lambda_hopf_log_amp": 0.05,
+  "lambda_hopf_energy": 0.05,
+  "lambda_hopf_overshoot": 0.02,
+  "hopf_loss_warmup_epochs": 30,
+  "hopf_sample_weight": 3.0,
+  "hopf_focus_sample_weight": 4.0,
+  "hopf_rollout_weight": 2.0
+}
