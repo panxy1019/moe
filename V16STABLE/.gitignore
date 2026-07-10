@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.ckpt
+*.log
+*.pid
+metrics.json
+*_metrics.json
+results/V16_1_SteadyPressureAnchor32_ru32_rp32/
+results/checkpoints/
+results/swanlog/

@@ -1,0 +1,77 @@
+{
+  "experiment_name": "V16_1_SteadyPressureAnchor32_ru32_rp32",
+  "database": "Physics-Generalizable Attractor Database, Re=20-200",
+  "data": {
+    "r_u": 32,
+    "r_p": 32,
+    "history_len": 3,
+    "phase_harmonics": 4,
+    "train_time_stride": 1,
+    "train_re_stride": 1,
+    "test_re_selection": "regime_default",
+    "attractor_balanced_sampling": true
+  },
+  "model": {
+    "input_dim": 501,
+    "hidden_dim": 224,
+    "num_blocks": 3,
+    "num_regime_groups": 3,
+    "experts_per_group": 6,
+    "shared_experts_per_group": 1,
+    "experts_per_branch": 21,
+    "top_k": 2,
+    "group_top_k": 1,
+    "expert_hidden": 768,
+    "expert_blocks": 3,
+    "quadratic_rank": 4,
+    "quadratic_scale": 0.05,
+    "dropout": 0.04,
+    "temperature": 0.95,
+    "group_temperature": 0.9,
+    "shared_scale": 1.0,
+    "routed_scale": 0.85,
+    "rhs_target": "residual",
+    "pressure_target": "closure",
+    "pressure_input_mode": "pressure_only:[a_t,b_t]",
+    "pressure_base_mode": "static",
+    "closure_mode": "adaptive_gate",
+    "integrator": "rk4",
+    "estimated_trainable_parameters": 48617547
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.00055,
+    "weight_decay": 0.00015,
+    "batch_size": 256,
+    "epochs": 240,
+    "min_epochs": 130,
+    "patience": 70,
+    "eval_every": 5,
+    "seed": 1600,
+    "train_rollout_steps": 16,
+    "rollout_batch": 2,
+    "rollout_every_batches": 1,
+    "curriculum_steps": [4, 8, 12, 16],
+    "scheduled_sampling": {
+      "start": 0.0,
+      "end": 0.85,
+      "warmup_fraction": 0.7
+    },
+    "evaluation_rollout_steps": 24,
+    "allow_tf32": true
+  },
+  "steady_pressure_anchor": {
+    "warmup_epochs": 0,
+    "lambda_pressure_state": 0.02,
+    "lambda_pressure_mean": 0.02,
+    "lambda_pressure_delta": 0.01,
+    "lambda_residual_damping": 0.01,
+    "lambda_pressure_energy": 0.01
+  },
+  "reference_run": {
+    "best_epoch": 225,
+    "best_val_score": 0.482090595504269,
+    "runtime_seconds": 41547.31402826309,
+    "torch_version": "2.11.0+cu126"
+  }
+}
