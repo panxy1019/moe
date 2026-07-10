@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<style>text{font-family:Arial,sans-serif;fill:#1f2937}.axis{stroke:#374151;stroke-width:1.2}.grid{stroke:#e5e7eb;stroke-width:1}.line{fill:none;stroke-width:2.5}.dot{stroke:white;stroke-width:1.2}</style>
+<rect width="1100" height="620" fill="#fbfdff"/>
+<text x="78" y="32" font-size="22" font-weight="700">V16_1 RK4 one-step velocity relative L2 vs Re</text>
+<line class="axis" x1="78" y1="548" x2="1070" y2="548"/>
+<line class="axis" x1="78" y1="52" x2="78" y2="548"/>
+<line class="grid" x1="78" y1="548.0" x2="1070" y2="548.0"/>
+<text x="12" y="552.0" font-size="12">0</text>
+<line class="grid" x1="78" y1="448.8" x2="1070" y2="448.8"/>
+<text x="12" y="452.8" font-size="12">0.0945</text>
+<line class="grid" x1="78" y1="349.6" x2="1070" y2="349.6"/>
+<text x="12" y="353.6" font-size="12">0.189</text>
+<line class="grid" x1="78" y1="250.4" x2="1070" y2="250.4"/>
+<text x="12" y="254.4" font-size="12">0.284</text>
+<line class="grid" x1="78" y1="151.2" x2="1070" y2="151.2"/>
+<text x="12" y="155.2" font-size="12">0.378</text>
+<line class="grid" x1="78" y1="52.0" x2="1070" y2="52.0"/>
+<text x="12" y="56.0" font-size="12">0.473</text>
+<text x="63.0" y="574" font-size="12">25</text>
+<text x="261.4" y="574" font-size="12">58</text>
+<text x="459.8" y="574" font-size="12">91</text>
+<text x="658.2" y="574" font-size="12">124</text>
+<text x="856.6" y="574" font-size="12">157</text>
+<text x="1055.0" y="574" font-size="12">190</text>
+<polyline class="line" points="78.0,524.6 126.7,532.4 168.4,534.6 201.1,536.1 212.8,490.1 224.4,505.2 241.0,330.9 352.3,486.3 532.6,501.4 825.0,513.6 1070.0,503.7" stroke="#2563eb"/>
+<circle class="dot" cx="78.0" cy="524.6" r="4" fill="#2563eb"/>
+<circle class="dot" cx="126.7" cy="532.4" r="4" fill="#2563eb"/>
+<circle class="dot" cx="168.4" cy="534.6" r="4" fill="#2563eb"/>
+<circle class="dot" cx="201.1" cy="536.1" r="4" fill="#2563eb"/>
+<circle class="dot" cx="212.8" cy="490.1" r="4" fill="#2563eb"/>
+<circle class="dot" cx="224.4" cy="505.2" r="4" fill="#2563eb"/>
+<circle class="dot" cx="241.0" cy="330.9" r="4" fill="#2563eb"/>
+<circle class="dot" cx="352.3" cy="486.3" r="4" fill="#2563eb"/>
+<circle class="dot" cx="532.6" cy="501.4" r="4" fill="#2563eb"/>
+<circle class="dot" cx="825.0" cy="513.6" r="4" fill="#2563eb"/>
+<circle class="dot" cx="1070.0" cy="503.7" r="4" fill="#2563eb"/>
+<line x1="88" y1="70" x2="112" y2="70" stroke="#2563eb" stroke-width="3"/>
+<text x="120" y="74" font-size="13">HopfOnsetGrowth</text>
+<polyline class="line" points="78.0,523.7 126.7,532.2 168.4,534.8 201.1,536.5 212.8,489.1 224.4,503.9 241.0,409.7 352.3,483.9 532.6,517.5 825.0,521.1 1070.0,514.5" stroke="#16a34a"/>
+<circle class="dot" cx="78.0" cy="523.7" r="4" fill="#16a34a"/>
+<circle class="dot" cx="126.7" cy="532.2" r="4" fill="#16a34a"/>
+<circle class="dot" cx="168.4" cy="534.8" r="4" fill="#16a34a"/>
+<circle class="dot" cx="201.1" cy="536.5" r="4" fill="#16a34a"/>
+<circle class="dot" cx="212.8" cy="489.1" r="4" fill="#16a34a"/>
+<circle class="dot" cx="224.4" cy="503.9" r="4" fill="#16a34a"/>
+<circle class="dot" cx="241.0" cy="409.7" r="4" fill="#16a34a"/>
+<circle class="dot" cx="352.3" cy="483.9" r="4" fill="#16a34a"/>
+<circle class="dot" cx="532.6" cy="517.5" r="4" fill="#16a34a"/>
+<circle class="dot" cx="825.0" cy="521.1" r="4" fill="#16a34a"/>
+<circle class="dot" cx="1070.0" cy="514.5" r="4" fill="#16a34a"/>
+<line x1="88" y1="92" x2="112" y2="92" stroke="#16a34a" stroke-width="3"/>
+<text x="120" y="96" font-size="13">SteadyPressureAnchor</text>
+<polyline class="line" points="78.0,521.2 126.7,529.3 168.4,532.4 201.1,534.4 212.8,440.9 224.4,469.4 241.0,88.7 352.3,470.3 532.6,508.4 825.0,519.4 1070.0,516.9" stroke="#dc2626"/>
+<circle class="dot" cx="78.0" cy="521.2" r="4" fill="#dc2626"/>
+<circle class="dot" cx="126.7" cy="529.3" r="4" fill="#dc2626"/>
+<circle class="dot" cx="168.4" cy="532.4" r="4" fill="#dc2626"/>
+<circle class="dot" cx="201.1" cy="534.4" r="4" fill="#dc2626"/>
+<circle class="dot" cx="212.8" cy="440.9" r="4" fill="#dc2626"/>
+<circle class="dot" cx="224.4" cy="469.4" r="4" fill="#dc2626"/>
+<circle class="dot" cx="241.0" cy="88.7" r="4" fill="#dc2626"/>
+<circle class="dot" cx="352.3" cy="470.3" r="4" fill="#dc2626"/>
+<circle class="dot" cx="532.6" cy="508.4" r="4" fill="#dc2626"/>
+<circle class="dot" cx="825.0" cy="519.4" r="4" fill="#dc2626"/>
+<circle class="dot" cx="1070.0" cy="516.9" r="4" fill="#dc2626"/>
+<line x1="88" y1="114" x2="112" y2="114" stroke="#dc2626" stroke-width="3"/>
+<text x="120" y="118" font-size="13">TrainStableCombined</text>
+</svg>

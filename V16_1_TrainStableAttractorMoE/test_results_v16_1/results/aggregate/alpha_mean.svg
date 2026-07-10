@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+<style>text{font-family:Arial,sans-serif;fill:#1f2937}.axis{stroke:#374151;stroke-width:1.2}.grid{stroke:#e5e7eb;stroke-width:1}.line{fill:none;stroke-width:2.5}.dot{stroke:white;stroke-width:1.2}</style>
+<rect width="1100" height="620" fill="#fbfdff"/>
+<text x="78" y="32" font-size="22" font-weight="700">V16_1 AdaptiveGate alpha mean vs Re</text>
+<line class="axis" x1="78" y1="548" x2="1070" y2="548"/>
+<line class="axis" x1="78" y1="52" x2="78" y2="548"/>
+<line class="grid" x1="78" y1="548.0" x2="1070" y2="548.0"/>
+<text x="12" y="552.0" font-size="12">0</text>
+<line class="grid" x1="78" y1="448.8" x2="1070" y2="448.8"/>
+<text x="12" y="452.8" font-size="12">0.124</text>
+<line class="grid" x1="78" y1="349.6" x2="1070" y2="349.6"/>
+<text x="12" y="353.6" font-size="12">0.247</text>
+<line class="grid" x1="78" y1="250.4" x2="1070" y2="250.4"/>
+<text x="12" y="254.4" font-size="12">0.371</text>
+<line class="grid" x1="78" y1="151.2" x2="1070" y2="151.2"/>
+<text x="12" y="155.2" font-size="12">0.495</text>
+<line class="grid" x1="78" y1="52.0" x2="1070" y2="52.0"/>
+<text x="12" y="56.0" font-size="12">0.619</text>
+<text x="63.0" y="574" font-size="12">25</text>
+<text x="261.4" y="574" font-size="12">58</text>
+<text x="459.8" y="574" font-size="12">91</text>
+<text x="658.2" y="574" font-size="12">124</text>
+<text x="856.6" y="574" font-size="12">157</text>
+<text x="1055.0" y="574" font-size="12">190</text>
+<polyline class="line" points="78.0,477.1 126.7,478.0 168.4,478.2 201.1,478.0 212.8,478.6 224.4,478.4 241.0,479.0 352.3,134.6 532.6,109.5 825.0,113.8 1070.0,114.4" stroke="#2563eb"/>
+<circle class="dot" cx="78.0" cy="477.1" r="4" fill="#2563eb"/>
+<circle class="dot" cx="126.7" cy="478.0" r="4" fill="#2563eb"/>
+<circle class="dot" cx="168.4" cy="478.2" r="4" fill="#2563eb"/>
+<circle class="dot" cx="201.1" cy="478.0" r="4" fill="#2563eb"/>
+<circle class="dot" cx="212.8" cy="478.6" r="4" fill="#2563eb"/>
+<circle class="dot" cx="224.4" cy="478.4" r="4" fill="#2563eb"/>
+<circle class="dot" cx="241.0" cy="479.0" r="4" fill="#2563eb"/>
+<circle class="dot" cx="352.3" cy="134.6" r="4" fill="#2563eb"/>
+<circle class="dot" cx="532.6" cy="109.5" r="4" fill="#2563eb"/>
+<circle class="dot" cx="825.0" cy="113.8" r="4" fill="#2563eb"/>
+<circle class="dot" cx="1070.0" cy="114.4" r="4" fill="#2563eb"/>
+<line x1="88" y1="70" x2="112" y2="70" stroke="#2563eb" stroke-width="3"/>
+<text x="120" y="74" font-size="13">HopfOnsetGrowth</text>
+<polyline class="line" points="78.0,497.3 126.7,497.7 168.4,497.9 201.1,497.8 212.8,498.4 224.4,498.3 241.0,498.5 352.3,136.7 532.6,91.2 825.0,90.5 1070.0,88.7" stroke="#16a34a"/>
+<circle class="dot" cx="78.0" cy="497.3" r="4" fill="#16a34a"/>
+<circle class="dot" cx="126.7" cy="497.7" r="4" fill="#16a34a"/>
+<circle class="dot" cx="168.4" cy="497.9" r="4" fill="#16a34a"/>
+<circle class="dot" cx="201.1" cy="497.8" r="4" fill="#16a34a"/>
+<circle class="dot" cx="212.8" cy="498.4" r="4" fill="#16a34a"/>
+<circle class="dot" cx="224.4" cy="498.3" r="4" fill="#16a34a"/>
+<circle class="dot" cx="241.0" cy="498.5" r="4" fill="#16a34a"/>
+<circle class="dot" cx="352.3" cy="136.7" r="4" fill="#16a34a"/>
+<circle class="dot" cx="532.6" cy="91.2" r="4" fill="#16a34a"/>
+<circle class="dot" cx="825.0" cy="90.5" r="4" fill="#16a34a"/>
+<circle class="dot" cx="1070.0" cy="88.7" r="4" fill="#16a34a"/>
+<line x1="88" y1="92" x2="112" y2="92" stroke="#16a34a" stroke-width="3"/>
+<text x="120" y="96" font-size="13">SteadyPressureAnchor</text>
+<polyline class="line" points="78.0,494.5 126.7,495.3 168.4,495.6 201.1,495.6 212.8,496.0 224.4,496.0 241.0,496.3 352.3,132.6 532.6,109.9 825.0,102.1 1070.0,100.7" stroke="#dc2626"/>
+<circle class="dot" cx="78.0" cy="494.5" r="4" fill="#dc2626"/>
+<circle class="dot" cx="126.7" cy="495.3" r="4" fill="#dc2626"/>
+<circle class="dot" cx="168.4" cy="495.6" r="4" fill="#dc2626"/>
+<circle class="dot" cx="201.1" cy="495.6" r="4" fill="#dc2626"/>
+<circle class="dot" cx="212.8" cy="496.0" r="4" fill="#dc2626"/>
+<circle class="dot" cx="224.4" cy="496.0" r="4" fill="#dc2626"/>
+<circle class="dot" cx="241.0" cy="496.3" r="4" fill="#dc2626"/>
+<circle class="dot" cx="352.3" cy="132.6" r="4" fill="#dc2626"/>
+<circle class="dot" cx="532.6" cy="109.9" r="4" fill="#dc2626"/>
+<circle class="dot" cx="825.0" cy="102.1" r="4" fill="#dc2626"/>
+<circle class="dot" cx="1070.0" cy="100.7" r="4" fill="#dc2626"/>
+<line x1="88" y1="114" x2="112" y2="114" stroke="#dc2626" stroke-width="3"/>
+<text x="120" y="118" font-size="13">TrainStableCombined</text>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "experiment_tag": "V15_Base",
+  "data_root": "/root/moe/ROM_PhysicsGeneralizable/data/Global_POD_AreaWeighted_L2",
+  "tensor_path": "/root/moe/ROM_PhysicsGeneralizable/data/semi_intrusive_galerkin_tensors_allRe100_areaWeightedL2_ru80_rp80_compact.npz",
+  "pressure_surrogate_path": "/root/moe/ROM_PhysicsGeneralizable/data/pressure_poisson_surrogate_tensors_allRe100_areaWeightedL2_ru80_rp80.npz",
+  "r_u": 16,
+  "r_p": 16,
+  "regime_balanced_sampling": false,
+  "test_re_selection": "regime_default",
+  "target_test_re_values": [24, 32, 40, 45, 47, 49, 52, 70, 100, 150, 190],
+  "closure_mode": "baseline",
+  "pressure_target": "closure",
+  "pressure_input_mode": "pressure_only",
+  "train_time_stride": 1,
+  "train_re_stride": 1,
+  "epochs": 240,
+  "batch_size": 256,
+  "lr": 0.00055,
+  "rollout_steps": 24,
+  "train_rollout_steps": 16,
+  "curriculum_steps": [4, 8, 12, 16],
+  "scheduled_sampling_end": 0.85
+}

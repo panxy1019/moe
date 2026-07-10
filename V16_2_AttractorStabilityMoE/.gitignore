@@ -1,0 +1,5 @@
+test_results_v16_2/__pycache__/
+test_results_v16_2/results/swanlog/
+test_results_v16_2/results/**/*.pid
+test_results_v16_2/results/V16_2_*/*/*_metrics.json
+test_results_v16_2/results/V16_2_*/*/*_checkpoint.pt
