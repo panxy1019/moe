@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980" role="img" aria-labelledby="title desc">
+  <title id="title">V13 Training Flow</title>
+  <desc id="desc">Training workflow for the V13 hierarchical physics-aware MoE-ROM.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f4858"/>
+    </marker>
+    <style>
+      .bg { fill: #f6f8fb; }
+      .band { fill: #ffffff; stroke: #c9d3df; stroke-width: 1.5; }
+      .title { font: 700 30px Arial, sans-serif; fill: #172a3a; }
+      .subtitle { font: 400 15px Arial, sans-serif; fill: #536575; }
+      .lane-title { font: 700 18px Arial, sans-serif; fill: #203242; }
+      .box { fill: #ffffff; stroke: #607d95; stroke-width: 2; rx: 10; }
+      .box-blue { fill: #e8f2ff; stroke: #3d73a3; stroke-width: 2; rx: 10; }
+      .box-green { fill: #e9f8ef; stroke: #43815c; stroke-width: 2; rx: 10; }
+      .box-amber { fill: #fff4df; stroke: #a47728; stroke-width: 2; rx: 10; }
+      .box-red { fill: #fdecec; stroke: #a85858; stroke-width: 2; rx: 10; }
+      .box-purple { fill: #f0ecff; stroke: #6656a6; stroke-width: 2; rx: 10; }
+      .label { font: 700 15px Arial, sans-serif; fill: #1f3242; }
+      .small { font: 400 13px Arial, sans-serif; fill: #3f5160; }
+      .tiny { font: 400 12px Arial, sans-serif; fill: #536575; }
+      .arrow { stroke: #2f4858; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .soft-arrow { stroke: #7d8c99; stroke-width: 1.8; fill: none; marker-end: url(#arrow); stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1500" height="980"/>
+  <text class="title" x="50" y="55">V13 Training Flow</text>
+  <text class="subtitle" x="50" y="82">Hierarchical physics-aware MoE-ROM with velocity/pressure routers, Top-2 sparse experts, shared experts, RK4, and multi-term losses.</text>
+
+  <rect class="band" x="40" y="115" width="280" height="790" rx="18"/>
+  <rect class="band" x="350" y="115" width="270" height="790" rx="18"/>
+  <rect class="band" x="650" y="115" width="360" height="790" rx="18"/>
+  <rect class="band" x="1040" y="115" width="410" height="790" rx="18"/>
+
+  <text class="lane-title" x="65" y="150">1. Data and Features</text>
+  <text class="lane-title" x="375" y="150">2. Split and Scaling</text>
+  <text class="lane-title" x="675" y="150">3. Forward Model</text>
+  <text class="lane-title" x="1065" y="150">4. Optimize and Record</text>
+
+  <rect class="box-blue" x="70" y="185" width="220" height="92"/>
+  <text class="label" x="90" y="215">POD Data</text>
+  <text class="small" x="90" y="240">a_t, b_t, Re, phase</text>
+  <text class="small" x="90" y="262">snapshot index, history</text>
+
+  <rect class="box-blue" x="70" y="320" width="220" height="104"/>
+  <text class="label" x="90" y="350">Physics Tensors</text>
+  <text class="small" x="90" y="375">Galerkin RHS</text>
+  <text class="small" x="90" y="397">pressure surrogate</text>
+
+  <rect class="box-green" x="70" y="470" width="220" height="128"/>
+  <text class="label" x="90" y="500">Feature Builder</text>
+  <text class="small" x="90" y="525">[a_t, b_t, Re]</text>
+  <text class="small" x="90" y="547">phase harmonics</text>
+  <text class="small" x="90" y="569">energy, norms, rhs_g</text>
+  <text class="small" x="90" y="591">short history deltas</text>
+
+  <rect class="box" x="390" y="195" width="190" height="86"/>
+  <text class="label" x="410" y="225">Leave-One-Re-Out</text>
+  <text class="small" x="410" y="250">train / val / test</text>
+  <text class="small" x="410" y="272">held-out Re split</text>
+
+  <rect class="box" x="390" y="330" width="190" height="112"/>
+  <text class="label" x="410" y="360">Targets</text>
+  <text class="small" x="410" y="385">velocity residual RHS</text>
+  <text class="small" x="410" y="407">pressure closure/state</text>
+  <text class="small" x="410" y="429">a_{t+1}, b_{t+1}</text>
+
+  <rect class="box" x="390" y="500" width="190" height="104"/>
+  <text class="label" x="410" y="530">Standardizers</text>
+  <text class="small" x="410" y="555">x, rhs target</text>
+  <text class="small" x="410" y="577">pressure target</text>
+  <text class="small" x="410" y="599">relative floors</text>
+
+  <rect class="box-purple" x="685" y="175" width="285" height="84"/>
+  <text class="label" x="705" y="205">Shared Encoder</text>
+  <text class="small" x="705" y="230">3-layer context encoder</text>
+  <text class="small" x="705" y="252">latent refinement blocks</text>
+
+  <rect class="box-purple" x="685" y="300" width="130" height="96"/>
+  <text class="label" x="705" y="330">Velocity</text>
+  <text class="label" x="705" y="351">Router</text>
+  <text class="small" x="705" y="374">Top-2 over</text>
+  <text class="small" x="705" y="392">24 experts</text>
+
+  <rect class="box-purple" x="840" y="300" width="130" height="96"/>
+  <text class="label" x="860" y="330">Pressure</text>
+  <text class="label" x="860" y="351">Router</text>
+  <text class="small" x="860" y="374">Top-2 over</text>
+  <text class="small" x="860" y="392">24 experts</text>
+
+  <rect class="box-amber" x="685" y="435" width="285" height="142"/>
+  <text class="label" x="705" y="466">Physics-Aware Experts</text>
+  <text class="small" x="705" y="491">routed velocity and pressure pools</text>
+  <text class="small" x="705" y="513">4 always-on shared experts</text>
+  <text class="small" x="705" y="535">W state + low-rank quadratic</text>
+  <text class="small" x="705" y="557">+ expanded residual FFN</text>
+
+  <rect class="box-green" x="685" y="630" width="285" height="110"/>
+  <text class="label" x="705" y="660">Time Advance</text>
+  <text class="small" x="705" y="685">f = Galerkin RHS + closure</text>
+  <text class="small" x="705" y="707">RK4(a_t, f) -> a_{t+1}</text>
+  <text class="small" x="705" y="729">pressure closure/state -> b_{t+1}</text>
+
+  <rect class="box-red" x="1085" y="180" width="315" height="170"/>
+  <text class="label" x="1105" y="212">Loss Terms</text>
+  <text class="small" x="1105" y="238">coefficient one-step</text>
+  <text class="small" x="1105" y="260">RHS dynamic and consistency</text>
+  <text class="small" x="1105" y="282">pressure and relative losses</text>
+  <text class="small" x="1105" y="304">short rollout and reconstruction</text>
+  <text class="small" x="1105" y="326">router balance, entropy, smoothness</text>
+
+  <rect class="box-red" x="1085" y="395" width="315" height="112"/>
+  <text class="label" x="1105" y="426">Backpropagation</text>
+  <text class="small" x="1105" y="451">AdamW + cosine schedule</text>
+  <text class="small" x="1105" y="473">gradient clipping</text>
+  <text class="small" x="1105" y="495">expert diversity regularization</text>
+
+  <rect class="box" x="1085" y="555" width="315" height="150"/>
+  <text class="label" x="1105" y="586">Validation and Selection</text>
+  <text class="small" x="1105" y="611">evaluate every N epochs</text>
+  <text class="small" x="1105" y="633">best val score per held-out Re</text>
+  <text class="small" x="1105" y="655">early stopping after patience</text>
+  <text class="small" x="1105" y="677">load best state before test metrics</text>
+
+  <rect class="box-green" x="1085" y="750" width="315" height="112"/>
+  <text class="label" x="1105" y="780">Artifacts</text>
+  <text class="small" x="1105" y="805">checkpoint.pt per split</text>
+  <text class="small" x="1105" y="827">metrics JSON and summary MD</text>
+  <text class="small" x="1105" y="849">routing and shared-expert diagnostics</text>
+
+  <path class="arrow" d="M180 277 L180 320"/>
+  <path class="arrow" d="M180 424 L180 470"/>
+  <path class="arrow" d="M290 534 L390 238"/>
+  <path class="arrow" d="M290 534 L390 386"/>
+  <path class="arrow" d="M485 442 L485 500"/>
+  <path class="arrow" d="M580 552 L685 217"/>
+  <path class="arrow" d="M828 259 L750 300"/>
+  <path class="arrow" d="M828 259 L905 300"/>
+  <path class="arrow" d="M750 396 L750 435"/>
+  <path class="arrow" d="M905 396 L905 435"/>
+  <path class="arrow" d="M828 577 L828 630"/>
+  <path class="arrow" d="M970 684 L1085 265"/>
+  <path class="arrow" d="M1242 350 L1242 395"/>
+  <path class="arrow" d="M1242 507 L1242 555"/>
+  <path class="arrow" d="M1242 705 L1242 750"/>
+  <path class="soft-arrow" d="M1085 451 C1015 451, 1015 205, 970 205"/>
+  <text class="tiny" x="995" y="432">parameter updates</text>
+</svg>

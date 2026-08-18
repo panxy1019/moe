@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="900" viewBox="0 0 1560 900" role="img" aria-labelledby="title desc">
+  <title id="title">V14 HPRS-MoE Inference Flow</title>
+  <desc id="desc">Autonomous inference workflow for the V14 Hierarchical Physics-Regime Sparse Mixture of Experts ROM.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f4858"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f9fb; }
+      .title { font: 700 30px Arial, sans-serif; fill: #172a3a; }
+      .subtitle { font: 400 15px Arial, sans-serif; fill: #526577; }
+      .box { fill: #ffffff; stroke: #607d95; stroke-width: 2; rx: 10; }
+      .blue { fill: #e8f2ff; stroke: #3d73a3; }
+      .green { fill: #e9f8ef; stroke: #43815c; }
+      .amber { fill: #fff4df; stroke: #a47728; }
+      .rose { fill: #fdecec; stroke: #a85858; }
+      .violet { fill: #f0ecff; stroke: #6656a6; }
+      .label { font: 700 15px Arial, sans-serif; fill: #1f3242; }
+      .small { font: 400 13px Arial, sans-serif; fill: #3f5160; }
+      .tiny { font: 400 12px Arial, sans-serif; fill: #526577; }
+      .arrow { stroke: #2f4858; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .soft { stroke: #7d8c99; stroke-width: 1.8; fill: none; marker-end: url(#arrow); stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1560" height="900"/>
+  <text class="title" x="48" y="54">V14 Inference Flow: Autonomous HPRS-MoE-ROM</text>
+  <text class="subtitle" x="48" y="82">At each time step the model selects a physics regime, assembles local velocity/pressure operators, and advances velocity with RK4.</text>
+
+  <rect class="box blue" x="62" y="158" width="260" height="126"/>
+  <text class="label" x="88" y="190">Current ROM State</text>
+  <text class="small" x="88" y="216">a_t, b_t</text>
+  <text class="small" x="88" y="238">Re and phase</text>
+  <text class="small" x="88" y="260">short history buffers</text>
+
+  <rect class="box blue" x="62" y="350" width="260" height="126"/>
+  <text class="label" x="88" y="382">Physics Context</text>
+  <text class="small" x="88" y="408">Galerkin tensors</text>
+  <text class="small" x="88" y="430">pressure surrogate tensors</text>
+  <text class="small" x="88" y="452">trained standardizers</text>
+
+  <rect class="box green" x="390" y="245" width="270" height="148"/>
+  <text class="label" x="416" y="277">Feature Builder</text>
+  <text class="small" x="416" y="303">state, Re, phase harmonics</text>
+  <text class="small" x="416" y="325">energy and modal norms</text>
+  <text class="small" x="416" y="347">Galerkin RHS and deltas</text>
+  <text class="small" x="416" y="369">standardized feature vector</text>
+
+  <rect class="box violet" x="728" y="108" width="280" height="88"/>
+  <text class="label" x="754" y="140">Shared Encoder</text>
+  <text class="small" x="754" y="166">context latent h_t</text>
+  <text class="small" x="754" y="188">shared across velocity and pressure</text>
+
+  <rect class="box violet" x="728" y="252" width="280" height="108"/>
+  <text class="label" x="754" y="284">Group Router</text>
+  <text class="small" x="754" y="310">select one physics regime</text>
+  <text class="small" x="754" y="332">Low / Transition / High</text>
+
+  <rect class="box amber" x="704" y="420" width="172" height="138"/>
+  <text class="label" x="730" y="452">Velocity Experts</text>
+  <text class="small" x="730" y="478">group shared expert</text>
+  <text class="small" x="730" y="500">Top-2 routed experts</text>
+  <text class="small" x="730" y="522">weighted closure c_u</text>
+
+  <rect class="box amber" x="916" y="420" width="172" height="138"/>
+  <text class="label" x="942" y="452">Pressure Experts</text>
+  <text class="small" x="942" y="478">group shared expert</text>
+  <text class="small" x="942" y="500">Top-2 routed experts</text>
+  <text class="small" x="942" y="522">closure or state c_p</text>
+
+  <rect class="box green" x="1150" y="168" width="300" height="118"/>
+  <text class="label" x="1176" y="200">Velocity Operator</text>
+  <text class="small" x="1176" y="226">f = Galerkin(a_t, Re) + c_u</text>
+  <text class="small" x="1176" y="248">same model used inside RK4 stages</text>
+  <text class="small" x="1176" y="270">operator-space, not black-box state map</text>
+
+  <rect class="box green" x="1150" y="350" width="300" height="118"/>
+  <text class="label" x="1176" y="382">RK4 Advance</text>
+  <text class="small" x="1176" y="408">k1, k2, k3, k4</text>
+  <text class="small" x="1176" y="430">a_{t+1} from explicit time integration</text>
+  <text class="small" x="1176" y="452">keeps Galerkin time structure</text>
+
+  <rect class="box green" x="1150" y="532" width="300" height="118"/>
+  <text class="label" x="1176" y="564">Pressure Update</text>
+  <text class="small" x="1176" y="590">closure: base surrogate + c_p</text>
+  <text class="small" x="1176" y="612">state target: c_p is b_{t+1}</text>
+  <text class="small" x="1176" y="634">shares regime group with velocity</text>
+
+  <rect class="box rose" x="1138" y="724" width="320" height="92"/>
+  <text class="label" x="1164" y="756">Rollout and Diagnostics</text>
+  <text class="small" x="1164" y="782">feed predicted a, b to next step</text>
+  <text class="small" x="1164" y="804">record group load and active experts</text>
+
+  <rect class="box" x="62" y="658" width="260" height="108"/>
+  <text class="label" x="88" y="690">Outputs</text>
+  <text class="small" x="88" y="716">one-step prediction</text>
+  <text class="small" x="88" y="738">autonomous rollout trajectory</text>
+  <text class="small" x="88" y="760">routing activation statistics</text>
+
+  <path class="arrow" d="M322 221 L390 292"/>
+  <path class="arrow" d="M322 413 L390 346"/>
+  <path class="arrow" d="M660 319 L728 152"/>
+  <path class="arrow" d="M868 196 L868 252"/>
+  <path class="arrow" d="M868 360 L790 420"/>
+  <path class="arrow" d="M868 360 L1002 420"/>
+  <path class="arrow" d="M876 489 L1150 227"/>
+  <path class="arrow" d="M1088 489 L1150 591"/>
+  <path class="arrow" d="M1300 286 L1300 350"/>
+  <path class="arrow" d="M1300 468 L1300 532"/>
+  <path class="arrow" d="M1300 650 L1298 724"/>
+  <path class="soft" d="M1138 770 C850 855, 470 830, 192 766"/>
+  <path class="soft" d="M192 658 C180 562, 180 430, 192 284"/>
+</svg>
